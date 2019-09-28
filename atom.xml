@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-27T13:18:25.850Z</updated>
+  <updated>2019-09-28T04:27:19.121Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>感悟</title>
+    <link href="http://yoursite.com/2019/09/28/%E6%84%9F%E6%82%9F/"/>
+    <id>http://yoursite.com/2019/09/28/感悟/</id>
+    <published>2019-09-28T04:23:32.000Z</published>
+    <updated>2019-09-28T04:27:19.121Z</updated>
+    
+    <content type="html"><![CDATA[<p>#每一天很长，但几十年很短。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#每一天很长，但几十年很短。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="感悟" scheme="http://yoursite.com/categories/%E6%84%9F%E6%82%9F/"/>
+    
+    
+      <category term="人生" scheme="http://yoursite.com/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>爱</title>
