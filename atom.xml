@@ -71,9 +71,9 @@
     <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
     <id>http://yoursite.com/2019/09/27/初识vim/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:17:54.219Z</updated>
+    <updated>2019-10-04T11:20:34.208Z</updated>
     
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><p>进入编辑模式的方式:<br>|命令   | 作用|<br>|:—-: | :—-:|<br>| i     | 在光标位置插入 |<br>| a     | 在光标之后插入 |<br>| o     | 在下一行插入   |<br>| I     | 在行头插入     |<br>| A     |在行末尾插入    |<br>| O        |在上一行插      |<br>| :wq   |写入退出         |</p>]]></content>
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><p>进入编辑模式的方式:<br>|命令   | 作用|<br>| —- | —-  |<br>| i     | 在光标位置插入 |<br>| a     | 在光标之后插入 |<br>| o     | 在下一行插入   |<br>| I     | 在行头插入     |<br>| A     |在行末尾插入    |<br>| O        |在上一行插      |<br>| :wq   |写入退出         |</p>]]></content>
     
     <summary type="html">
     
