@@ -23,14 +23,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[投入]]></title>
-    <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
-    <content type="text"><![CDATA[享受并且投入]]></content>
+    <title><![CDATA[初识VIM]]></title>
+    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
+    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 进入编辑模式的方式:|命令 | 作用||:—-: | :—-:|| i | 在光标位置插入 || a | 在光标之后插入 || o | 在下一行插入 || I | 在行头插入 || A |在行末尾插入 || O |在上一行插 || :wq |写入退出 |]]></content>
       <categories>
-        <category>益言</category>
+        <category>VIM</category>
       </categories>
       <tags>
-        <tag>益言</tag>
+        <tag>VIM</tag>
       </tags>
   </entry>
   <entry>
@@ -45,14 +45,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[初识VIM]]></title>
-    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
-    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 进入编辑模式的方式:|命令|作用||— | —|| i | 在光标位置插入 || a | 在光标之后插入 || o | 在下一行插入 | i ==&gt;insert a ==&gt;append 在光标之后插入。 o ==&gt;open a line below 在下一行插入。 4.I ==&gt; 在行头插入。5.A==&gt;在行末尾插入。6.O==&gt;在上一行插入。 使用 :wq 写入退出]]></content>
+    <title><![CDATA[投入]]></title>
+    <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
+    <content type="text"><![CDATA[享受并且投入]]></content>
       <categories>
-        <category>VIM</category>
+        <category>益言</category>
       </categories>
       <tags>
-        <tag>VIM</tag>
+        <tag>益言</tag>
       </tags>
   </entry>
   <entry>
