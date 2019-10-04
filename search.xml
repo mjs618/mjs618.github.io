@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[MarkDown]]></title>
     <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题 我也是一级标题我也是二级标题]]></content>
+    <content type="text"><![CDATA[MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题 我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线]]></content>
       <categories>
         <category>编程习惯</category>
       </categories>
