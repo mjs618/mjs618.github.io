@@ -25,23 +25,12 @@
   <entry>
     <title><![CDATA[初识VIM]]></title>
     <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
-    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 进入编辑模式的方式:|命令 | 作用|| —- | —- || i | 在光标位置插入 || a | 在光标之后插入 || o | 在下一行插入 || I | 在行头插入 || A |在行末尾插入 || O |在上一行插 || :wq |写入退出 |]]></content>
+    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 进入编辑模式的方式:|命令 | 作用||——–| ———— || i | 在光标位置插入 || a | 在光标之后插入 || o | 在下一行插入 || I | 在行头插入 || A |在行末尾插入 || O |在上一行插 || :wq |写入退出 | 天气 日期 晴天 20191004 阴天 20191005]]></content>
       <categories>
         <category>VIM</category>
       </categories>
       <tags>
         <tag>VIM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[爱]]></title>
-    <url>%2F2019%2F09%2F27%2F%E7%88%B1%2F</url>
-    <content type="text"><![CDATA[爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!]]></content>
-      <categories>
-        <category>每日晚安</category>
-      </categories>
-      <tags>
-        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
@@ -53,6 +42,17 @@
       </categories>
       <tags>
         <tag>益言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[爱]]></title>
+    <url>%2F2019%2F09%2F27%2F%E7%88%B1%2F</url>
+    <content type="text"><![CDATA[爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!]]></content>
+      <categories>
+        <category>每日晚安</category>
+      </categories>
+      <tags>
+        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
