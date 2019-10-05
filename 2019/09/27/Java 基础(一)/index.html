@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="代码老中医">
 <meta property="og:description" content="基础的数据类型">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-05T06:37:35.941Z">
+<meta property="og:updated_time" content="2019-10-05T09:34:20.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 基础（一）">
 <meta name="twitter:description" content="基础的数据类型">
@@ -313,7 +313,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-05 14:37:35" itemprop="dateModified" datetime="2019-10-05T14:37:35+08:00">2019-10-05</time>
+                <time title="修改时间：2019-10-05 17:34:20" itemprop="dateModified" datetime="2019-10-05T17:34:20+08:00">2019-10-05</time>
               </span>
             
           
@@ -412,9 +412,65 @@
 <p>基本类型的数组有三种赋值方式</p>
 <ul>
 <li>int[] arr = {1,2,3};</li>
-<li>int[] arr = new int[]{1,2,3}</li>
+<li>int[] arr = new int[]{1,2,3};</li>
 <li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li>
 </ul>
+</blockquote>
+<blockquote>
+<p>数组类型有两块内存空间 </p>
+<ul>
+<li>一块是存储数组内容本身；</li>
+<li>另一块是存储数组内容的位置；<blockquote>
+<p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p>
+<blockquote>
+<p>栈：</p>
+<p>堆：</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table>
+<thead>
+<tr>
+<th align="center">运算符</th>
+<th align="center">符号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">加</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td align="center">减</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">乘</td>
+<td align="center">*</td>
+</tr>
+<tr>
+<td align="center">除</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td align="center">取模</td>
+<td align="center">%</td>
+</tr>
+</tbody></table>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul>
+<li>函数名字</li>
+<li>参数</li>
+<li>操作</li>
+<li>返回值 </li>
+</ul>
+<h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p>
+</blockquote>
+<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote>
+<p>调用自己的函数称为递归函数。</p>
 </blockquote>
 
     </div>
@@ -451,8 +507,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/28/感悟/" rel="prev" title="感悟">
-                  感悟 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/27/ClassLoader/" rel="prev" title="ClassLoaderTest">
+                  ClassLoaderTest <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -502,7 +558,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java的基本数据类型"><span class="nav-number">1.</span> <span class="nav-text">Java的基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">2.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组类型"><span class="nav-number">3.</span> <span class="nav-text">数组类型</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java的基本数据类型"><span class="nav-number">1.</span> <span class="nav-text">Java的基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量"><span class="nav-number">2.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组类型"><span class="nav-number">3.</span> <span class="nav-text">数组类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本运算"><span class="nav-number">4.</span> <span class="nav-text">基本运算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">5.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数的组成"><span class="nav-number">5.1.</span> <span class="nav-text">函数的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-函数"><span class="nav-number">5.2.</span> <span class="nav-text">main 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#递归函数"><span class="nav-number">5.3.</span> <span class="nav-text">递归函数</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
