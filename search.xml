@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Java 基础（二）]]></title>
-    <url>%2F2019%2F10%2F06%2FJava%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)%20%2F</url>
-    <content type="text"><![CDATA[进制 二进制 位权 补码表示法 源码表示法 十进制与二进制的转换]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[感悟]]></title>
     <url>%2F2019%2F09%2F28%2F%E6%84%9F%E6%82%9F%2F</url>
     <content type="text"><![CDATA[#每一天很长，但几十年很短。]]></content>
@@ -45,14 +34,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vim有哪几种模式？]]></title>
-    <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
+    <title><![CDATA[Java 基础（二）]]></title>
+    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)%20%2F</url>
+    <content type="text"><![CDATA[进制 二进制 位权 补码表示法 源码表示法 十进制与二进制的转换]]></content>
       <categories>
-        <category>VIM</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>VIM</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -67,9 +56,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[初识VIM]]></title>
-    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
-    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 命令 作用 i 在光标位置插入 a 在光标之后插入 o 在下一行插入 I 在行头插入 A 在行末尾插入 O 在上一行插 :wq 写入退出]]></content>
+    <title><![CDATA[Vim有哪几种模式？]]></title>
+    <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
       <categories>
         <category>VIM</category>
       </categories>
@@ -97,6 +86,17 @@
       </categories>
       <tags>
         <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初识VIM]]></title>
+    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
+    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 命令 作用 i 在光标位置插入 a 在光标之后插入 o 在下一行插入 I 在行头插入 A 在行末尾插入 O 在上一行插 :wq 写入退出]]></content>
+      <categories>
+        <category>VIM</category>
+      </categories>
+      <tags>
+        <tag>VIM</tag>
       </tags>
   </entry>
   <entry>
