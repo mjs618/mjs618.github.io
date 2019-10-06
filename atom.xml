@@ -67,6 +67,75 @@
   </entry>
   
   <entry>
+    <title>ClassLoaderTest</title>
+    <link href="http://yoursite.com/2019/09/27/ClassLoader/"/>
+    <id>http://yoursite.com/2019/09/27/ClassLoader/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-05T02:22:44.119Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassLoaderTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">      ClassLoader loader = Thread.currentThread().getContextClassLoader();</span><br><span class="line">      System.out.println(<span class="string">"current loader"</span> + loader);</span><br><span class="line">      System.out.println(<span class="string">"parent loader"</span> + loader.getParent());</span><br><span class="line">      System.out.println(<span class="string">"grandparent  loader"</span> + loader.getParent().getParent());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>输出内容<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">current loadersun.misc.Launcher$AppClassLoader@18b4aac2</span><br><span class="line">parent loadersun.misc.Launcher$ExtClassLoader@4554617c</span><br><span class="line">grandparent  loadernull</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p>通过以上输出信息。我们知道当前的ClassLoader是AppClassLoader，父ClassLoader是ExtClassLoader，祖父ClassLoader是根类装载器，因为在java中无法获得句柄就直接返回null。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 基础（一）</title>
+    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-05T09:34:20.245Z</updated>
+    
+    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间 </p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值 </li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim有哪几种模式？</title>
+    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T11:36:26.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MarkDown</title>
     <link href="http://yoursite.com/2019/09/27/markdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
     <id>http://yoursite.com/2019/09/27/markdown学习指南/</id>
@@ -132,75 +201,6 @@
     
     
       <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ClassLoaderTest</title>
-    <link href="http://yoursite.com/2019/09/27/ClassLoader/"/>
-    <id>http://yoursite.com/2019/09/27/ClassLoader/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-05T02:22:44.119Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassLoaderTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">      ClassLoader loader = Thread.currentThread().getContextClassLoader();</span><br><span class="line">      System.out.println(<span class="string">"current loader"</span> + loader);</span><br><span class="line">      System.out.println(<span class="string">"parent loader"</span> + loader.getParent());</span><br><span class="line">      System.out.println(<span class="string">"grandparent  loader"</span> + loader.getParent().getParent());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>输出内容<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">current loadersun.misc.Launcher$AppClassLoader@18b4aac2</span><br><span class="line">parent loadersun.misc.Launcher$ExtClassLoader@4554617c</span><br><span class="line">grandparent  loadernull</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p>通过以上输出信息。我们知道当前的ClassLoader是AppClassLoader，父ClassLoader是ExtClassLoader，祖父ClassLoader是根类装载器，因为在java中无法获得句柄就直接返回null。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim有哪几种模式？</title>
-    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:36:26.999Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 基础（一）</title>
-    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-05T09:34:20.245Z</updated>
-    
-    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间 </p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值 </li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
