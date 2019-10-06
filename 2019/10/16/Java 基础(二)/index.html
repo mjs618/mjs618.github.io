@@ -59,14 +59,14 @@
   <meta name="description" content="基础的数据类型">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 基础（二）">
+<meta property="og:title" content="Java 基础(二)">
 <meta property="og:url" content="http://yoursite.com/2019/10/16/Java 基础(二)/index.html">
 <meta property="og:site_name" content="代码老中医">
 <meta property="og:description" content="基础的数据类型">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-06T05:32:49.543Z">
+<meta property="og:updated_time" content="2019-10-06T11:07:48.499Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 基础（二）">
+<meta name="twitter:title" content="Java 基础(二)">
 <meta name="twitter:description" content="基础的数据类型">
   <link rel="canonical" href="http://yoursite.com/2019/10/16/Java 基础(二)/">
 
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>Java 基础（二） | 代码老中医</title>
+  <title>Java 基础(二) | 代码老中医</title>
   
 
 
@@ -286,7 +286,7 @@
       <meta itemprop="name" content="代码老中医">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Java 基础（二）
+        <h1 class="post-title" itemprop="name headline">Java 基础(二)
 
           
         </h1>
@@ -313,7 +313,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-06 13:32:49" itemprop="dateModified" datetime="2019-10-06T13:32:49+08:00">2019-10-06</time>
+                <time title="修改时间：2019-10-06 19:07:48" itemprop="dateModified" datetime="2019-10-06T19:07:48+08:00">2019-10-06</time>
               </span>
             
           
@@ -365,7 +365,102 @@
 <blockquote>
 <table><tr><td bgcolor="#ffb4d9">源码表示法</td></tr></table>
 </blockquote>
-<h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3>
+<h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote>
+<p>位运算包括移位运算和逻辑运算</p>
+</blockquote>
+<h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>程序输出</p>
+<blockquote>
+<p>1</p>
+<p>8</p>
+<blockquote>
+<p>Process finished with exit code 0</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table>
+<thead>
+<tr>
+<th align="center">逻辑运算</th>
+<th align="center">运算符</th>
+<th align="center">规则</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">按位与</td>
+<td align="center">&amp;</td>
+<td align="center">两位都为1才为1</td>
+</tr>
+<tr>
+<td align="center">按位或</td>
+<td align="center">&#124;</td>
+<td align="center">两位都为1才为1</td>
+</tr>
+<tr>
+<td align="center">按位取反</td>
+<td align="center">~</td>
+<td align="center">1变为0,0变为1</td>
+</tr>
+<tr>
+<td align="center">按位异或</td>
+<td align="center">^</td>
+<td align="center">相异为真，相同为假</td>
+</tr>
+</tbody></table>
+<table>
+<tr>
+<td bgcolor="red">
+    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值
+    例如 | 对应的ASCII为124;
+</td>
+</tr>
+</table>
+
+<h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote>
+<p>American Standard Code for Information Interchange(美国信息互换标准代码)</p>
+<blockquote>
+<p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p>
+</blockquote>
+</blockquote>
+<h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote>
+<p>128 ~ 159 表示控制字符</p>
+<p>160 ~ 255 表示西欧字符 </p>
+</blockquote>
+<h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote>
+<p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p>
+</blockquote>
+<h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote>
+<p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p>
+</blockquote>
+<h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote>
+<p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p>
+</blockquote>
+<h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote>
+<p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p>
+</blockquote>
+<h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote>
+<p>是针对繁体中文的，港台地区使用。</p>
+</blockquote>
+<h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote>
+<p>每个字符用4个字节表示，非常浪费空间</p>
+</blockquote>
+<h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote>
+<p>使用变长字节表示</p>
+</blockquote>
+<h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote>
+<p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p>
+</blockquote>
+<table>
+<tr>
+<td bgcolor="red">
+    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。
+</td>
+</tr>
+</table>
+
+<h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2>
     </div>
 
     
@@ -447,7 +542,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#二进制"><span class="nav-number">1.</span> <span class="nav-text">二进制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#十进制与二进制的转换"><span class="nav-number">1.1.</span> <span class="nav-text">十进制与二进制的转换</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#二进制"><span class="nav-number">1.</span> <span class="nav-text">二进制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#十进制与二进制的转换"><span class="nav-number">1.1.</span> <span class="nav-text">十进制与二进制的转换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#位运算"><span class="nav-number">2.</span> <span class="nav-text">位运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#移位运算"><span class="nav-number">2.1.</span> <span class="nav-text">移位运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑运算"><span class="nav-number">2.2.</span> <span class="nav-text">逻辑运算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符的编码与乱码"><span class="nav-number">3.</span> <span class="nav-text">字符的编码与乱码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的非Unicode编码"><span class="nav-number">3.1.</span> <span class="nav-text">常用的非Unicode编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-ASCII编码"><span class="nav-number">3.1.1.</span> <span class="nav-text">1.ASCII编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-ISO-8859-1-Latin-1"><span class="nav-number">3.1.2.</span> <span class="nav-text">2.ISO 8859-1(Latin-1)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Windows-1252"><span class="nav-number">3.1.3.</span> <span class="nav-text">3.Windows-1252</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-GB2312"><span class="nav-number">3.1.4.</span> <span class="nav-text">4.GB2312</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-GBK"><span class="nav-number">3.1.5.</span> <span class="nav-text">5.GBK</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-GB18030"><span class="nav-number">3.1.6.</span> <span class="nav-text">6.GB18030</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-Big5"><span class="nav-number">3.1.7.</span> <span class="nav-text">7.Big5</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unicode编码"><span class="nav-number">3.2.</span> <span class="nav-text">Unicode编码</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#UTF-32"><span class="nav-number">3.2.1.</span> <span class="nav-text">UTF-32</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UTF-16"><span class="nav-number">3.2.2.</span> <span class="nav-text">UTF-16</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UTF-8"><span class="nav-number">3.2.3.</span> <span class="nav-text">UTF-8</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编码错误的原因"><span class="nav-number">4.</span> <span class="nav-text">编码错误的原因</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
