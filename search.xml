@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Java 基础(二)]]></title>
     <url>%2F2019%2F10%2F16%2FJava%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)%2F</url>
-    <content type="text"><![CDATA[进制 二进制 位权 补码表示法 源码表示法 十进制与二进制的转换位运算 位运算包括移位运算和逻辑运算 移位运算12345678class Test&#123; public static void main(String[] args) &#123; int a = 4; //二进制为 100 a = a &gt;&gt; 2; // 二进制为 001 System.out.println(a); a= a &lt;&lt; 3; // 二进制为1000 &#125;&#125; 程序输出 1 8 Process finished with exit code 0 逻辑运算 逻辑运算 运算符 规则 按位与 &amp; 两位都为1才为1 按位或 &#124; 两位都为1才为1 按位取反 ~ 1变为0,0变为1 按位异或 ^ 相异为真，相同为假 如果在MarkDown输入特殊字符可以使用字符对应的ASCII值 例如 | 对应的ASCII为124; 字符的编码与乱码常用的非Unicode编码1.ASCII编码 American Standard Code for Information Interchange(美国信息互换标准代码) 由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。 2.ISO 8859-1(Latin-1) 128 ~ 159 表示控制字符 160 ~ 255 表示西欧字符 3.Windows-1252 用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159 4.GB2312 主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。 5.GBK GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。 6.GB18030 向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。 7.Big5 是针对繁体中文的，港台地区使用。 Unicode编码UTF-32 每个字符用4个字节表示，非常浪费空间 UTF-16 使用变长字节表示 UTF-8 使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。 编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。 编码错误的原因]]></content>
+    <content type="text"><![CDATA[进制 二进制 位权 补码表示法 源码表示法 十进制与二进制的转换位运算 位运算包括移位运算和逻辑运算 移位运算12345678class Test&#123; public static void main(String[] args) &#123; int a = 4; //二进制为 100 a = a &gt;&gt; 2; // 二进制为 001 System.out.println(a); a= a &lt;&lt; 3; // 二进制为1000 &#125;&#125; 程序输出 1 8 Process finished with exit code 0 逻辑运算 逻辑运算 运算符 规则 按位与 &amp; 两位都为1才为1 按位或 &#124; 两位都为1才为1 按位取反 ~ 1变为0,0变为1 按位异或 ^ 相异为真，相同为假 如果在MarkDown输入特殊字符可以使用字符对应的ASCII值 例如 | 对应的ASCII为124; 字符的编码与乱码常用的非Unicode编码1.ASCII编码 American Standard Code for Information Interchange(美国信息互换标准代码) 由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。 2.ISO 8859-1(Latin-1) 128 ~ 159 表示控制字符 160 ~ 255 表示西欧字符 3.Windows-1252 用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159 4.GB2312 主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。 5.GBK GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。 6.GB18030 向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。 7.Big5 是针对繁体中文的，港台地区使用。 Unicode编码UTF-32 每个字符用4个字节表示，非常浪费空间 UTF-16 使用变长字节表示 UTF-8 使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。 编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。 编码错误的原因1.解析错误2.错误的解析和编码转换char的真正含义 char本质是一个固定占用两个字节的无符号正整数，]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -20,17 +20,6 @@
       </categories>
       <tags>
         <tag>人生</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[初识VIM]]></title>
-    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
-    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 命令 作用 i 在光标位置插入 a 在光标之后插入 o 在下一行插入 I 在行头插入 A 在行末尾插入 O 在上一行插 :wq 写入退出]]></content>
-      <categories>
-        <category>VIM</category>
-      </categories>
-      <tags>
-        <tag>VIM</tag>
       </tags>
   </entry>
   <entry>
@@ -78,14 +67,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[编程基础知识积累]]></title>
-    <url>%2F2019%2F09%2F27%2F%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF%2F</url>
-    <content type="text"><![CDATA[编程基础知识积累 POJO 与 EJBPOJO是什么？ POJO（Plain Ordinary Java Object）简单的Java对象。 EJB 是什么？ 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。]]></content>
+    <title><![CDATA[初识VIM]]></title>
+    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
+    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 命令 作用 i 在光标位置插入 a 在光标之后插入 o 在下一行插入 I 在行头插入 A 在行末尾插入 O 在上一行插 :wq 写入退出]]></content>
       <categories>
-        <category>编程习惯</category>
+        <category>VIM</category>
       </categories>
       <tags>
-        <tag>编程习惯</tag>
+        <tag>VIM</tag>
       </tags>
   </entry>
   <entry>
@@ -108,6 +97,17 @@
       </categories>
       <tags>
         <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[编程基础知识积累]]></title>
+    <url>%2F2019%2F09%2F27%2F%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF%2F</url>
+    <content type="text"><![CDATA[编程基础知识积累 POJO 与 EJBPOJO是什么？ POJO（Plain Ordinary Java Object）简单的Java对象。 EJB 是什么？ 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。]]></content>
+      <categories>
+        <category>编程习惯</category>
+      </categories>
+      <tags>
+        <tag>编程习惯</tag>
       </tags>
   </entry>
 </search>

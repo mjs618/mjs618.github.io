@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-06T11:07:48.499Z</updated>
+  <updated>2019-10-06T11:36:03.713Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
     <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
     <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-06T11:07:48.499Z</updated>
+    <updated>2019-10-06T11:36:03.713Z</updated>
     
-    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#ffb4d9">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="red">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="red">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2>]]></content>
+    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="red">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
     
     <summary type="html">
     
@@ -63,29 +63,6 @@
     
     
       <category term="人生" scheme="http://yoursite.com/tags/%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初识VIM</title>
-    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
-    <id>http://yoursite.com/2019/09/27/初识vim/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:31:07.899Z</updated>
-    
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
     
   </entry>
   
@@ -182,13 +159,13 @@
   </entry>
   
   <entry>
-    <title>编程基础知识积累</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <title>初识VIM</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
+    <id>http://yoursite.com/2019/09/27/初识vim/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:45:56.608Z</updated>
+    <updated>2019-10-04T11:31:07.899Z</updated>
     
-    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -197,10 +174,10 @@
     </summary>
     
     
-      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
     
     
-      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
     
   </entry>
   
@@ -247,6 +224,29 @@
     
     
       <category term="爱" scheme="http://yoursite.com/tags/%E7%88%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程基础知识积累</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:45:56.608Z</updated>
+    
+    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
     
   </entry>
   
