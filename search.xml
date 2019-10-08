@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[类的基础]]></title>
-    <url>%2F2019%2F10%2F16%2F%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
-    <content type="text"><![CDATA[面向对象 类的基本概念 类是函数的容器，但类更多表示的是自定义的数据类型。 抽象类 Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。 ###抽象方法的特点 只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现） 抽象方法用abstract关键字来修饰。 抽象方法代表一种不确定的操作或行为。（由子类去具体实现） 抽象方法不能被调用。 函数容器 不在同一包下，无法访问父类默认的构造方法 类方法 static表示类方法 类变量 就是静态变量 声明类变量通过类名直接调用 实例方法 通过实例或者对象调用 实例方法是表示具体的实例可以进行的操作。实例实例变量表示具体的实例所具有的属性有一种对象只叫对象，有一种对象叫实例化对象（实例）。 对象]]></content>
+    <title><![CDATA[Maven使用]]></title>
+    <url>%2F2019%2F10%2F16%2FMaven%2F</url>
+    <content type="text"><![CDATA[MavenMaven 的配置 1.环境变量配置 12&gt;&gt; MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3&gt;&gt; 2.PATH 配置 配置远程仓库 3. Maven的生命周期 Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。 1.clean生命周期：清理项目，包含三个phase。 pre-clean：执行清理前需要完成的工作 clean：清理上一次构建生成的文件 post-clean：执行清理后需要完成的工作 2.default生命周期：构建项目，重要的phase如下。 validate：验证工程是否正确，所有需要的资源是否可用。 compile：编译项目的源代码。 test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。 Package：把已编译的代码打包成可发布的格式，比如jar。 integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。 verify：运行所有检查，验证包是否有效且达到质量标准。 install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。 Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。 3.site生命周期：建立和发布项目站点，phase如下 pre-site：生成项目站点之前需要完成的工作 site：生成项目站点文档 post-site：生成项目站点之后需要完成的工作 site-deploy：将项目站点发布到服务器 Maven官网 Maven官网]]></content>
       <categories>
-        <category>Java</category>
+        <category>Maven</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>Maven</tag>
       </tags>
   </entry>
   <entry>
@@ -23,14 +23,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Maven使用]]></title>
-    <url>%2F2019%2F10%2F16%2FMaven%2F</url>
-    <content type="text"><![CDATA[MavenMaven 的配置 1.环境变量配置 12&gt;&gt; MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3&gt;&gt; 2.PATH 配置 配置远程仓库 3. sdssmarkdown 源码表示法 Maven官网 Maven官网]]></content>
+    <title><![CDATA[类的基础]]></title>
+    <url>%2F2019%2F10%2F16%2F%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[面向对象 类的基本概念 类是函数的容器，但类更多表示的是自定义的数据类型。 抽象类 Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。 ###抽象方法的特点 只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现） 抽象方法用abstract关键字来修饰。 抽象方法代表一种不确定的操作或行为。（由子类去具体实现） 抽象方法不能被调用。 函数容器 不在同一包下，无法访问父类默认的构造方法 类方法 static表示类方法 类变量 就是静态变量 声明类变量通过类名直接调用 实例方法 通过实例或者对象调用 实例方法是表示具体的实例可以进行的操作。实例实例变量表示具体的实例所具有的属性有一种对象只叫对象，有一种对象叫实例化对象（实例）。 对象]]></content>
       <categories>
-        <category>Maven</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>Maven</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -45,14 +45,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vim有哪几种模式？]]></title>
-    <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
+    <title><![CDATA[初识VIM]]></title>
+    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
+    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 命令 作用 i 在光标位置插入 a 在光标之后插入 o 在下一行插入 I 在行头插入 A 在行末尾插入 O 在上一行插 :wq 写入退出]]></content>
       <categories>
         <category>VIM</category>
       </categories>
       <tags>
         <tag>VIM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MarkDown]]></title>
+    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题 我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
+      <categories>
+        <category>编程习惯</category>
+      </categories>
+      <tags>
+        <tag>编程习惯</tag>
       </tags>
   </entry>
   <entry>
@@ -78,17 +89,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[初识VIM]]></title>
-    <url>%2F2019%2F09%2F27%2F%E5%88%9D%E8%AF%86vim%2F</url>
-    <content type="text"><![CDATA[vim 文件名 进入该文件的normal模式 命令 作用 i 在光标位置插入 a 在光标之后插入 o 在下一行插入 I 在行头插入 A 在行末尾插入 O 在上一行插 :wq 写入退出]]></content>
-      <categories>
-        <category>VIM</category>
-      </categories>
-      <tags>
-        <tag>VIM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[投入]]></title>
     <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
     <content type="text"><![CDATA[享受并且投入]]></content>
@@ -97,6 +97,17 @@
       </categories>
       <tags>
         <tag>益言</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vim有哪几种模式？]]></title>
+    <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
+      <categories>
+        <category>VIM</category>
+      </categories>
+      <tags>
+        <tag>VIM</tag>
       </tags>
   </entry>
   <entry>
@@ -114,17 +125,6 @@
     <title><![CDATA[编程基础知识积累]]></title>
     <url>%2F2019%2F09%2F27%2F%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF%2F</url>
     <content type="text"><![CDATA[编程基础知识积累 POJO 与 EJBPOJO是什么？ POJO（Plain Ordinary Java Object）简单的Java对象。 EJB 是什么？ 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。]]></content>
-      <categories>
-        <category>编程习惯</category>
-      </categories>
-      <tags>
-        <tag>编程习惯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[MarkDown]]></title>
-    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题 我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
       <categories>
         <category>编程习惯</category>
       </categories>
