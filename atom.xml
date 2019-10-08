@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-06T11:37:40.386Z</updated>
+  <updated>2019-10-07T08:09:36.420Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Java 基础(二)</title>
-    <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
-    <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-06T11:37:40.386Z</updated>
-    
-    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="a0f0ff">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
   
   <entry>
     <title>类的基础</title>
@@ -51,6 +28,52 @@
     <summary type="html">
     
       面向对象
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven使用</title>
+    <link href="http://yoursite.com/2019/10/16/Maven/"/>
+    <id>http://yoursite.com/2019/10/16/Maven/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-08T03:22:41.251Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><h3 id="Maven-的配置"><a href="#Maven-的配置" class="headerlink" title="Maven 的配置"></a>Maven 的配置</h3><center>sdssmarkdown</center><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table><h3 id="Maven官网"><a href="#Maven官网" class="headerlink" title="Maven官网"></a>Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 基础(二)</title>
+    <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
+    <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-06T11:37:40.386Z</updated>
+    
+    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="a0f0ff">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
     
     </summary>
     
@@ -90,6 +113,75 @@
   </entry>
   
   <entry>
+    <title>Java 基础（一）</title>
+    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-05T09:34:20.245Z</updated>
+    
+    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间 </p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值 </li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>投入</title>
+    <link href="http://yoursite.com/2019/09/27/%E6%8A%95%E5%85%A5/"/>
+    <id>http://yoursite.com/2019/09/27/投入/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:47:25.004Z</updated>
+    
+    <content type="html"><![CDATA[<p>享受并且投入</p>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="益言" scheme="http://yoursite.com/categories/%E7%9B%8A%E8%A8%80/"/>
+    
+    
+      <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MarkDown</title>
+    <link href="http://yoursite.com/2019/09/27/markdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    <id>http://yoursite.com/2019/09/27/markdown学习指南/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:56:31.805Z</updated>
+    
+    <content type="html"><![CDATA[<center>MarkDown学习指南</center># MarkDown 标题<ol><li>使用=和-标记一级和二级标题  </li></ol><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="我展示的二级标题"><a href="#我展示的二级标题" class="headerlink" title="我展示的二级标题  "></a>我展示的二级标题  </h2><h1 id="我也是一级标题"><a href="#我也是一级标题" class="headerlink" title="我也是一级标题"></a>我也是一级标题</h1><h2 id="我也是二级标题"><a href="#我也是二级标题" class="headerlink" title="我也是二级标题"></a>我也是二级标题</h2><h1 id="MarkDown-字体"><a href="#MarkDown-字体" class="headerlink" title="MarkDown 字体"></a>MarkDown 字体</h1><p><em>斜体文本</em>  </p><p><em>斜体文本</em></p><p><strong>粗体文本</strong></p><p><strong>粗体文本</strong></p><p><strong><em>粗斜体文本</em></strong></p><p><strong><em>粗斜体文本</em></strong></p><h1 id="MarkDown-分割线"><a href="#MarkDown-分割线" class="headerlink" title="MarkDown 分割线"></a>MarkDown 分割线</h1><hr><hr><hr><hr><hr><h1 id="MarkDown-删除线"><a href="#MarkDown-删除线" class="headerlink" title="MarkDown 删除线"></a>MarkDown 删除线</h1><p><del>~ 我删除了 ~</del></p><h1 id="MarkDown-脚注"><a href="#MarkDown-脚注" class="headerlink" title="MarkDown 脚注"></a>MarkDown 脚注</h1><h3 id="无序列表-使用-“-”-”-“-”-”"><a href="#无序列表-使用-“-”-”-“-”-”" class="headerlink" title="无序列表 使用(“*”,”-“,”+”)"></a>无序列表 使用(“*”,”-“,”+”)</h3><ul><li>第一项</li></ul><ul><li>第二项</li></ul><ul><li>第三项</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol><li>第一项：<ul><li>第一项的第一个元素</li><li>第一项的第二个元素</li></ul></li><li>第二项：<ul><li>第二项的第一个元素</li><li>第二项的第二个元素</li></ul></li></ol><h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><h3 id="Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号："><a href="#Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号：" class="headerlink" title="Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号："></a>Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：</h3><h4 id="简单区块"><a href="#简单区块" class="headerlink" title="简单区块"></a>简单区块</h4><blockquote><p>区块内容一<br>区块内容二<br>区块内容三</p></blockquote><h4 id="嵌套区块"><a href="#嵌套区块" class="headerlink" title="嵌套区块"></a>嵌套区块</h4><pre><code>&gt; 最外层区块&gt; &gt; 第一层区块&gt; &gt; &gt; 第二层区块</code></pre><h4 id="区块和列表-嵌套使用"><a href="#区块和列表-嵌套使用" class="headerlink" title="区块和列表 嵌套使用"></a>区块和列表 嵌套使用</h4><h5 id="区块内嵌套列表"><a href="#区块内嵌套列表" class="headerlink" title="区块内嵌套列表"></a>区块内嵌套列表</h5><pre><code>&gt; 区块&gt; 1. 第一项&gt; 2. 第二项</code></pre><h5 id="列表内嵌套区块"><a href="#列表内嵌套区块" class="headerlink" title="列表内嵌套区块"></a>列表内嵌套区块</h5><ul><li><p>第一项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li><li><p>第二项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li></ul><h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">System.out.println(<span class="string">"我是代码"</span>)</span><br></pre></td></tr></table></figure><h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><h3 id="链接方式一"><a href="#链接方式一" class="headerlink" title="链接方式一"></a>链接方式一</h3><p>我是一个链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h3 id="链接方式二"><a href="#链接方式二" class="headerlink" title="链接方式二"></a>链接方式二</h3><p><a href="https://maojingsong.com" target="_blank" rel="noopener">https://maojingsong.com</a></p><h3 id="高级链接-链接也可以用变量来代替，文档末尾附带变量地址："><a href="#高级链接-链接也可以用变量来代替，文档末尾附带变量地址：" class="headerlink" title="高级链接 链接也可以用变量来代替，文档末尾附带变量地址："></a>高级链接 链接也可以用变量来代替，文档末尾附带变量地址：</h3><p>这是一个高级链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="代码老中医"></p><h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><table><thead><tr><th>天气</th><th>日期</th></tr></thead><tbody><tr><td>晴天</td><td>20191004</td></tr><tr><td>阴天</td><td>20191005</td></tr></tbody></table><table><thead><tr><th align="left">天气</th><th align="center">日期</th><th align="right">任务</th></tr></thead><tbody><tr><td align="left">晴天</td><td align="center">20191004</td><td align="right">学习</td></tr><tr><td align="left">阴天</td><td align="center">20191005</td><td align="right">学习</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ClassLoaderTest</title>
     <link href="http://yoursite.com/2019/09/27/ClassLoader/"/>
     <id>http://yoursite.com/2019/09/27/ClassLoader/</id>
@@ -113,13 +205,59 @@
   </entry>
   
   <entry>
-    <title>MarkDown</title>
-    <link href="http://yoursite.com/2019/09/27/markdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    <id>http://yoursite.com/2019/09/27/markdown学习指南/</id>
+    <title>Vim有哪几种模式？</title>
+    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:56:31.805Z</updated>
+    <updated>2019-10-04T11:36:26.999Z</updated>
     
-    <content type="html"><![CDATA[<center>MarkDown学习指南</center># MarkDown 标题<ol><li>使用=和-标记一级和二级标题  </li></ol><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="我展示的二级标题"><a href="#我展示的二级标题" class="headerlink" title="我展示的二级标题  "></a>我展示的二级标题  </h2><h1 id="我也是一级标题"><a href="#我也是一级标题" class="headerlink" title="我也是一级标题"></a>我也是一级标题</h1><h2 id="我也是二级标题"><a href="#我也是二级标题" class="headerlink" title="我也是二级标题"></a>我也是二级标题</h2><h1 id="MarkDown-字体"><a href="#MarkDown-字体" class="headerlink" title="MarkDown 字体"></a>MarkDown 字体</h1><p><em>斜体文本</em>  </p><p><em>斜体文本</em></p><p><strong>粗体文本</strong></p><p><strong>粗体文本</strong></p><p><strong><em>粗斜体文本</em></strong></p><p><strong><em>粗斜体文本</em></strong></p><h1 id="MarkDown-分割线"><a href="#MarkDown-分割线" class="headerlink" title="MarkDown 分割线"></a>MarkDown 分割线</h1><hr><hr><hr><hr><hr><h1 id="MarkDown-删除线"><a href="#MarkDown-删除线" class="headerlink" title="MarkDown 删除线"></a>MarkDown 删除线</h1><p><del>~ 我删除了 ~</del></p><h1 id="MarkDown-脚注"><a href="#MarkDown-脚注" class="headerlink" title="MarkDown 脚注"></a>MarkDown 脚注</h1><h3 id="无序列表-使用-“-”-”-“-”-”"><a href="#无序列表-使用-“-”-”-“-”-”" class="headerlink" title="无序列表 使用(“*”,”-“,”+”)"></a>无序列表 使用(“*”,”-“,”+”)</h3><ul><li>第一项</li></ul><ul><li>第二项</li></ul><ul><li>第三项</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol><li>第一项：<ul><li>第一项的第一个元素</li><li>第一项的第二个元素</li></ul></li><li>第二项：<ul><li>第二项的第一个元素</li><li>第二项的第二个元素</li></ul></li></ol><h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><h3 id="Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号："><a href="#Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号：" class="headerlink" title="Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号："></a>Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：</h3><h4 id="简单区块"><a href="#简单区块" class="headerlink" title="简单区块"></a>简单区块</h4><blockquote><p>区块内容一<br>区块内容二<br>区块内容三</p></blockquote><h4 id="嵌套区块"><a href="#嵌套区块" class="headerlink" title="嵌套区块"></a>嵌套区块</h4><pre><code>&gt; 最外层区块&gt; &gt; 第一层区块&gt; &gt; &gt; 第二层区块</code></pre><h4 id="区块和列表-嵌套使用"><a href="#区块和列表-嵌套使用" class="headerlink" title="区块和列表 嵌套使用"></a>区块和列表 嵌套使用</h4><h5 id="区块内嵌套列表"><a href="#区块内嵌套列表" class="headerlink" title="区块内嵌套列表"></a>区块内嵌套列表</h5><pre><code>&gt; 区块&gt; 1. 第一项&gt; 2. 第二项</code></pre><h5 id="列表内嵌套区块"><a href="#列表内嵌套区块" class="headerlink" title="列表内嵌套区块"></a>列表内嵌套区块</h5><ul><li><p>第一项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li><li><p>第二项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li></ul><h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">System.out.println(<span class="string">"我是代码"</span>)</span><br></pre></td></tr></table></figure><h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><h3 id="链接方式一"><a href="#链接方式一" class="headerlink" title="链接方式一"></a>链接方式一</h3><p>我是一个链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h3 id="链接方式二"><a href="#链接方式二" class="headerlink" title="链接方式二"></a>链接方式二</h3><p><a href="https://maojingsong.com" target="_blank" rel="noopener">https://maojingsong.com</a></p><h3 id="高级链接-链接也可以用变量来代替，文档末尾附带变量地址："><a href="#高级链接-链接也可以用变量来代替，文档末尾附带变量地址：" class="headerlink" title="高级链接 链接也可以用变量来代替，文档末尾附带变量地址："></a>高级链接 链接也可以用变量来代替，文档末尾附带变量地址：</h3><p>这是一个高级链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="代码老中医"></p><h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><table><thead><tr><th>天气</th><th>日期</th></tr></thead><tbody><tr><td>晴天</td><td>20191004</td></tr><tr><td>阴天</td><td>20191005</td></tr></tbody></table><table><thead><tr><th align="left">天气</th><th align="center">日期</th><th align="right">任务</th></tr></thead><tbody><tr><td align="left">晴天</td><td align="center">20191004</td><td align="right">学习</td></tr><tr><td align="left">阴天</td><td align="center">20191005</td><td align="right">学习</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>爱</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%88%B1/"/>
+    <id>http://yoursite.com/2019/09/27/爱/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-09-27T13:18:25.850Z</updated>
+    
+    <content type="html"><![CDATA[<p>爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!</p>]]></content>
+    
+    <summary type="html">
+    
+      想对你讲的一些话
+    
+    </summary>
+    
+    
+      <category term="每日晚安" scheme="http://yoursite.com/categories/%E6%AF%8F%E6%97%A5%E6%99%9A%E5%AE%89/"/>
+    
+    
+      <category term="爱" scheme="http://yoursite.com/tags/%E7%88%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程基础知识积累</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:45:56.608Z</updated>
+    
+    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
     
     <summary type="html">
     
@@ -155,121 +293,6 @@
     
     
       <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 基础（一）</title>
-    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-05T09:34:20.245Z</updated>
-    
-    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间 </p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值 </li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>爱</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%88%B1/"/>
-    <id>http://yoursite.com/2019/09/27/爱/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-09-27T13:18:25.850Z</updated>
-    
-    <content type="html"><![CDATA[<p>爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!</p>]]></content>
-    
-    <summary type="html">
-    
-      想对你讲的一些话
-    
-    </summary>
-    
-    
-      <category term="每日晚安" scheme="http://yoursite.com/categories/%E6%AF%8F%E6%97%A5%E6%99%9A%E5%AE%89/"/>
-    
-    
-      <category term="爱" scheme="http://yoursite.com/tags/%E7%88%B1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim有哪几种模式？</title>
-    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:36:26.999Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>编程基础知识积累</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:45:56.608Z</updated>
-    
-    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-    
-      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>投入</title>
-    <link href="http://yoursite.com/2019/09/27/%E6%8A%95%E5%85%A5/"/>
-    <id>http://yoursite.com/2019/09/27/投入/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:47:25.004Z</updated>
-    
-    <content type="html"><![CDATA[<p>享受并且投入</p>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="益言" scheme="http://yoursite.com/categories/%E7%9B%8A%E8%A8%80/"/>
-    
-    
-      <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
     
   </entry>
   
