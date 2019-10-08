@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Maven使用]]></title>
-    <url>%2F2019%2F10%2F16%2FMaven%2F</url>
-    <content type="text"><![CDATA[MavenMaven 的配置 1.环境变量配置 12&gt;&gt; MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3&gt;&gt; 2.PATH 配置 配置远程仓库 3. sdssmarkdown 源码表示法 Maven官网 Maven官网]]></content>
+    <title><![CDATA[类的基础]]></title>
+    <url>%2F2019%2F10%2F16%2F%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[面向对象 类的基本概念 类是函数的容器，但类更多表示的是自定义的数据类型。 抽象类 Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。 ###抽象方法的特点 只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现） 抽象方法用abstract关键字来修饰。 抽象方法代表一种不确定的操作或行为。（由子类去具体实现） 抽象方法不能被调用。 函数容器 不在同一包下，无法访问父类默认的构造方法 类方法 static表示类方法 类变量 就是静态变量 声明类变量通过类名直接调用 实例方法 通过实例或者对象调用 实例方法是表示具体的实例可以进行的操作。实例实例变量表示具体的实例所具有的属性有一种对象只叫对象，有一种对象叫实例化对象（实例）。 对象]]></content>
       <categories>
-        <category>Maven</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>Maven</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -23,14 +23,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[类的基础]]></title>
-    <url>%2F2019%2F10%2F16%2F%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
-    <content type="text"><![CDATA[面向对象 类的基本概念 类是函数的容器，但类更多表示的是自定义的数据类型。 抽象类 Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。 ###抽象方法的特点 只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现） 抽象方法用abstract关键字来修饰。 抽象方法代表一种不确定的操作或行为。（由子类去具体实现） 抽象方法不能被调用。 函数容器 不在同一包下，无法访问父类默认的构造方法 类方法 static表示类方法 类变量 就是静态变量 声明类变量通过类名直接调用 实例方法 通过实例或者对象调用 实例方法是表示具体的实例可以进行的操作。实例实例变量表示具体的实例所具有的属性有一种对象只叫对象，有一种对象叫实例化对象（实例）。 对象]]></content>
+    <title><![CDATA[Maven使用]]></title>
+    <url>%2F2019%2F10%2F16%2FMaven%2F</url>
+    <content type="text"><![CDATA[MavenMaven 的配置 1.环境变量配置 12&gt;&gt; MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3&gt;&gt; 2.PATH 配置 配置远程仓库 3. sdssmarkdown 源码表示法 Maven官网 Maven官网]]></content>
       <categories>
-        <category>Java</category>
+        <category>Maven</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>Maven</tag>
       </tags>
   </entry>
   <entry>
@@ -45,6 +45,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Vim有哪几种模式？]]></title>
+    <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
+      <categories>
+        <category>VIM</category>
+      </categories>
+      <tags>
+        <tag>VIM</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java 基础（一）]]></title>
     <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
     <content type="text"><![CDATA[Java 基础（一） Java的基本数据类型 类型名 取值范围 占用内存空间字节 byte -2^7~2^(7-1) 1 short -2^15~2^(15-1) 2 int -2^31~2^(31-1) 4 long -2^63~2^(63-1) 8 float 1.4E-45 ~ 3.4E+38-3.4E+38 ~ -1.4E-45 4 double 4.9E-324 ~ 1.7E+308-1.7E+308 ~ -4.9E-324 8 boolean ture false 具体情况而定 char 2 变量 变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。 数组类型 基本类型的数组有三种赋值方式 int[] arr = {1,2,3}; int[] arr = new int[]{1,2,3}; int[] arr = new int[3];arr[0]=1; arr[1]=2;arr[2]=3; 数组类型有两块内存空间 一块是存储数组内容本身； 另一块是存储数组内容的位置； 数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈； 栈： 堆： 基本运算 运算符 符号 加 + 减 - 乘 * 除 / 取模 % 函数函数的组成 函数名字 参数 操作 返回值 main 函数12345class JavaTest &#123; public static void main(String[] args)&#123; &#125;&#125; main函数表示程序的入口同一个类中函数名相同但参数不同的现象，一般称为函数重载。 递归函数 调用自己的函数称为递归函数。]]></content>
@@ -53,17 +64,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[MarkDown]]></title>
-    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题 我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
-      <categories>
-        <category>编程习惯</category>
-      </categories>
-      <tags>
-        <tag>编程习惯</tag>
       </tags>
   </entry>
   <entry>
@@ -100,14 +100,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vim有哪几种模式？]]></title>
-    <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
+    <title><![CDATA[爱]]></title>
+    <url>%2F2019%2F09%2F27%2F%E7%88%B1%2F</url>
+    <content type="text"><![CDATA[爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!]]></content>
       <categories>
-        <category>VIM</category>
+        <category>每日晚安</category>
       </categories>
       <tags>
-        <tag>VIM</tag>
+        <tag>爱</tag>
       </tags>
   </entry>
   <entry>
@@ -122,14 +122,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[爱]]></title>
-    <url>%2F2019%2F09%2F27%2F%E7%88%B1%2F</url>
-    <content type="text"><![CDATA[爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!]]></content>
+    <title><![CDATA[MarkDown]]></title>
+    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题 我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
       <categories>
-        <category>每日晚安</category>
+        <category>编程习惯</category>
       </categories>
       <tags>
-        <tag>爱</tag>
+        <tag>编程习惯</tag>
       </tags>
   </entry>
 </search>
