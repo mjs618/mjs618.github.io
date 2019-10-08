@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-08T07:01:09.079Z</updated>
+  <updated>2019-10-06T11:37:40.386Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Maven使用</title>
-    <link href="http://yoursite.com/2019/10/16/Maven/"/>
-    <id>http://yoursite.com/2019/10/16/Maven/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-08T07:01:09.079Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><h3 id="1-Maven-的配置"><a href="#1-Maven-的配置" class="headerlink" title="1.Maven 的配置"></a>1.Maven 的配置</h3><blockquote><p>1.环境变量配置</p><blockquote><p>MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3</p></blockquote></blockquote><blockquote><p>2.PATH 配置</p><blockquote><p>%MAVEN_HOME%\bin</p></blockquote></blockquote><h3 id="2-Maven的生命周期"><a href="#2-Maven的生命周期" class="headerlink" title="2.Maven的生命周期"></a>2.Maven的生命周期</h3><blockquote><p>Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。</p></blockquote><p>1.clean生命周期：清理项目，包含三个phase。</p><ul><li><p>pre-clean：执行清理前需要完成的工作</p></li><li><p>clean：清理上一次构建生成的文件</p></li><li><p>post-clean：执行清理后需要完成的工作</p></li></ul><p>2.default生命周期：构建项目，重要的phase如下。</p><ul><li>validate：验证工程是否正确，所有需要的资源是否可用。</li><li>compile：编译项目的源代码。</li><li>test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。</li><li>Package：把已编译的代码打包成可发布的格式，比如jar。</li><li>integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。</li><li>verify：运行所有检查，验证包是否有效且达到质量标准。</li><li>install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。</li><li>Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。</li></ul><p>3.site生命周期：建立和发布项目站点，phase如下</p><ul><li><p>pre-site：生成项目站点之前需要完成的工作</p></li><li><p>site：生成项目站点文档</p></li><li><p>post-site：生成项目站点之后需要完成的工作</p></li><li><p>site-deploy：将项目站点发布到服务器</p></li></ul><h3 id="3-配置Maven仓库"><a href="#3-配置Maven仓库" class="headerlink" title="3.配置Maven仓库"></a>3.配置Maven仓库</h3><p>3.1 本地仓库配置到指定路径</p><blockquote><p>在maven解压文件中，conf目录中修改settings.xml文件。<br>可以添加新的仓库路径<localrepository>D:Programming\maven-3.5.2\repository</localrepository><br>3.2 配置中央仓库指定阿里的</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;nexus-aliyun&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><h3 id="4-配置Idea使用自己安装的Maven"><a href="#4-配置Idea使用自己安装的Maven" class="headerlink" title="4.配置Idea使用自己安装的Maven"></a>4.配置Idea使用自己安装的Maven</h3><p><img src="/assets/QQ%E6%88%AA%E5%9B%BE20191008123630.png" alt="QQ截图20191008123630"></p><h3 id="Maven官网"><a href="#Maven官网" class="headerlink" title="Maven官网"></a>Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      Maven的使用
-    
-    </summary>
-    
-    
-      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
-    
-    
-      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
-    
-  </entry>
   
   <entry>
     <title>Java 基础(二)</title>
@@ -59,6 +36,29 @@
     
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven使用</title>
+    <link href="http://yoursite.com/2019/10/16/Maven/"/>
+    <id>http://yoursite.com/2019/10/16/Maven/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-08T07:08:54.070Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><h3 id="1-Maven-的配置"><a href="#1-Maven-的配置" class="headerlink" title="1.Maven 的配置"></a>1.Maven 的配置</h3><blockquote><p>1.环境变量配置</p><blockquote><p>MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3</p></blockquote></blockquote><blockquote><p>2.PATH 配置</p><blockquote><p>%MAVEN_HOME%\bin</p></blockquote></blockquote><h3 id="2-Maven的生命周期"><a href="#2-Maven的生命周期" class="headerlink" title="2.Maven的生命周期"></a>2.Maven的生命周期</h3><blockquote><p>Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。</p></blockquote><p>1.clean生命周期：清理项目，包含三个phase。</p><ul><li><p>pre-clean：执行清理前需要完成的工作</p></li><li><p>clean：清理上一次构建生成的文件</p></li><li><p>post-clean：执行清理后需要完成的工作</p></li></ul><p>2.default生命周期：构建项目，重要的phase如下。</p><ul><li>validate：验证工程是否正确，所有需要的资源是否可用。</li><li>compile：编译项目的源代码。</li><li>test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。</li><li>Package：把已编译的代码打包成可发布的格式，比如jar。</li><li>integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。</li><li>verify：运行所有检查，验证包是否有效且达到质量标准。</li><li>install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。</li><li>Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。</li></ul><p>3.site生命周期：建立和发布项目站点，phase如下</p><ul><li><p>pre-site：生成项目站点之前需要完成的工作</p></li><li><p>site：生成项目站点文档</p></li><li><p>post-site：生成项目站点之后需要完成的工作</p></li><li><p>site-deploy：将项目站点发布到服务器</p></li></ul><h3 id="3-配置Maven仓库"><a href="#3-配置Maven仓库" class="headerlink" title="3.配置Maven仓库"></a>3.配置Maven仓库</h3><p>3.1 本地仓库配置到指定路径</p><blockquote><p>在maven解压文件中，conf目录中修改settings.xml文件。<br>可以添加新的仓库路径<localrepository>D:Programming\maven-3.5.2\repository</localrepository><br>3.2 配置中央仓库指定阿里的</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;nexus-aliyun&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><h3 id="4-配置Idea使用自己安装的Maven"><a href="#4-配置Idea使用自己安装的Maven" class="headerlink" title="4.配置Idea使用自己安装的Maven"></a>4.配置Idea使用自己安装的Maven</h3><p><img src="20191008123630.png" alt="20191008123630"></p><h3 id="Maven官网"><a href="#Maven官网" class="headerlink" title="Maven官网"></a>Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      Maven的使用
+    
+    </summary>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
     
   </entry>
   
@@ -113,13 +113,36 @@
   </entry>
   
   <entry>
-    <title>编程基础知识积累</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <title>初识VIM</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
+    <id>http://yoursite.com/2019/09/27/初识vim/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:45:56.608Z</updated>
+    <updated>2019-10-04T11:31:07.899Z</updated>
     
-    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MarkDown</title>
+    <link href="http://yoursite.com/2019/09/27/markdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    <id>http://yoursite.com/2019/09/27/markdown学习指南/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-08T06:41:25.550Z</updated>
+    
+    <content type="html"><![CDATA[<center>MarkDown学习指南</center># MarkDown 标题<ol><li>使用=和-标记一级和二级标题</li></ol><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="我展示的二级标题"><a href="#我展示的二级标题" class="headerlink" title="我展示的二级标题"></a>我展示的二级标题</h2><h1 id="我也是一级标题"><a href="#我也是一级标题" class="headerlink" title="我也是一级标题"></a>我也是一级标题</h1><h2 id="我也是二级标题"><a href="#我也是二级标题" class="headerlink" title="我也是二级标题"></a>我也是二级标题</h2><h1 id="MarkDown-字体"><a href="#MarkDown-字体" class="headerlink" title="MarkDown 字体"></a>MarkDown 字体</h1><p><em>斜体文本</em></p><p><em>斜体文本</em></p><p><strong>粗体文本</strong></p><p><strong>粗体文本</strong></p><p><strong><em>粗斜体文本</em></strong></p><p><strong><em>粗斜体文本</em></strong></p><h1 id="MarkDown-分割线"><a href="#MarkDown-分割线" class="headerlink" title="MarkDown 分割线"></a>MarkDown 分割线</h1><hr><hr><hr><hr><hr><h1 id="MarkDown-删除线"><a href="#MarkDown-删除线" class="headerlink" title="MarkDown 删除线"></a>MarkDown 删除线</h1><p><del>~ 我删除了 ~</del></p><h1 id="MarkDown-脚注"><a href="#MarkDown-脚注" class="headerlink" title="MarkDown 脚注"></a>MarkDown 脚注</h1><h3 id="无序列表-使用-“-”-”-“-”-”"><a href="#无序列表-使用-“-”-”-“-”-”" class="headerlink" title="无序列表 使用(“*”,”-“,”+”)"></a>无序列表 使用(“*”,”-“,”+”)</h3><ul><li>第一项</li></ul><ul><li>第二项</li></ul><ul><li>第三项</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol><li>第一项：<ul><li>第一项的第一个元素</li><li>第一项的第二个元素</li></ul></li><li>第二项：<ul><li>第二项的第一个元素</li><li>第二项的第二个元素</li></ul></li></ol><h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><h3 id="Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号："><a href="#Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号：" class="headerlink" title="Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号："></a>Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：</h3><h4 id="简单区块"><a href="#简单区块" class="headerlink" title="简单区块"></a>简单区块</h4><blockquote><p>区块内容一<br>区块内容二<br>区块内容三</p></blockquote><h4 id="嵌套区块"><a href="#嵌套区块" class="headerlink" title="嵌套区块"></a>嵌套区块</h4><pre><code>&gt; 最外层区块&gt; &gt; 第一层区块&gt; &gt; &gt; 第二层区块</code></pre><h4 id="区块和列表-嵌套使用"><a href="#区块和列表-嵌套使用" class="headerlink" title="区块和列表 嵌套使用"></a>区块和列表 嵌套使用</h4><h5 id="区块内嵌套列表"><a href="#区块内嵌套列表" class="headerlink" title="区块内嵌套列表"></a>区块内嵌套列表</h5><pre><code>&gt; 区块&gt; 1. 第一项&gt; 2. 第二项</code></pre><h5 id="列表内嵌套区块"><a href="#列表内嵌套区块" class="headerlink" title="列表内嵌套区块"></a>列表内嵌套区块</h5><ul><li><p>第一项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li><li><p>第二项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li></ul><h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">System.out.println(<span class="string">"我是代码"</span>)</span><br></pre></td></tr></table></figure><h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><h3 id="链接方式一"><a href="#链接方式一" class="headerlink" title="链接方式一"></a>链接方式一</h3><p>我是一个链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h3 id="链接方式二"><a href="#链接方式二" class="headerlink" title="链接方式二"></a>链接方式二</h3><p><a href="https://maojingsong.com" target="_blank" rel="noopener">https://maojingsong.com</a></p><h3 id="高级链接-链接也可以用变量来代替，文档末尾附带变量地址："><a href="#高级链接-链接也可以用变量来代替，文档末尾附带变量地址：" class="headerlink" title="高级链接 链接也可以用变量来代替，文档末尾附带变量地址："></a>高级链接 链接也可以用变量来代替，文档末尾附带变量地址：</h3><p>这是一个高级链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="代码老中医"></p><h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><table><thead><tr><th>天气</th><th>日期</th></tr></thead><tbody><tr><td>晴天</td><td>20191004</td></tr><tr><td>阴天</td><td>20191005</td></tr></tbody></table><table><thead><tr><th align="left">天气</th><th align="center">日期</th><th align="right">任务</th></tr></thead><tbody><tr><td align="left">晴天</td><td align="center">20191004</td><td align="right">学习</td></tr><tr><td align="left">阴天</td><td align="center">20191005</td><td align="right">学习</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -205,29 +228,6 @@
   </entry>
   
   <entry>
-    <title>MarkDown</title>
-    <link href="http://yoursite.com/2019/09/27/markdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
-    <id>http://yoursite.com/2019/09/27/markdown学习指南/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-08T06:41:25.550Z</updated>
-    
-    <content type="html"><![CDATA[<center>MarkDown学习指南</center># MarkDown 标题<ol><li>使用=和-标记一级和二级标题</li></ol><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="我展示的二级标题"><a href="#我展示的二级标题" class="headerlink" title="我展示的二级标题"></a>我展示的二级标题</h2><h1 id="我也是一级标题"><a href="#我也是一级标题" class="headerlink" title="我也是一级标题"></a>我也是一级标题</h1><h2 id="我也是二级标题"><a href="#我也是二级标题" class="headerlink" title="我也是二级标题"></a>我也是二级标题</h2><h1 id="MarkDown-字体"><a href="#MarkDown-字体" class="headerlink" title="MarkDown 字体"></a>MarkDown 字体</h1><p><em>斜体文本</em></p><p><em>斜体文本</em></p><p><strong>粗体文本</strong></p><p><strong>粗体文本</strong></p><p><strong><em>粗斜体文本</em></strong></p><p><strong><em>粗斜体文本</em></strong></p><h1 id="MarkDown-分割线"><a href="#MarkDown-分割线" class="headerlink" title="MarkDown 分割线"></a>MarkDown 分割线</h1><hr><hr><hr><hr><hr><h1 id="MarkDown-删除线"><a href="#MarkDown-删除线" class="headerlink" title="MarkDown 删除线"></a>MarkDown 删除线</h1><p><del>~ 我删除了 ~</del></p><h1 id="MarkDown-脚注"><a href="#MarkDown-脚注" class="headerlink" title="MarkDown 脚注"></a>MarkDown 脚注</h1><h3 id="无序列表-使用-“-”-”-“-”-”"><a href="#无序列表-使用-“-”-”-“-”-”" class="headerlink" title="无序列表 使用(“*”,”-“,”+”)"></a>无序列表 使用(“*”,”-“,”+”)</h3><ul><li>第一项</li></ul><ul><li>第二项</li></ul><ul><li>第三项</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol><li>第一项：<ul><li>第一项的第一个元素</li><li>第一项的第二个元素</li></ul></li><li>第二项：<ul><li>第二项的第一个元素</li><li>第二项的第二个元素</li></ul></li></ol><h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><h3 id="Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号："><a href="#Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号：" class="headerlink" title="Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号："></a>Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：</h3><h4 id="简单区块"><a href="#简单区块" class="headerlink" title="简单区块"></a>简单区块</h4><blockquote><p>区块内容一<br>区块内容二<br>区块内容三</p></blockquote><h4 id="嵌套区块"><a href="#嵌套区块" class="headerlink" title="嵌套区块"></a>嵌套区块</h4><pre><code>&gt; 最外层区块&gt; &gt; 第一层区块&gt; &gt; &gt; 第二层区块</code></pre><h4 id="区块和列表-嵌套使用"><a href="#区块和列表-嵌套使用" class="headerlink" title="区块和列表 嵌套使用"></a>区块和列表 嵌套使用</h4><h5 id="区块内嵌套列表"><a href="#区块内嵌套列表" class="headerlink" title="区块内嵌套列表"></a>区块内嵌套列表</h5><pre><code>&gt; 区块&gt; 1. 第一项&gt; 2. 第二项</code></pre><h5 id="列表内嵌套区块"><a href="#列表内嵌套区块" class="headerlink" title="列表内嵌套区块"></a>列表内嵌套区块</h5><ul><li><p>第一项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li><li><p>第二项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li></ul><h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">System.out.println(<span class="string">"我是代码"</span>)</span><br></pre></td></tr></table></figure><h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><h3 id="链接方式一"><a href="#链接方式一" class="headerlink" title="链接方式一"></a>链接方式一</h3><p>我是一个链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h3 id="链接方式二"><a href="#链接方式二" class="headerlink" title="链接方式二"></a>链接方式二</h3><p><a href="https://maojingsong.com" target="_blank" rel="noopener">https://maojingsong.com</a></p><h3 id="高级链接-链接也可以用变量来代替，文档末尾附带变量地址："><a href="#高级链接-链接也可以用变量来代替，文档末尾附带变量地址：" class="headerlink" title="高级链接 链接也可以用变量来代替，文档末尾附带变量地址："></a>高级链接 链接也可以用变量来代替，文档末尾附带变量地址：</h3><p>这是一个高级链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="代码老中医"></p><h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><table><thead><tr><th>天气</th><th>日期</th></tr></thead><tbody><tr><td>晴天</td><td>20191004</td></tr><tr><td>阴天</td><td>20191005</td></tr></tbody></table><table><thead><tr><th align="left">天气</th><th align="center">日期</th><th align="right">任务</th></tr></thead><tbody><tr><td align="left">晴天</td><td align="center">20191004</td><td align="right">学习</td></tr><tr><td align="left">阴天</td><td align="center">20191005</td><td align="right">学习</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-    
-      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-  </entry>
-  
-  <entry>
     <title>爱</title>
     <link href="http://yoursite.com/2019/09/27/%E7%88%B1/"/>
     <id>http://yoursite.com/2019/09/27/爱/</id>
@@ -251,29 +251,6 @@
   </entry>
   
   <entry>
-    <title>初识VIM</title>
-    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
-    <id>http://yoursite.com/2019/09/27/初识vim/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:31:07.899Z</updated>
-    
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Vim有哪几种模式？</title>
     <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
     <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
@@ -293,6 +270,29 @@
     
     
       <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程基础知识积累</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:45:56.608Z</updated>
+    
+    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
     
   </entry>
   
