@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 3.9.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/32x32-next-favicon.ico?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32-next-favicon.ico?v=7.4.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16-next-favicon.ico?v=7.4.0">
+  <link rel="mask-icon" href="/images/32x32-next-favicon.ico?v=7.4.0" color="#222">
+  <link rel="alternate" href="/atom.xml" title="代码老中医" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css?v=7.4.0">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.4.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    bookmark: {"enable":true,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="Java">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java 模板学习">
+<meta property="og:url" content="http://yoursite.com/2019/10/16/模板学习/index.html">
+<meta property="og:site_name" content="代码老中医">
+<meta property="og:description" content="Java">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://badgen.net/badge/Rank/20?icon=github&color=4ab8a1">
+<meta property="og:image" content="https://badgen.net/badge/OvO/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD?icon=telegram&color=4ab8a1">
+<meta property="og:image" content="https://badgen.net/badge/CyC/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=sourcegraph&color=4ab8a1">
+<meta property="og:image" content="https://badgen.net/badge/%e5%85%ac%e4%bc%97%e5%8f%b7/CyC2018?icon=rss&color=4ab8a1">
+<meta property="og:image" content="http://yoursite.com/2019/10/16/模板学习/assets/公众号海报7.png">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png">
+<meta property="og:image" content="https://avatars3.githubusercontent.com/u/21679154?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/18458140?s=400&v=4">
+<meta property="og:image" content="https://avatars3.githubusercontent.com/u/33345444?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/8018776?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/15684156?s=400&v=4">
+<meta property="og:image" content="https://avatars2.githubusercontent.com/u/7719370?s=400&v=4">
+<meta property="og:image" content="https://avatars0.githubusercontent.com/u/22954582?s=400&v=4">
+<meta property="og:image" content="https://avatars2.githubusercontent.com/u/10072416?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/24795000?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/21008209?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/11623828?s=400&v=4">
+<meta property="og:image" content="https://avatars1.githubusercontent.com/u/32872430?s=400&v=4">
+<meta property="og:updated_time" content="2019-10-20T10:04:21.872Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java 模板学习">
+<meta name="twitter:description" content="Java">
+<meta name="twitter:image" content="https://badgen.net/badge/Rank/20?icon=github&color=4ab8a1">
+  <link rel="canonical" href="http://yoursite.com/2019/10/16/模板学习/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Java 模板学习 | 代码老中医</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">代码老中医</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">一个专注技术的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+      
+      
+      
+        
+        <li class="menu-item menu-item-home">
+      
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-about">
+      
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-tags">
+      
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-categories">
+      
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-archives">
+      
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+      
+      
+      
+        
+        <li class="menu-item menu-item-schedule">
+      
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a class="book-mark-link book-mark-link-fixed" href="#"></a>
+
+  <a href="https://github.com/mjs618" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+            
+
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/16/模板学习/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Maojinsong">
+      <meta itemprop="description" content="主要的编程语言为 JAVA、C#">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="代码老中医">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Java 模板学习
+
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-16 21:13:50" itemprop="dateCreated datePublished" datetime="2019-10-16T21:13:50+08:00">2019-10-16</time>
+            </span>
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-10-20 18:04:21" itemprop="dateModified" datetime="2019-10-20T18:04:21+08:00">2019-10-20</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+            <div class="post-description">Java</div>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <div align="center">
+    <a href="https://gitstar-ranking.com/repositories" target="_blank" rel="noopener"> <img src="https://badgen.net/badge/Rank/20?icon=github&color=4ab8a1"></a>
+    <a href="assets/download.md"> <img src="https://badgen.net/badge/OvO/%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD?icon=telegram&color=4ab8a1"></a>
+    <a href="https://cyc2018.github.io/CS-Notes" target="_blank" rel="noopener"> <img src="https://badgen.net/badge/CyC/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB?icon=sourcegraph&color=4ab8a1"></a>
+    <a href="#微信公众号"> <img src="https://badgen.net/badge/%e5%85%ac%e4%bc%97%e5%8f%b7/CyC2018?icon=rss&color=4ab8a1"></a>
+</div>
+<br>
+
+<table>
+<thead>
+<tr>
+<th align="center">&nbsp;算法&nbsp;</th>
+<th align="center">操作系统</th>
+<th align="center">&nbsp;网络&nbsp;</th>
+<th align="center">面向对象</th>
+<th align="center">&nbsp;&nbsp;数据库&nbsp;&nbsp;</th>
+<th align="center">&nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;</th>
+<th align="center">系统设计</th>
+<th align="center">&nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp;</th>
+<th align="center">编码实践</th>
+<th align="center">&nbsp;&nbsp;&nbsp;后记&nbsp;&nbsp;&nbsp;</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><a href="#pencil2-算法">:pencil2:</a></td>
+<td align="center"><a href="#computer-操作系统">:computer:</a></td>
+<td align="center"><a href="#cloud-网络">:cloud:</a></td>
+<td align="center"><a href="#art-面向对象">:art:</a></td>
+<td align="center"><a href="#floppy_disk-数据库">:floppy_disk:</a></td>
+<td align="center"><a href="#coffee-java">:coffee:</a></td>
+<td align="center"><a href="#bulb-系统设计">:bulb:</a></td>
+<td align="center"><a href="#wrench-工具">:wrench:</a></td>
+<td align="center"><a href="#watermelon-编码实践">:watermelon:</a></td>
+<td align="center"><a href="#memo-后记">:memo:</a></td>
+</tr>
+</tbody></table>
+<br>
+
+
+<br>
+
+<h2 id="pencil2-算法"><a href="#pencil2-算法" class="headerlink" title=":pencil2: 算法"></a>:pencil2: 算法</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/剑指%20Offer%20题解%20-%20目录.md" target="_blank" rel="noopener">剑指 Offer 题解</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20题解%20-%20目录.md" target="_blank" rel="noopener">Leetcode 题解</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/算法%20-%20目录.md" target="_blank" rel="noopener">算法</a></li>
+<li><a href="https://www.nowcoder.com/intelligentTest?from=cyc_github" target="_blank" rel="noopener">互联网笔试题库</a></li>
+</ul>
+<h2 id="computer-操作系统"><a href="#computer-操作系统" class="headerlink" title=":computer: 操作系统"></a>:computer: 操作系统</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/计算机操作系统%20-%20目录.md" target="_blank" rel="noopener">计算机操作系统</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Linux.md" target="_blank" rel="noopener">Linux</a></li>
+</ul>
+<h2 id="cloud-网络"><a href="#cloud-网络" class="headerlink" title=":cloud: 网络"></a>:cloud: 网络</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/计算机网络%20-%20目录.md" target="_blank" rel="noopener">计算机网络</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/HTTP.md" target="_blank" rel="noopener">HTTP</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Socket.md" target="_blank" rel="noopener">Socket</a></li>
+</ul>
+<h2 id="art-面向对象"><a href="#art-面向对象" class="headerlink" title=":art: 面向对象"></a>:art: 面向对象</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/设计模式.md" target="_blank" rel="noopener">设计模式</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/面向对象思想.md" target="_blank" rel="noopener">面向对象思想</a></li>
+</ul>
+<h2 id="floppy-disk-数据库"><a href="#floppy-disk-数据库" class="headerlink" title=":floppy_disk: 数据库"></a>:floppy_disk: 数据库</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/数据库系统原理.md" target="_blank" rel="noopener">数据库系统原理</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/SQL.md" target="_blank" rel="noopener">SQL</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode-Database%20题解.md" target="_blank" rel="noopener">Leetcode-Database 题解</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/MySQL.md" target="_blank" rel="noopener">MySQL</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Redis.md" target="_blank" rel="noopener">Redis</a></li>
+</ul>
+<h2 id="coffee-Java"><a href="#coffee-Java" class="headerlink" title=":coffee: Java"></a>:coffee: Java</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20基础.md" target="_blank" rel="noopener">Java 基础</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20容器.md" target="_blank" rel="noopener">Java 容器</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20并发.md" target="_blank" rel="noopener">Java 并发</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20虚拟机.md" target="_blank" rel="noopener">Java 虚拟机</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Java%20IO.md" target="_blank" rel="noopener">Java I/O</a></li>
+</ul>
+<h2 id="bulb-系统设计"><a href="#bulb-系统设计" class="headerlink" title=":bulb: 系统设计"></a>:bulb: 系统设计</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/系统设计基础.md" target="_blank" rel="noopener">系统设计基础</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/分布式.md" target="_blank" rel="noopener">分布式</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/集群.md" target="_blank" rel="noopener">集群</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/攻击技术.md" target="_blank" rel="noopener">攻击技术</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/缓存.md" target="_blank" rel="noopener">缓存</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/消息队列.md" target="_blank" rel="noopener">消息队列</a></li>
+</ul>
+<h2 id="wrench-工具"><a href="#wrench-工具" class="headerlink" title=":wrench: 工具"></a>:wrench: 工具</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Git.md" target="_blank" rel="noopener">Git</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/Docker.md" target="_blank" rel="noopener">Docker</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/构建工具.md" target="_blank" rel="noopener">构建工具</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/正则表达式.md" target="_blank" rel="noopener">正则表达式</a></li>
+</ul>
+<h2 id="watermelon-编码实践"><a href="#watermelon-编码实践" class="headerlink" title=":watermelon: 编码实践"></a>:watermelon: 编码实践</h2><ul>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/代码可读性.md" target="_blank" rel="noopener">代码可读性</a></li>
+<li><a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/代码风格规范.md" target="_blank" rel="noopener">代码风格规范</a></li>
+</ul>
+<h2 id="memo-后记"><a href="#memo-后记" class="headerlink" title=":memo: 后记"></a>:memo: 后记</h2><h3 id="更多内容"><a href="#更多内容" class="headerlink" title="更多内容"></a>更多内容</h3><ul>
+<li>面经：<a href="https://www.nowcoder.com/discuss/137593?from=cyc_github" target="_blank" rel="noopener">2018 这一年</a></li>
+<li>简历：<a href="https://cyc2018.github.io" target="_blank" rel="noopener">https://cyc2018.github.io</a></li>
+<li>内推：<a href="https://github.com/CyC2018/Job-Recommend" target="_blank" rel="noopener">Job-Recommend</a></li>
+<li>简历模版：<a href="https://github.com/CyC2018/Markdown-Resume" target="_blank" rel="noopener">Markdown-Resume</a></li>
+</ul>
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><ul>
+<li>Github Pages：<a href="https://docsify.js.org/#/" target="_blank" rel="noopener">docsify</a></li>
+<li>云笔记：<a href="http://www.wiz.cn/" target="_blank" rel="noopener">为知笔记</a></li>
+<li>绘图：<a href="https://www.draw.io/" target="_blank" rel="noopener">draw.io</a></li>
+<li>Logo：<a href="https://logomakr.com/" target="_blank" rel="noopener">logomakr</a></li>
+</ul>
+<h3 id="微信公众号"><a href="#微信公众号" class="headerlink" title="微信公众号"></a>微信公众号</h3><p>更多精彩内容将发布在微信公众号 CyC2018 上，你也可以在公众号后台和我交流学习和求职相关的问题。另外，公众号提供了该项目的 PDF 等离线阅读版本，后台回复 “下载” 即可领取。公众号也提供了一份技术面试复习大纲，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复 “大纲” 即可领取。我基本是按照这个大纲来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</p>
+<br>
+
+<div align="center"><img width="500px" src="assets/公众号海报7.png"></div>
+
+<h3 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h3><p>笔记内容按照 <a href="https://github.com/sparanoid/chinese-copywriting-guidelines" target="_blank" rel="noopener">中文文案排版指北</a> 进行排版，以保证内容的可读性。</p>
+<p>不使用 <code>![]()</code> 这种方式来引用图片，而是用 <code>&lt;img&gt;</code> 标签。一方面是为了能够控制图片以合适的大小显示，另一方面是因为 <a href="https://github.github.com/gfm/" target="_blank" rel="noopener">GFM</a> 不支持 <code>&lt;center&gt; ![]() &lt;/center&gt;</code> 这种方法让图片居中显示，只能使用 <code>&lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;&quot;/&gt; &lt;/div&gt;</code> 达到居中的效果。</p>
+<p>在线排版工具：<a href="https://github.com/CyC2018/Text-Typesetting" target="_blank" rel="noopener">Text-Typesetting</a>。</p>
+<h3 id="上传方案"><a href="#上传方案" class="headerlink" title="上传方案"></a>上传方案</h3><p>为了方便将本地笔记内容上传到 Github 上，实现了一整套自动化上传方案，包括提取图片、Markdown 文档转换、Git 同步。进行 Markdown 文档转换是因为 Github 使用的 GFM 不支持 MathJax 公式和 TOC 标记，所以需要替换 MathJax 公式为 CodeCogs 的云服务和重新生成 TOC 目录。</p>
+<p>GFM 转换工具：<a href="https://github.com/CyC2018/GFM-Converter" target="_blank" rel="noopener">GFM-Converter</a>。</p>
+<h3 id="License"><a href="#License" class="headerlink" title="License"></a>License</h3><p>本仓库内容 <strong>不是</strong> 将网上的资料随意拼凑而来，除了少部分引用书上和技术文档的原文，其余都是我的原创。在您引用本仓库内容或者对内容进行修改演绎时，请署名并以相同方式共享，谢谢。</p>
+<p>转载文章请在开头明显处标明该页面地址，公众号等其它转载请联系 <a href="mailto:zhengyc101@163.com" target="_blank" rel="noopener">zhengyc101@163.com</a>。</p>
+<p><a rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a></p>
+<h3 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h3><p>感谢以下人员对本仓库做出的贡献，当然不仅仅只有这些贡献者，这里就不一一列举了。如果你希望被添加到这个名单中，并且提交过 Issue 或者 PR，请与我联系。</p>
+<a href="https://github.com/linw7" target="_blank" rel="noopener">
+    <img src="https://avatars3.githubusercontent.com/u/21679154?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/g10guang" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/18458140?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/Sctwang" target="_blank" rel="noopener">
+    <img src="https://avatars3.githubusercontent.com/u/33345444?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/ResolveWang" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/8018776?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/crossoverJie" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/15684156?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/jy03078584" target="_blank" rel="noopener">
+    <img src="https://avatars2.githubusercontent.com/u/7719370?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/kwongtailau" target="_blank" rel="noopener">
+    <img src="https://avatars0.githubusercontent.com/u/22954582?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/xiangflight" target="_blank" rel="noopener">
+    <img src="https://avatars2.githubusercontent.com/u/10072416?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/mafulong" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/24795000?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/yanglbme" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/21008209?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/OOCZC" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/11623828?s=400&v=4" width="50px">
+</a>
+<a href="https://github.com/5renyuebing" target="_blank" rel="noopener">
+    <img src="https://avatars1.githubusercontent.com/u/32872430?s=400&v=4" width="50px">
+</a>
+
+    </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Java/" rel="tag"># Java</a>
+            
+          </div>
+        
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/16/Java 基础(二)/" rel="next" title="Java 基础(二)">
+                  <i class="fa fa-chevron-left"></i> Java 基础(二)
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/10/20/情话/" rel="prev" title="情话">
+                  情话 <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+      </footer>
+    
+  </div>
+  
+  
+  
+  </article>
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+        
+        
+        
+        
+      
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#pencil2-算法"><span class="nav-number">1.</span> <span class="nav-text">:pencil2: 算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#computer-操作系统"><span class="nav-number">2.</span> <span class="nav-text">:computer: 操作系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cloud-网络"><span class="nav-number">3.</span> <span class="nav-text">:cloud: 网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#art-面向对象"><span class="nav-number">4.</span> <span class="nav-text">:art: 面向对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#floppy-disk-数据库"><span class="nav-number">5.</span> <span class="nav-text">:floppy_disk: 数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#coffee-Java"><span class="nav-number">6.</span> <span class="nav-text">:coffee: Java</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bulb-系统设计"><span class="nav-number">7.</span> <span class="nav-text">:bulb: 系统设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#wrench-工具"><span class="nav-number">8.</span> <span class="nav-text">:wrench: 工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#watermelon-编码实践"><span class="nav-number">9.</span> <span class="nav-text">:watermelon: 编码实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#memo-后记"><span class="nav-number">10.</span> <span class="nav-text">:memo: 后记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#更多内容"><span class="nav-number">10.1.</span> <span class="nav-text">更多内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工具"><span class="nav-number">10.2.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#微信公众号"><span class="nav-number">10.3.</span> <span class="nav-text">微信公众号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排版"><span class="nav-number">10.4.</span> <span class="nav-text">排版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传方案"><span class="nav-number">10.5.</span> <span class="nav-text">上传方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#License"><span class="nav-number">10.6.</span> <span class="nav-text">License</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#致谢"><span class="nav-number">10.7.</span> <span class="nav-text">致谢</span></a></li></ol></li></ol></div>
+        
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="/images/avatar.png"
+      alt="Maojinsong">
+  <p class="site-author-name" itemprop="name">Maojinsong</p>
+  <div class="site-description" itemprop="description">主要的编程语言为 JAVA、C#</div>
+</div>
+  <nav class="site-state motion-element">
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Maojinsong</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.4.0</div>
+
+        
+<div class="busuanzi-count">
+  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+  
+    <span class="post-meta-divider">|</span>
+  
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <script src="/lib/anime.min.js?v=3.1.0"></script>
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script src="true"></script>
+<script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+<script src="/js/next-boot.js?v=7.4.0"></script><script src="/js/bookmark.js?v=7.4.0"></script>
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var id = element.id || '';
+    var src = element.src || '';
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (id !=='') {
+      script.id = element.id;
+    }
+    if (src !== '') {
+      script.src = src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="/js/local-search.js?v=7.4.0"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+
+  
+
+  
+
+  
+
+  
+
+    </div>
+</body>
+</html>
