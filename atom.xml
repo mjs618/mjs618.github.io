@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-07T08:09:36.420Z</updated>
+  <updated>2019-10-06T11:37:40.386Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>类的基础</title>
-    <link href="http://yoursite.com/2019/10/16/%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/10/16/类的基础(一)/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-07T08:09:36.420Z</updated>
-    
-    <content type="html"><![CDATA[<center>    面向对象</center><h2 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h2><blockquote><p>类是函数的容器，但类更多表示的是自定义的数据类型。</p></blockquote><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><blockquote><p>Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。<br>该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。</p></blockquote><p>###抽象方法的特点</p><ul><li>只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现）</li><li>抽象方法用abstract关键字来修饰。</li><li>抽象方法代表一种不确定的操作或行为。（由子类去具体实现）</li><li>抽象方法不能被调用。</li></ul><h3 id="函数容器"><a href="#函数容器" class="headerlink" title="函数容器"></a>函数容器</h3><blockquote><table> <tr><td bgcolor="#00ffff">不在同一包下，无法访问父类默认的构造方法</td> </tr></table></blockquote><h4 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h4><blockquote><p>static表示类方法</p><blockquote><p>类变量 就是静态变量 声明类变量<br>通过类名直接调用</p></blockquote></blockquote><h4 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h4><blockquote><p>通过实例或者对象调用</p><blockquote><p> 实例方法是表示具体的实例可以进行的操作。<br>实例<br>实例变量表示具体的实例所具有的属性<br>有一种对象只叫对象，有一种对象叫实例化对象（实例）。</p></blockquote><p>对象 </p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      面向对象
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
   
   <entry>
     <title>Java 基础(二)</title>
@@ -51,6 +28,52 @@
     <summary type="html">
     
       基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站清单</title>
+    <link href="http://yoursite.com/2019/10/16/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
+    <id>http://yoursite.com/2019/10/16/网站清单/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-15T14:40:55.200Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="有趣的学习网站"><a href="#有趣的学习网站" class="headerlink" title="有趣的学习网站"></a>有趣的学习网站</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">git学习网站</a></td><td><a href="https://design-patterns.readthedocs.io/zh_CN/latest/index.html#" target="_blank" rel="noopener">图说设计模式</a></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><h2 id="小工具"><a href="#小工具" class="headerlink" title="小工具"></a>小工具</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://oktools.net/" target="_blank" rel="noopener">格式化工具</a></td><td></td><td></td></tr></tbody></table><h2 id="常用官网"><a href="#常用官网" class="headerlink" title="常用官网"></a>常用官网</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven</a></td><td><a href="https://spring.io/" target="_blank" rel="noopener">Spring</a></td><td></td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      网站清单
+    
+    </summary>
+    
+    
+      <category term="网站清单" scheme="http://yoursite.com/categories/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
+    
+    
+      <category term="网站清单" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>类的基础</title>
+    <link href="http://yoursite.com/2019/10/16/%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/10/16/类的基础(一)/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-07T08:09:36.420Z</updated>
+    
+    <content type="html"><![CDATA[<center>    面向对象</center><h2 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h2><blockquote><p>类是函数的容器，但类更多表示的是自定义的数据类型。</p></blockquote><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><blockquote><p>Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。<br>该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。</p></blockquote><p>###抽象方法的特点</p><ul><li>只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现）</li><li>抽象方法用abstract关键字来修饰。</li><li>抽象方法代表一种不确定的操作或行为。（由子类去具体实现）</li><li>抽象方法不能被调用。</li></ul><h3 id="函数容器"><a href="#函数容器" class="headerlink" title="函数容器"></a>函数容器</h3><blockquote><table> <tr><td bgcolor="#00ffff">不在同一包下，无法访问父类默认的构造方法</td> </tr></table></blockquote><h4 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h4><blockquote><p>static表示类方法</p><blockquote><p>类变量 就是静态变量 声明类变量<br>通过类名直接调用</p></blockquote></blockquote><h4 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h4><blockquote><p>通过实例或者对象调用</p><blockquote><p> 实例方法是表示具体的实例可以进行的操作。<br>实例<br>实例变量表示具体的实例所具有的属性<br>有一种对象只叫对象，有一种对象叫实例化对象（实例）。</p></blockquote><p>对象 </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      面向对象
     
     </summary>
     
@@ -86,29 +109,6 @@
   </entry>
   
   <entry>
-    <title>网站清单</title>
-    <link href="http://yoursite.com/2019/10/16/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    <id>http://yoursite.com/2019/10/16/网站清单/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-15T14:40:55.200Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="有趣的学习网站"><a href="#有趣的学习网站" class="headerlink" title="有趣的学习网站"></a>有趣的学习网站</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">git学习网站</a></td><td><a href="https://design-patterns.readthedocs.io/zh_CN/latest/index.html#" target="_blank" rel="noopener">图说设计模式</a></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><h2 id="小工具"><a href="#小工具" class="headerlink" title="小工具"></a>小工具</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://oktools.net/" target="_blank" rel="noopener">格式化工具</a></td><td></td><td></td></tr></tbody></table><h2 id="常用官网"><a href="#常用官网" class="headerlink" title="常用官网"></a>常用官网</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven</a></td><td><a href="https://spring.io/" target="_blank" rel="noopener">Spring</a></td><td></td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      网站清单
-    
-    </summary>
-    
-    
-      <category term="网站清单" scheme="http://yoursite.com/categories/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    
-    
-      <category term="网站清单" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>感悟</title>
     <link href="http://yoursite.com/2019/09/28/%E6%84%9F%E6%82%9F/"/>
     <id>http://yoursite.com/2019/09/28/感悟/</id>
@@ -132,29 +132,6 @@
     
     
       <category term="人生" scheme="http://yoursite.com/tags/%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ClassLoaderTest</title>
-    <link href="http://yoursite.com/2019/09/27/ClassLoader/"/>
-    <id>http://yoursite.com/2019/09/27/ClassLoader/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-05T02:22:44.119Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassLoaderTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">      ClassLoader loader = Thread.currentThread().getContextClassLoader();</span><br><span class="line">      System.out.println(<span class="string">"current loader"</span> + loader);</span><br><span class="line">      System.out.println(<span class="string">"parent loader"</span> + loader.getParent());</span><br><span class="line">      System.out.println(<span class="string">"grandparent  loader"</span> + loader.getParent().getParent());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>输出内容<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">current loadersun.misc.Launcher$AppClassLoader@18b4aac2</span><br><span class="line">parent loadersun.misc.Launcher$ExtClassLoader@4554617c</span><br><span class="line">grandparent  loadernull</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p>通过以上输出信息。我们知道当前的ClassLoader是AppClassLoader，父ClassLoader是ExtClassLoader，祖父ClassLoader是根类装载器，因为在java中无法获得句柄就直接返回null。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -205,6 +182,29 @@
   </entry>
   
   <entry>
+    <title>Java 基础（一）</title>
+    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-05T09:34:20.245Z</updated>
+    
+    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间 </p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值 </li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>初识VIM</title>
     <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
     <id>http://yoursite.com/2019/09/27/初识vim/</id>
@@ -228,40 +228,17 @@
   </entry>
   
   <entry>
-    <title>编程基础知识积累</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <title>ClassLoaderTest</title>
+    <link href="http://yoursite.com/2019/09/27/ClassLoader/"/>
+    <id>http://yoursite.com/2019/09/27/ClassLoader/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:45:56.608Z</updated>
+    <updated>2019-10-05T02:22:44.119Z</updated>
     
-    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassLoaderTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span>  <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">      ClassLoader loader = Thread.currentThread().getContextClassLoader();</span><br><span class="line">      System.out.println(<span class="string">"current loader"</span> + loader);</span><br><span class="line">      System.out.println(<span class="string">"parent loader"</span> + loader.getParent());</span><br><span class="line">      System.out.println(<span class="string">"grandparent  loader"</span> + loader.getParent().getParent());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>输出内容<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">current loadersun.misc.Launcher$AppClassLoader@18b4aac2</span><br><span class="line">parent loadersun.misc.Launcher$ExtClassLoader@4554617c</span><br><span class="line">grandparent  loadernull</span><br></pre></td></tr></table></figure></p></blockquote><blockquote><p>通过以上输出信息。我们知道当前的ClassLoader是AppClassLoader，父ClassLoader是ExtClassLoader，祖父ClassLoader是根类装载器，因为在java中无法获得句柄就直接返回null。</p></blockquote>]]></content>
     
     <summary type="html">
     
       相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-    
-      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 基础（一）</title>
-    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-05T09:34:20.245Z</updated>
-    
-    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间 </p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值 </li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
     
     </summary>
     
@@ -293,6 +270,29 @@
     
     
       <category term="爱" scheme="http://yoursite.com/tags/%E7%88%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程基础知识积累</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:45:56.608Z</updated>
+    
+    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
     
   </entry>
   
