@@ -12,9 +12,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java 模板学习]]></title>
-    <url>%2F2019%2F10%2F16%2F%E6%A8%A1%E6%9D%BF%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[&nbsp;算法&nbsp; 操作系统 &nbsp;网络&nbsp; 面向对象 &nbsp;&nbsp;数据库&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp; 系统设计 &nbsp;&nbsp;&nbsp;工具&nbsp;&nbsp;&nbsp; 编码实践 &nbsp;&nbsp;&nbsp;后记&nbsp;&nbsp;&nbsp; :pencil2: :computer: :cloud: :art: :floppy_disk: :coffee: :bulb: :wrench: :watermelon: :memo: :pencil2: 算法 剑指 Offer 题解 Leetcode 题解 算法 互联网笔试题库 :computer: 操作系统 计算机操作系统 Linux :cloud: 网络 计算机网络 HTTP Socket :art: 面向对象 设计模式 面向对象思想 :floppy_disk: 数据库 数据库系统原理 SQL Leetcode-Database 题解 MySQL Redis :coffee: Java Java 基础 Java 容器 Java 并发 Java 虚拟机 Java I/O :bulb: 系统设计 系统设计基础 分布式 集群 攻击技术 缓存 消息队列 :wrench: 工具 Git Docker 构建工具 正则表达式 :watermelon: 编码实践 代码可读性 代码风格规范 :memo: 后记更多内容 面经：2018 这一年 简历：https://cyc2018.github.io 内推：Job-Recommend 简历模版：Markdown-Resume 工具 Github Pages：docsify 云笔记：为知笔记 绘图：draw.io Logo：logomakr 微信公众号更多精彩内容将发布在微信公众号 CyC2018 上，你也可以在公众号后台和我交流学习和求职相关的问题。另外，公众号提供了该项目的 PDF 等离线阅读版本，后台回复 “下载” 即可领取。公众号也提供了一份技术面试复习大纲，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复 “大纲” 即可领取。我基本是按照这个大纲来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。 排版笔记内容按照 中文文案排版指北 进行排版，以保证内容的可读性。 不使用 ![]() 这种方式来引用图片，而是用 &lt;img&gt; 标签。一方面是为了能够控制图片以合适的大小显示，另一方面是因为 GFM 不支持 &lt;center&gt; ![]() &lt;/center&gt; 这种方法让图片居中显示，只能使用 &lt;div align=&quot;center&quot;&gt; &lt;img src=&quot;&quot;/&gt; &lt;/div&gt; 达到居中的效果。 在线排版工具：Text-Typesetting。 上传方案为了方便将本地笔记内容上传到 Github 上，实现了一整套自动化上传方案，包括提取图片、Markdown 文档转换、Git 同步。进行 Markdown 文档转换是因为 Github 使用的 GFM 不支持 MathJax 公式和 TOC 标记，所以需要替换 MathJax 公式为 CodeCogs 的云服务和重新生成 TOC 目录。 GFM 转换工具：GFM-Converter。 License本仓库内容 不是 将网上的资料随意拼凑而来，除了少部分引用书上和技术文档的原文，其余都是我的原创。在您引用本仓库内容或者对内容进行修改演绎时，请署名并以相同方式共享，谢谢。 转载文章请在开头明显处标明该页面地址，公众号等其它转载请联系 zhengyc101@163.com。 致谢感谢以下人员对本仓库做出的贡献，当然不仅仅只有这些贡献者，这里就不一一列举了。如果你希望被添加到这个名单中，并且提交过 Issue 或者 PR，请与我联系。]]></content>
+    <title><![CDATA[Java书单]]></title>
+    <url>%2F2019%2F10%2F16%2FJava%E4%B9%A6%E5%8D%95%2F</url>
+    <content type="text"><![CDATA[Java 基础 并发 JVM Java8 新特性 代码优化 网络 操作系统 数据结构与算法 数据库 系统设计 设计模式 常用框架 网站架构 软件底层 其他 Java基础 《Head First Java》(推荐，豆瓣评分 8.7，1.0K+人评价)： 可以说是我的 Java 启蒙书籍了，特别适合新手读当然也适合我们用来温故 Java 知识点。 《Java 核心技术卷 1+卷 2》（推荐）: 很棒的两本书，建议有点 Java 基础之后再读，介绍的还是比较深入的，非常推荐。这两本书我一般也会用来巩固知识点，是两本适合放在自己身边的好书。 《JAVA 网络编程 第 4 版》： 可以系统的学习一下网络的一些概念以及网络编程在 Java 中的使用。 《Java 编程思想 (第 4 版)》（推荐，豆瓣评分 9.1，3.2K+人评价）：大部分人称之为Java领域的圣经，但我不推荐初学者阅读，有点劝退的味道。稍微有点基础后阅读更好。 《Java性能权威指南》（推荐，豆瓣评分 8.2，0.1K+人评价）：O’Reilly 家族书，性能调优的入门书，我个人觉得性能调优是每个 Java 从业者必备知识，这本书的缺点就是太老了，但是这本书可以作为一个实战书，尤其是 JVM 调优！不适合初学者。前置书籍：《深入理解 Java 虚拟机》 并发 《Java 并发编程之美》 （推荐）：2018 年 10 月出版的一本书，个人感觉非常不错，对每个知识点的讲解都很棒。 《Java 并发编程的艺术》（推荐，豆瓣评分 7.2，0.2K+人评价）： 这本书不是很适合作为 Java 并发入门书籍，需要具备一定的 JVM 基础。我感觉有些东西讲的还是挺深入的，推荐阅读。 《实战 Java 高并发程序设计》（推荐,豆瓣评分 8.3）： 书的质量没的说，推荐大家好好看一下。 《Java 高并发编程详解》（豆瓣评分 7.6）： 2018 年 6 月出版的一本书，内容很详细，但可能又有点过于啰嗦，不过这只是我的感觉。 JVM 《深入理解 Java 虚拟机（第 2 版）周志明》（推荐，豆瓣评分 8.9，1.0K+人评价）：建议多刷几遍，书中的所有知识点可以通过 JAVA 运行时区域和 JAVA 的内存模型与线程两个大模块罗列完全。 《实战 JAVA 虚拟机》（推荐，豆瓣评分 8.0，1.0K+人评价）：作为入门的了解 Java 虚拟机的知识还是不错的。 Java8 新特性 《Java 8 实战》 （推荐，豆瓣评分 9.2 ）：面向 Java 8 的技能升级，包括 Lambdas、流和函数式编程特性。实战系列的一贯风格让自己快速上手应用起来。Java 8 支持的 Lambda 是精简表达在语法上提供的支持。Java 8 提供了 Stream，学习和使用可以建立流式编程的认知。 《Java 8 编程参考官方教程》 （推荐，豆瓣评分 9.2）：也还不错吧。 代码优化 《重构_改善既有代码的设计》（推荐）：豆瓣 9.1 分，重构书籍的开山鼻祖。 《Effective java 》（推荐，豆瓣评分 9.0，1.4K+人评价）：本书介绍了在 Java 编程中 78 条极具实用价值的经验规则，这些经验规则涵盖了大多数开发人员每天所面临的问题的解决方案。通过对 Java 平台设计专家所使用的技术的全面描述，揭示了应该做什么，不应该做什么才能产生清晰、健壮和高效的代码。本书中的每条规则都以简短、独立的小文章形式出现，并通过例子代码加以进一步说明。本书内容全面，结构清晰，讲解详细。可作为技术人员的参考用书。 《代码整洁之道》（推荐，豆瓣评分 9.1）：虽然是用 Java 语言作为例子，全篇都是在阐述 Java 面向对象的思想，但是其中大部分内容其它语言也能应用到。 阿里巴巴 Java 开发手册（详尽版） https://github.com/alibaba/p3c/blob/master/阿里巴巴 Java 开发手册（详尽版）.pdf Google Java 编程风格指南： http://www.hawstein.com/posts/google-java-style.html 网络 《图解 HTTP》（推荐,豆瓣评分 8.1 , 1.6K+人评价）： 讲漫画一样的讲 HTTP，很有意思，不会觉得枯燥，大概也涵盖也 HTTP 常见的知识点。因为篇幅问题，内容可能不太全面。不过，如果不是专门做网络方向研究的小伙伴想研究 HTTP 相关知识的话，读这本书的话应该来说就差不多了。 《HTTP 权威指南》 （推荐,豆瓣评分 8.6）:如果要全面了解 HTTP 非此书不可！ 操作系统 《鸟哥的 Linux 私房菜》（推荐，，豆瓣评分 9.1，0.3K+人评价）：本书是最具知名度的 Linux 入门书《鸟哥的 Linux 私房菜基础学习篇》的最新版，全面而详细地介绍了 Linux 操作系统。全书分为 5 个部分：第一部分着重说明 Linux 的起源及功能，如何规划和安装 Linux 主机；第二部分介绍 Linux 的文件系统、文件、目录与磁盘的管理；第三部分介绍文字模式接口 shell 和管理系统的好帮手 shell 脚本，另外还介绍了文字编辑器 vi 和 vim 的使用方法；第四部分介绍了对于系统安全非常重要的 Linux 账号的管理，以及主机系统与程序的管理，如查看进程、任务分配和作业管理；第五部分介绍了系统管理员 (root) 的管理事项，如了解系统运行状况、系统服务，针对登录文件进行解析，对系统进行备份以及核心的管理等。 数据结构与算法 《大话数据结构》（推荐，豆瓣评分 7.9 , 1K+人评价）：入门类型的书籍，读起来比较浅显易懂，适合没有数据结构基础或者说数据结构没学好的小伙伴用来入门数据结构。 《数据结构与算法分析：C 语言描述》（推荐，豆瓣评分 8.9，1.6K+人评价）:本书是《Data Structures and Algorithm Analysis in C》一书第 2 版的简体中译本。原书曾被评为 20 世纪顶尖的 30 部计算机著作之一，作者 Mark Allen Weiss 在数据结构和算法分析方面卓有建树，他的数据结构和算法分析的著作尤其畅销，并受到广泛好评．已被世界 500 余所大学用作教材。 《算法图解》（推荐，豆瓣评分 8.4，0.6K+人评价）：入门类型的书籍，读起来比较浅显易懂，适合没有算法基础或者说算法没学好的小伙伴用来入门。示例丰富，图文并茂，以让人容易理解的方式阐释了算法.读起来比较快，内容不枯燥！ 《算法 第四版》（推荐，豆瓣评分 9.3，0.4K+人评价）：Java 语言描述，算法领域经典的参考书，全面介绍了关于算法和数据结构的必备知识，并特别针对排序、搜索、图处理和字符串处理进行了论述。书的内容非常多，可以说是 Java 程序员的必备书籍之一了。 数据库 《高性能 MySQL》（推荐，豆瓣评分 9.3，0.4K+人评价）：mysql 领域的经典之作，拥有广泛的影响力。不但适合数据库管理员（dba）阅读，也适合开发人员参考学习。不管是数据库新手还是专家，相信都能从本书有所收获。 《Redis 实战》：如果你想了解 Redis 的一些概念性知识的话，这本书真的非常不错。 《Redis 设计与实现》（推荐，豆瓣评分 8.5，0.5K+人评价）：也还行吧！ 《MySQL 技术内幕-InnoDB 存储引擎》（推荐，豆瓣评分 8.7）：了解 InnoDB 存储引擎底层原理必备的一本书，比较深入。 系统设计设计模式 《设计模式 : 可复用面向对象软件的基础》 （推荐，豆瓣评分 9.1）：设计模式的经典！ 《Head First 设计模式（中文版）》 （推荐，豆瓣评分 9.2）：相当赞的一本设计模式入门书籍。用实际的编程案例讲解算法设计中会遇到的各种问题和需求变更（对的，连需求变更都考虑到了！），并以此逐步推导出良好的设计模式解决办法。 常用框架 《深入分析 Java Web 技术内幕》： 感觉还行，涉及的东西也蛮多。 《Netty 实战》（推荐，豆瓣评分 7.8，92 人评价）：内容很细，如果想学 Netty 的话，推荐阅读这本书！ 《从 Paxos 到 Zookeeper》（推荐，豆瓣评分 7.8，0.3K 人评价）：简要介绍几种典型的分布式一致性协议，以及解决分布式一致性问题的思路，其中重点讲解了 Paxos 和 ZAB 协议。同时，本书深入介绍了分布式一致性问题的工业解决方案——ZooKeeper，并着重向读者展示这一分布式协调框架的使用方法、内部实现及运维技巧，旨在帮助读者全面了解 ZooKeeper，并更好地使用和运维 ZooKeeper。 《Spring 实战（第 4 版）》（推荐，豆瓣评分 8.3，0.3K+人评价）：不建议当做入门书籍读，入门的话可以找点国人的书或者视频看。这本定位就相当于是关于 Spring 的新华字典，只有一些基本概念的介绍和示例，涵盖了 Spring 的各个方面，但都不够深入。就像作者在最后一页写的那样：“学习 Spring，这才刚刚开始”。 《RabbitMQ 实战指南》：《RabbitMQ 实战指南》从消息中间件的概念和 RabbitMQ 的历史切入，主要阐述 RabbitMQ 的安装、使用、配置、管理、运维、原理、扩展等方面的细节。如果你想浅尝 RabbitMQ 的使用，这本书是你最好的选择；如果你想深入 RabbitMQ 的原理，这本书也是你最好的选择；总之，如果你想玩转 RabbitMQ，这本书一定是最值得看的书之一 《Spring Cloud 微服务实战》：从时下流行的微服务架构概念出发，详细介绍了 Spring Cloud 针对微服务架构中几大核心要素的解决方案和基础组件。对于各个组件的介绍，《Spring Cloud 微服务实战》主要以示例与源码结合的方式来帮助读者更好地理解这些组件的使用方法以及运行原理。同时，在介绍的过程中，还包含了作者在实践中所遇到的一些问题和解决思路，可供读者在实践中作为参考。 《第一本 Docker 书》：Docker 入门书籍！ 《Spring Boot编程思想（核心篇）》（推荐，豆瓣评分 6.2）：SpringBoot深入书，不适合初学者。书尤其的厚，评分低的的理由是书某些知识过于拖沓，评分高的理由是书中对SpringBoot内部原理讲解很清楚。作者小马哥：Apache Dubbo PMC、Spring Cloud Alibaba项目架构师。B站作者地址：https://space.bilibili.com/327910845?from=search&amp;seid=17095917016893398636。 网站架构 《大型网站技术架构：核心原理与案例分析+李智慧》（推荐）:这本书我读过，基本不需要你有什么基础啊~读起来特别轻松，但是却可以学到很多东西，非常推荐了。另外我写过这本书的思维导图，关注我的微信公众号：“Java 面试通关手册”回复“大型网站技术架构”即可领取思维导图。 《亿级流量网站架构核心技术》（推荐）：一书总结并梳理了亿级流量网站高可用和高并发原则，通过实例详细介绍了如何落地这些原则。本书分为四部分：概述、高可用原则、高并发原则、案例实战。从负载均衡、限流、降级、隔离、超时与重试、回滚机制、压测与预案、缓存、池化、异步化、扩容、队列等多方面详细介绍了亿级流量网站的架构核心技术，让读者看后能快速运用到实践项目中。 软件底层 《深入剖析 Tomcat》（推荐，豆瓣评分 8.4，0.2K+人评价）：本书深入剖析 Tomcat 4 和 Tomcat 5 中的每个组件，并揭示其内部工作原理。通过学习本书，你将可以自行开发 Tomcat 组件，或者扩展已有的组件。 读完这本书，基本可以摆脱背诵面试题的尴尬。 《深入理解 Nginx（第 2 版）》：作者讲的非常细致，注释都写的都很工整，对于 Nginx 的开发人员非常有帮助。优点是细致，缺点是过于细致，到处都是代码片段，缺少一些抽象。 其他 《黑客与画家》：这本书是硅谷创业之父，Y Combinator 创始人 Paul Graham 的文集。之所以叫这个名字，是因为作者认为黑客（并非负面的那个意思）与画家有着极大的相似性，他们都是在创造，而不是完成某个任务。 《图解密码技术》（推荐，豆瓣评分 9.1，0.3K+人评价）：本书以图配文的形式，第一部分讲述了密码技术的历史沿革、对称密码、分组密码模式（包括ECB、CBC、CFB、OFB、CTR）、公钥、混合密码系统。第二部分重点介绍了认证方面的内容，涉及单向散列函数、消息认证码、数字签名、证书等。第三部分讲述了密钥、随机数、PGP、SSL/TLS 以及密码技术在现实生活中的应用。关键字：JWT 前置知识、区块链密码技术前置知识。属于密码知识入门书籍。]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -31,6 +31,28 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java项目]]></title>
+    <url>%2F2019%2F10%2F16%2F%E9%A1%B9%E7%9B%AE%2F</url>
+    <content type="text"><![CDATA[1.CS-Notes Github 地址：https://github.com/CyC2018/CS-Notes Star: 69.8k 介绍: 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计。 2.toBeTopJavaer Github 地址：https://github.com/hollischuang/toBeTopJavaer Star: 4.7k 介绍: To Be Top Javaer - Java工程师成神之路。 3.p3c Github 地址： https://github.com/alibaba/p3c Star: 16.6k 介绍: Alibaba Java Coding Guidelines pmd implements and IDE plugin。Eclipse 和 IDEA 上都有该插件，推荐使用！ 4.SpringCloudLearning Github 地址： https://github.com/forezp/SpringCloudLearning Star: 8.7k 介绍: 史上最简单的Spring Cloud教程源码。 5.dubbo Github地址：https://github.com/apache/dubbo star: 27.6 k 介绍: Apache Dubbo是一个基于Java的高性能开源RPC框架。 6.jeecg-boot Github地址： https://github.com/zhangdaiscott/jeecg-boot star: 3.3 k 介绍: 一款基于代码生成器的JAVA快速开发平台！全新架构前后端分离：SpringBoot 2.x，Ant Design&amp;Vue，Mybatis，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码，绝对是全栈开发福音！！ JeecgBoot的宗旨是提高UI能力的同时,降低前后分离的开发成本，JeecgBoot还独创在线开发模式，No代码概念，一系列在线智能开发：在线配置表单、在线配置报表、在线设计流程等等。 7.advanced-java Github 地址：https://github.com/doocs/advanced-java Star: 24.2k 介绍: 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，后端同学必看，前端同学也可学习。 8.FEBS-Shiro Github 地址：https://github.com/wuyouzhuguli/FEBS-Shiro Star: 2.6k 介绍: Spring Boot 2.1.3，Shiro1.4.0 &amp; Layui 2.5.4 权限管理系统。预览地址：http://49.234.20.223:8080/login。 9.SpringAll Github 地址: https://github.com/wuyouzhuguli/SpringAll Star: 5.4k 介绍: 循序渐进，学习Spring Boot、Spring Boot &amp; Shiro、Spring Cloud、Spring Security &amp; Spring Security OAuth2，博客Spring系列源码。 10.JavaGuide Github 地址：https://github.com/Snailclimb/JavaGuide Star: 47.2k 介绍: 【Java 学习+面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。 11.vhr Github 地址：https://github.com/lenve/vhr Star: 4.9k 介绍: 微人事是一个前后端分离的人力资源管理系统，项目采用SpringBoot+Vue开发。 12. tutorials Github 地址：https://github.com/eugenp/tutorials star: 15.4 k 介绍: 该项目是一系列小而专注的教程 - 每个教程都涵盖 Java 生态系统中单一且定义明确的开发领域。 当然，它们的重点是 Spring Framework - Spring，Spring Boot 和 Spring Securiyt。 除了 Spring 之外，还有以下技术：核心 Java，Jackson，HttpClient，Guava。 13.EasyScheduler Github 地址：https://github.com/analysys/EasyScheduler star: 1.1 k 介绍: Easy Scheduler是一个分布式工作流任务调度系统，主要解决“复杂任务依赖但无法直接监控任务健康状态”的问题。Easy Scheduler以DAG方式组装任务，可以实时监控任务的运行状态。同时，它支持重试，重新运行等操作… 。https://analysys.github.io/easyscheduler_docs_cn/ 14.thingsboard Github 地址：https://github.com/thingsboard/thingsboard star: 3.7 k 介绍: 开源物联网平台 - 设备管理，数据收集，处理和可视化。 https://thingsboard.io 15.mall-learning Github 地址: https://github.com/macrozheng/mall-learning star: 0.6 k 介绍: mall学习教程，架构、业务、技术要点全方位解析。mall项目（16k+star）是一套电商系统，使用现阶段主流技术实现。 涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。 https://github.com/macrozheng/mall 16. flink Github地址：https://github.com/apache/flink star: 9.3 k 介绍: Apache Flink是一个开源流处理框架，具有强大的流和批处理功能。 17.spring-cloud-kubernetes Github地址：https://github.com/spring-cloud/spring-cloud-kubernetes star: 1.4 k 介绍: Kubernetes 集成 Spring Cloud Discovery Client, Configuration, etc… 18.springboot-learning-example Github地址：https://github.com/JeffLi1993/springboot-learning-example star: 10.0 k 介绍: spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。 19.canal Github地址：https://github.com/alibaba/canal star: 9.3 k 介绍: 阿里巴巴 MySQL binlog 增量订阅&amp;消费组件。 20.react-native-device-info Github地址：https://github.com/react-native-community/react-native-device-info star: 4.0 k 介绍: React Native iOS和Android的设备信息。]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网站清单]]></title>
+    <url>%2F2019%2F10%2F16%2F%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95%2F</url>
+    <content type="text"><![CDATA[有趣的学习网站 0 1 2 git学习网站 图说设计模式 小工具 0 1 2 格式化工具 常用官网 0 1 2 Maven Spring]]></content>
+      <categories>
+        <category>网站清单</category>
+      </categories>
+      <tags>
+        <tag>网站清单</tag>
       </tags>
   </entry>
   <entry>
@@ -56,39 +78,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[网站清单]]></title>
-    <url>%2F2019%2F10%2F16%2F%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95%2F</url>
-    <content type="text"><![CDATA[有趣的学习网站 0 1 2 git学习网站 图说设计模式 小工具 0 1 2 格式化工具 常用官网 0 1 2 Maven Spring]]></content>
-      <categories>
-        <category>网站清单</category>
-      </categories>
-      <tags>
-        <tag>网站清单</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java项目]]></title>
-    <url>%2F2019%2F10%2F16%2F%E9%A1%B9%E7%9B%AE%2F</url>
-    <content type="text"><![CDATA[1.CS-Notes Github 地址：https://github.com/CyC2018/CS-Notes Star: 69.8k 介绍: 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计。 2.toBeTopJavaer Github 地址：https://github.com/hollischuang/toBeTopJavaer Star: 4.7k 介绍: To Be Top Javaer - Java工程师成神之路。 3.p3c Github 地址： https://github.com/alibaba/p3c Star: 16.6k 介绍: Alibaba Java Coding Guidelines pmd implements and IDE plugin。Eclipse 和 IDEA 上都有该插件，推荐使用！ 4.SpringCloudLearning Github 地址： https://github.com/forezp/SpringCloudLearning Star: 8.7k 介绍: 史上最简单的Spring Cloud教程源码。 5.dubbo Github地址：https://github.com/apache/dubbo star: 27.6 k 介绍: Apache Dubbo是一个基于Java的高性能开源RPC框架。 6.jeecg-boot Github地址： https://github.com/zhangdaiscott/jeecg-boot star: 3.3 k 介绍: 一款基于代码生成器的JAVA快速开发平台！全新架构前后端分离：SpringBoot 2.x，Ant Design&amp;Vue，Mybatis，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码，绝对是全栈开发福音！！ JeecgBoot的宗旨是提高UI能力的同时,降低前后分离的开发成本，JeecgBoot还独创在线开发模式，No代码概念，一系列在线智能开发：在线配置表单、在线配置报表、在线设计流程等等。 7.advanced-java Github 地址：https://github.com/doocs/advanced-java Star: 24.2k 介绍: 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，后端同学必看，前端同学也可学习。 8.FEBS-Shiro Github 地址：https://github.com/wuyouzhuguli/FEBS-Shiro Star: 2.6k 介绍: Spring Boot 2.1.3，Shiro1.4.0 &amp; Layui 2.5.4 权限管理系统。预览地址：http://49.234.20.223:8080/login。 9.SpringAll Github 地址: https://github.com/wuyouzhuguli/SpringAll Star: 5.4k 介绍: 循序渐进，学习Spring Boot、Spring Boot &amp; Shiro、Spring Cloud、Spring Security &amp; Spring Security OAuth2，博客Spring系列源码。 10.JavaGuide Github 地址：https://github.com/Snailclimb/JavaGuide Star: 47.2k 介绍: 【Java 学习+面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。 11.vhr Github 地址：https://github.com/lenve/vhr Star: 4.9k 介绍: 微人事是一个前后端分离的人力资源管理系统，项目采用SpringBoot+Vue开发。 12. tutorials Github 地址：https://github.com/eugenp/tutorials star: 15.4 k 介绍: 该项目是一系列小而专注的教程 - 每个教程都涵盖 Java 生态系统中单一且定义明确的开发领域。 当然，它们的重点是 Spring Framework - Spring，Spring Boot 和 Spring Securiyt。 除了 Spring 之外，还有以下技术：核心 Java，Jackson，HttpClient，Guava。 13.EasyScheduler Github 地址：https://github.com/analysys/EasyScheduler star: 1.1 k 介绍: Easy Scheduler是一个分布式工作流任务调度系统，主要解决“复杂任务依赖但无法直接监控任务健康状态”的问题。Easy Scheduler以DAG方式组装任务，可以实时监控任务的运行状态。同时，它支持重试，重新运行等操作… 。https://analysys.github.io/easyscheduler_docs_cn/ 14.thingsboard Github 地址：https://github.com/thingsboard/thingsboard star: 3.7 k 介绍: 开源物联网平台 - 设备管理，数据收集，处理和可视化。 https://thingsboard.io 15.mall-learning Github 地址: https://github.com/macrozheng/mall-learning star: 0.6 k 介绍: mall学习教程，架构、业务、技术要点全方位解析。mall项目（16k+star）是一套电商系统，使用现阶段主流技术实现。 涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。 https://github.com/macrozheng/mall 16. flink Github地址：https://github.com/apache/flink star: 9.3 k 介绍: Apache Flink是一个开源流处理框架，具有强大的流和批处理功能。 17.spring-cloud-kubernetes Github地址：https://github.com/spring-cloud/spring-cloud-kubernetes star: 1.4 k 介绍: Kubernetes 集成 Spring Cloud Discovery Client, Configuration, etc… 18.springboot-learning-example Github地址：https://github.com/JeffLi1993/springboot-learning-example star: 10.0 k 介绍: spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。 19.canal Github地址：https://github.com/alibaba/canal star: 9.3 k 介绍: 阿里巴巴 MySQL binlog 增量订阅&amp;消费组件。 20.react-native-device-info Github地址：https://github.com/react-native-community/react-native-device-info star: 4.0 k 介绍: React Native iOS和Android的设备信息。]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java书单]]></title>
-    <url>%2F2019%2F10%2F16%2FJava%E4%B9%A6%E5%8D%95%2F</url>
-    <content type="text"><![CDATA[Java 基础 并发 JVM Java8 新特性 代码优化 网络 操作系统 数据结构与算法 数据库 系统设计 设计模式 常用框架 网站架构 软件底层 其他 Java基础 《Head First Java》(推荐，豆瓣评分 8.7，1.0K+人评价)： 可以说是我的 Java 启蒙书籍了，特别适合新手读当然也适合我们用来温故 Java 知识点。 《Java 核心技术卷 1+卷 2》（推荐）: 很棒的两本书，建议有点 Java 基础之后再读，介绍的还是比较深入的，非常推荐。这两本书我一般也会用来巩固知识点，是两本适合放在自己身边的好书。 《JAVA 网络编程 第 4 版》： 可以系统的学习一下网络的一些概念以及网络编程在 Java 中的使用。 《Java 编程思想 (第 4 版)》（推荐，豆瓣评分 9.1，3.2K+人评价）：大部分人称之为Java领域的圣经，但我不推荐初学者阅读，有点劝退的味道。稍微有点基础后阅读更好。 《Java性能权威指南》（推荐，豆瓣评分 8.2，0.1K+人评价）：O’Reilly 家族书，性能调优的入门书，我个人觉得性能调优是每个 Java 从业者必备知识，这本书的缺点就是太老了，但是这本书可以作为一个实战书，尤其是 JVM 调优！不适合初学者。前置书籍：《深入理解 Java 虚拟机》 并发 《Java 并发编程之美》 （推荐）：2018 年 10 月出版的一本书，个人感觉非常不错，对每个知识点的讲解都很棒。 《Java 并发编程的艺术》（推荐，豆瓣评分 7.2，0.2K+人评价）： 这本书不是很适合作为 Java 并发入门书籍，需要具备一定的 JVM 基础。我感觉有些东西讲的还是挺深入的，推荐阅读。 《实战 Java 高并发程序设计》（推荐,豆瓣评分 8.3）： 书的质量没的说，推荐大家好好看一下。 《Java 高并发编程详解》（豆瓣评分 7.6）： 2018 年 6 月出版的一本书，内容很详细，但可能又有点过于啰嗦，不过这只是我的感觉。 JVM 《深入理解 Java 虚拟机（第 2 版）周志明》（推荐，豆瓣评分 8.9，1.0K+人评价）：建议多刷几遍，书中的所有知识点可以通过 JAVA 运行时区域和 JAVA 的内存模型与线程两个大模块罗列完全。 《实战 JAVA 虚拟机》（推荐，豆瓣评分 8.0，1.0K+人评价）：作为入门的了解 Java 虚拟机的知识还是不错的。 Java8 新特性 《Java 8 实战》 （推荐，豆瓣评分 9.2 ）：面向 Java 8 的技能升级，包括 Lambdas、流和函数式编程特性。实战系列的一贯风格让自己快速上手应用起来。Java 8 支持的 Lambda 是精简表达在语法上提供的支持。Java 8 提供了 Stream，学习和使用可以建立流式编程的认知。 《Java 8 编程参考官方教程》 （推荐，豆瓣评分 9.2）：也还不错吧。 代码优化 《重构_改善既有代码的设计》（推荐）：豆瓣 9.1 分，重构书籍的开山鼻祖。 《Effective java 》（推荐，豆瓣评分 9.0，1.4K+人评价）：本书介绍了在 Java 编程中 78 条极具实用价值的经验规则，这些经验规则涵盖了大多数开发人员每天所面临的问题的解决方案。通过对 Java 平台设计专家所使用的技术的全面描述，揭示了应该做什么，不应该做什么才能产生清晰、健壮和高效的代码。本书中的每条规则都以简短、独立的小文章形式出现，并通过例子代码加以进一步说明。本书内容全面，结构清晰，讲解详细。可作为技术人员的参考用书。 《代码整洁之道》（推荐，豆瓣评分 9.1）：虽然是用 Java 语言作为例子，全篇都是在阐述 Java 面向对象的思想，但是其中大部分内容其它语言也能应用到。 阿里巴巴 Java 开发手册（详尽版） https://github.com/alibaba/p3c/blob/master/阿里巴巴 Java 开发手册（详尽版）.pdf Google Java 编程风格指南： http://www.hawstein.com/posts/google-java-style.html 网络 《图解 HTTP》（推荐,豆瓣评分 8.1 , 1.6K+人评价）： 讲漫画一样的讲 HTTP，很有意思，不会觉得枯燥，大概也涵盖也 HTTP 常见的知识点。因为篇幅问题，内容可能不太全面。不过，如果不是专门做网络方向研究的小伙伴想研究 HTTP 相关知识的话，读这本书的话应该来说就差不多了。 《HTTP 权威指南》 （推荐,豆瓣评分 8.6）:如果要全面了解 HTTP 非此书不可！ 操作系统 《鸟哥的 Linux 私房菜》（推荐，，豆瓣评分 9.1，0.3K+人评价）：本书是最具知名度的 Linux 入门书《鸟哥的 Linux 私房菜基础学习篇》的最新版，全面而详细地介绍了 Linux 操作系统。全书分为 5 个部分：第一部分着重说明 Linux 的起源及功能，如何规划和安装 Linux 主机；第二部分介绍 Linux 的文件系统、文件、目录与磁盘的管理；第三部分介绍文字模式接口 shell 和管理系统的好帮手 shell 脚本，另外还介绍了文字编辑器 vi 和 vim 的使用方法；第四部分介绍了对于系统安全非常重要的 Linux 账号的管理，以及主机系统与程序的管理，如查看进程、任务分配和作业管理；第五部分介绍了系统管理员 (root) 的管理事项，如了解系统运行状况、系统服务，针对登录文件进行解析，对系统进行备份以及核心的管理等。 数据结构与算法 《大话数据结构》（推荐，豆瓣评分 7.9 , 1K+人评价）：入门类型的书籍，读起来比较浅显易懂，适合没有数据结构基础或者说数据结构没学好的小伙伴用来入门数据结构。 《数据结构与算法分析：C 语言描述》（推荐，豆瓣评分 8.9，1.6K+人评价）:本书是《Data Structures and Algorithm Analysis in C》一书第 2 版的简体中译本。原书曾被评为 20 世纪顶尖的 30 部计算机著作之一，作者 Mark Allen Weiss 在数据结构和算法分析方面卓有建树，他的数据结构和算法分析的著作尤其畅销，并受到广泛好评．已被世界 500 余所大学用作教材。 《算法图解》（推荐，豆瓣评分 8.4，0.6K+人评价）：入门类型的书籍，读起来比较浅显易懂，适合没有算法基础或者说算法没学好的小伙伴用来入门。示例丰富，图文并茂，以让人容易理解的方式阐释了算法.读起来比较快，内容不枯燥！ 《算法 第四版》（推荐，豆瓣评分 9.3，0.4K+人评价）：Java 语言描述，算法领域经典的参考书，全面介绍了关于算法和数据结构的必备知识，并特别针对排序、搜索、图处理和字符串处理进行了论述。书的内容非常多，可以说是 Java 程序员的必备书籍之一了。 数据库 《高性能 MySQL》（推荐，豆瓣评分 9.3，0.4K+人评价）：mysql 领域的经典之作，拥有广泛的影响力。不但适合数据库管理员（dba）阅读，也适合开发人员参考学习。不管是数据库新手还是专家，相信都能从本书有所收获。 《Redis 实战》：如果你想了解 Redis 的一些概念性知识的话，这本书真的非常不错。 《Redis 设计与实现》（推荐，豆瓣评分 8.5，0.5K+人评价）：也还行吧！ 《MySQL 技术内幕-InnoDB 存储引擎》（推荐，豆瓣评分 8.7）：了解 InnoDB 存储引擎底层原理必备的一本书，比较深入。 系统设计设计模式 《设计模式 : 可复用面向对象软件的基础》 （推荐，豆瓣评分 9.1）：设计模式的经典！ 《Head First 设计模式（中文版）》 （推荐，豆瓣评分 9.2）：相当赞的一本设计模式入门书籍。用实际的编程案例讲解算法设计中会遇到的各种问题和需求变更（对的，连需求变更都考虑到了！），并以此逐步推导出良好的设计模式解决办法。 常用框架 《深入分析 Java Web 技术内幕》： 感觉还行，涉及的东西也蛮多。 《Netty 实战》（推荐，豆瓣评分 7.8，92 人评价）：内容很细，如果想学 Netty 的话，推荐阅读这本书！ 《从 Paxos 到 Zookeeper》（推荐，豆瓣评分 7.8，0.3K 人评价）：简要介绍几种典型的分布式一致性协议，以及解决分布式一致性问题的思路，其中重点讲解了 Paxos 和 ZAB 协议。同时，本书深入介绍了分布式一致性问题的工业解决方案——ZooKeeper，并着重向读者展示这一分布式协调框架的使用方法、内部实现及运维技巧，旨在帮助读者全面了解 ZooKeeper，并更好地使用和运维 ZooKeeper。 《Spring 实战（第 4 版）》（推荐，豆瓣评分 8.3，0.3K+人评价）：不建议当做入门书籍读，入门的话可以找点国人的书或者视频看。这本定位就相当于是关于 Spring 的新华字典，只有一些基本概念的介绍和示例，涵盖了 Spring 的各个方面，但都不够深入。就像作者在最后一页写的那样：“学习 Spring，这才刚刚开始”。 《RabbitMQ 实战指南》：《RabbitMQ 实战指南》从消息中间件的概念和 RabbitMQ 的历史切入，主要阐述 RabbitMQ 的安装、使用、配置、管理、运维、原理、扩展等方面的细节。如果你想浅尝 RabbitMQ 的使用，这本书是你最好的选择；如果你想深入 RabbitMQ 的原理，这本书也是你最好的选择；总之，如果你想玩转 RabbitMQ，这本书一定是最值得看的书之一 《Spring Cloud 微服务实战》：从时下流行的微服务架构概念出发，详细介绍了 Spring Cloud 针对微服务架构中几大核心要素的解决方案和基础组件。对于各个组件的介绍，《Spring Cloud 微服务实战》主要以示例与源码结合的方式来帮助读者更好地理解这些组件的使用方法以及运行原理。同时，在介绍的过程中，还包含了作者在实践中所遇到的一些问题和解决思路，可供读者在实践中作为参考。 《第一本 Docker 书》：Docker 入门书籍！ 《Spring Boot编程思想（核心篇）》（推荐，豆瓣评分 6.2）：SpringBoot深入书，不适合初学者。书尤其的厚，评分低的的理由是书某些知识过于拖沓，评分高的理由是书中对SpringBoot内部原理讲解很清楚。作者小马哥：Apache Dubbo PMC、Spring Cloud Alibaba项目架构师。B站作者地址：https://space.bilibili.com/327910845?from=search&amp;seid=17095917016893398636。 网站架构 《大型网站技术架构：核心原理与案例分析+李智慧》（推荐）:这本书我读过，基本不需要你有什么基础啊~读起来特别轻松，但是却可以学到很多东西，非常推荐了。另外我写过这本书的思维导图，关注我的微信公众号：“Java 面试通关手册”回复“大型网站技术架构”即可领取思维导图。 《亿级流量网站架构核心技术》（推荐）：一书总结并梳理了亿级流量网站高可用和高并发原则，通过实例详细介绍了如何落地这些原则。本书分为四部分：概述、高可用原则、高并发原则、案例实战。从负载均衡、限流、降级、隔离、超时与重试、回滚机制、压测与预案、缓存、池化、异步化、扩容、队列等多方面详细介绍了亿级流量网站的架构核心技术，让读者看后能快速运用到实践项目中。 软件底层 《深入剖析 Tomcat》（推荐，豆瓣评分 8.4，0.2K+人评价）：本书深入剖析 Tomcat 4 和 Tomcat 5 中的每个组件，并揭示其内部工作原理。通过学习本书，你将可以自行开发 Tomcat 组件，或者扩展已有的组件。 读完这本书，基本可以摆脱背诵面试题的尴尬。 《深入理解 Nginx（第 2 版）》：作者讲的非常细致，注释都写的都很工整，对于 Nginx 的开发人员非常有帮助。优点是细致，缺点是过于细致，到处都是代码片段，缺少一些抽象。 其他 《黑客与画家》：这本书是硅谷创业之父，Y Combinator 创始人 Paul Graham 的文集。之所以叫这个名字，是因为作者认为黑客（并非负面的那个意思）与画家有着极大的相似性，他们都是在创造，而不是完成某个任务。 《图解密码技术》（推荐，豆瓣评分 9.1，0.3K+人评价）：本书以图配文的形式，第一部分讲述了密码技术的历史沿革、对称密码、分组密码模式（包括ECB、CBC、CFB、OFB、CTR）、公钥、混合密码系统。第二部分重点介绍了认证方面的内容，涉及单向散列函数、消息认证码、数字签名、证书等。第三部分讲述了密钥、随机数、PGP、SSL/TLS 以及密码技术在现实生活中的应用。关键字：JWT 前置知识、区块链密码技术前置知识。属于密码知识入门书籍。]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[感悟]]></title>
     <url>%2F2019%2F09%2F28%2F%E6%84%9F%E6%82%9F%2F</url>
     <content type="text"><![CDATA[#每一天很长，但几十年很短。]]></content>
@@ -100,14 +89,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MarkDown]]></title>
-    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
+    <title><![CDATA[Java 基础（一）]]></title>
+    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[Java 基础（一） Java的基本数据类型 类型名 取值范围 占用内存空间字节 byte -2^7~2^(7-1) 1 short -2^15~2^(15-1) 2 int -2^31~2^(31-1) 4 long -2^63~2^(63-1) 8 float 1.4E-45 ~ 3.4E+38-3.4E+38 ~ -1.4E-45 4 double 4.9E-324 ~ 1.7E+308-1.7E+308 ~ -4.9E-324 8 boolean ture false 具体情况而定 char 2 变量 变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。 数组类型 基本类型的数组有三种赋值方式 int[] arr = {1,2,3}; int[] arr = new int[]{1,2,3}; int[] arr = new int[3];arr[0]=1; arr[1]=2;arr[2]=3; 数组类型有两块内存空间 一块是存储数组内容本身； 另一块是存储数组内容的位置； 数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈； 栈： 堆： 基本运算 运算符 符号 加 + 减 - 乘 * 除 / 取模 % 函数函数的组成 函数名字 参数 操作 返回值 main 函数12345class JavaTest &#123; public static void main(String[] args)&#123; &#125;&#125; main函数表示程序的入口同一个类中函数名相同但参数不同的现象，一般称为函数重载。 递归函数 调用自己的函数称为递归函数。]]></content>
       <categories>
-        <category>编程习惯</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>编程习惯</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[投入]]></title>
+    <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
+    <content type="text"><![CDATA[享受并且投入]]></content>
+      <categories>
+        <category>益言</category>
+      </categories>
+      <tags>
+        <tag>益言</tag>
       </tags>
   </entry>
   <entry>
@@ -119,6 +119,17 @@
       </categories>
       <tags>
         <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MarkDown]]></title>
+    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
+      <categories>
+        <category>编程习惯</category>
+      </categories>
+      <tags>
+        <tag>编程习惯</tag>
       </tags>
   </entry>
   <entry>
@@ -144,17 +155,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java 基础（一）]]></title>
-    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
-    <content type="text"><![CDATA[Java 基础（一） Java的基本数据类型 类型名 取值范围 占用内存空间字节 byte -2^7~2^(7-1) 1 short -2^15~2^(15-1) 2 int -2^31~2^(31-1) 4 long -2^63~2^(63-1) 8 float 1.4E-45 ~ 3.4E+38-3.4E+38 ~ -1.4E-45 4 double 4.9E-324 ~ 1.7E+308-1.7E+308 ~ -4.9E-324 8 boolean ture false 具体情况而定 char 2 变量 变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。 数组类型 基本类型的数组有三种赋值方式 int[] arr = {1,2,3}; int[] arr = new int[]{1,2,3}; int[] arr = new int[3];arr[0]=1; arr[1]=2;arr[2]=3; 数组类型有两块内存空间 一块是存储数组内容本身； 另一块是存储数组内容的位置； 数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈； 栈： 堆： 基本运算 运算符 符号 加 + 减 - 乘 * 除 / 取模 % 函数函数的组成 函数名字 参数 操作 返回值 main 函数12345class JavaTest &#123; public static void main(String[] args)&#123; &#125;&#125; main函数表示程序的入口同一个类中函数名相同但参数不同的现象，一般称为函数重载。 递归函数 调用自己的函数称为递归函数。]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Vim有哪几种模式？]]></title>
     <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
@@ -174,17 +174,6 @@
       </categories>
       <tags>
         <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[投入]]></title>
-    <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
-    <content type="text"><![CDATA[享受并且投入]]></content>
-      <categories>
-        <category>益言</category>
-      </categories>
-      <tags>
-        <tag>益言</tag>
       </tags>
   </entry>
 </search>
