@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-06T11:37:40.386Z</updated>
+  <updated>2019-10-15T14:40:55.200Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Java 基础(二)</title>
-    <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
-    <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-06T11:37:40.386Z</updated>
-    
-    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="a0f0ff">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
   
   <entry>
     <title>网站清单</title>
@@ -59,29 +36,6 @@
     
     
       <category term="网站清单" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>类的基础</title>
-    <link href="http://yoursite.com/2019/10/16/%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/10/16/类的基础(一)/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-07T08:09:36.420Z</updated>
-    
-    <content type="html"><![CDATA[<center>    面向对象</center><h2 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h2><blockquote><p>类是函数的容器，但类更多表示的是自定义的数据类型。</p></blockquote><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><blockquote><p>Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。<br>该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。</p></blockquote><p>###抽象方法的特点</p><ul><li>只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现）</li><li>抽象方法用abstract关键字来修饰。</li><li>抽象方法代表一种不确定的操作或行为。（由子类去具体实现）</li><li>抽象方法不能被调用。</li></ul><h3 id="函数容器"><a href="#函数容器" class="headerlink" title="函数容器"></a>函数容器</h3><blockquote><table> <tr><td bgcolor="#00ffff">不在同一包下，无法访问父类默认的构造方法</td> </tr></table></blockquote><h4 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h4><blockquote><p>static表示类方法</p><blockquote><p>类变量 就是静态变量 声明类变量<br>通过类名直接调用</p></blockquote></blockquote><h4 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h4><blockquote><p>通过实例或者对象调用</p><blockquote><p> 实例方法是表示具体的实例可以进行的操作。<br>实例<br>实例变量表示具体的实例所具有的属性<br>有一种对象只叫对象，有一种对象叫实例化对象（实例）。</p></blockquote><p>对象 </p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      面向对象
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -109,6 +63,52 @@
   </entry>
   
   <entry>
+    <title>Java 基础(二)</title>
+    <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
+    <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-06T11:37:40.386Z</updated>
+    
+    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="a0f0ff">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>类的基础</title>
+    <link href="http://yoursite.com/2019/10/16/%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/10/16/类的基础(一)/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-07T08:09:36.420Z</updated>
+    
+    <content type="html"><![CDATA[<center>    面向对象</center><h2 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h2><blockquote><p>类是函数的容器，但类更多表示的是自定义的数据类型。</p></blockquote><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><blockquote><p>Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。<br>该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。</p></blockquote><p>###抽象方法的特点</p><ul><li>只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现）</li><li>抽象方法用abstract关键字来修饰。</li><li>抽象方法代表一种不确定的操作或行为。（由子类去具体实现）</li><li>抽象方法不能被调用。</li></ul><h3 id="函数容器"><a href="#函数容器" class="headerlink" title="函数容器"></a>函数容器</h3><blockquote><table> <tr><td bgcolor="#00ffff">不在同一包下，无法访问父类默认的构造方法</td> </tr></table></blockquote><h4 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h4><blockquote><p>static表示类方法</p><blockquote><p>类变量 就是静态变量 声明类变量<br>通过类名直接调用</p></blockquote></blockquote><h4 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h4><blockquote><p>通过实例或者对象调用</p><blockquote><p> 实例方法是表示具体的实例可以进行的操作。<br>实例<br>实例变量表示具体的实例所具有的属性<br>有一种对象只叫对象，有一种对象叫实例化对象（实例）。</p></blockquote><p>对象 </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      面向对象
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>感悟</title>
     <link href="http://yoursite.com/2019/09/28/%E6%84%9F%E6%82%9F/"/>
     <id>http://yoursite.com/2019/09/28/感悟/</id>
@@ -132,29 +132,6 @@
     
     
       <category term="人生" scheme="http://yoursite.com/tags/%E4%BA%BA%E7%94%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vim有哪几种模式？</title>
-    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:36:26.999Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
     
   </entry>
   
@@ -205,29 +182,6 @@
   </entry>
   
   <entry>
-    <title>初识VIM</title>
-    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
-    <id>http://yoursite.com/2019/09/27/初识vim/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:31:07.899Z</updated>
-    
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ClassLoaderTest</title>
     <link href="http://yoursite.com/2019/09/27/ClassLoader/"/>
     <id>http://yoursite.com/2019/09/27/ClassLoader/</id>
@@ -247,6 +201,29 @@
     
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>投入</title>
+    <link href="http://yoursite.com/2019/09/27/%E6%8A%95%E5%85%A5/"/>
+    <id>http://yoursite.com/2019/09/27/投入/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:47:25.004Z</updated>
+    
+    <content type="html"><![CDATA[<p>享受并且投入</p>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="益言" scheme="http://yoursite.com/categories/%E7%9B%8A%E8%A8%80/"/>
+    
+    
+      <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
     
   </entry>
   
@@ -274,6 +251,29 @@
   </entry>
   
   <entry>
+    <title>Vim有哪几种模式？</title>
+    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T11:36:26.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>编程基础知识积累</title>
     <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
     <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
@@ -297,13 +297,13 @@
   </entry>
   
   <entry>
-    <title>投入</title>
-    <link href="http://yoursite.com/2019/09/27/%E6%8A%95%E5%85%A5/"/>
-    <id>http://yoursite.com/2019/09/27/投入/</id>
+    <title>初识VIM</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
+    <id>http://yoursite.com/2019/09/27/初识vim/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:47:25.004Z</updated>
+    <updated>2019-10-04T11:31:07.899Z</updated>
     
-    <content type="html"><![CDATA[<p>享受并且投入</p>]]></content>
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -312,10 +312,10 @@
     </summary>
     
     
-      <category term="益言" scheme="http://yoursite.com/categories/%E7%9B%8A%E8%A8%80/"/>
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
     
     
-      <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
     
   </entry>
   
