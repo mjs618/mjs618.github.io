@@ -70,9 +70,9 @@
     <link href="http://yoursite.com/2019/10/20/%E6%83%85%E8%AF%9D/"/>
     <id>http://yoursite.com/2019/10/20/情话/</id>
     <published>2019-10-20T13:13:50.000Z</published>
-    <updated>2019-10-23T14:51:50.245Z</updated>
+    <updated>2019-10-24T14:12:33.630Z</updated>
     
-    <content type="html"><![CDATA[<center>情话</center><h3 id="20191020"><a href="#20191020" class="headerlink" title="20191020"></a>20191020</h3><hr><p>我想你一定很忙，<br>所以你只要看前三个字就好了。</p><hr><h3 id="20191023"><a href="#20191023" class="headerlink" title="20191023"></a>20191023</h3><hr><p>林深时见鹿，<br>海蓝时见鲸，<br>梦醒时见你。</p><hr>]]></content>
+    <content type="html"><![CDATA[<center>情话</center><h3 id="20191020"><a href="#20191020" class="headerlink" title="20191020"></a>20191020</h3><hr><p>我想你一定很忙，<br>所以你只要看前三个字就好了。</p><hr><h3 id="20191023"><a href="#20191023" class="headerlink" title="20191023"></a>20191023</h3><hr><p>林深时见鹿，<br>海蓝时见鲸，<br>梦醒时见你。</p><hr><h3 id="20191023-1"><a href="#20191023-1" class="headerlink" title="20191023"></a>20191023</h3><hr><p>月亮很亮，亮也没用，没用也亮。<br>我喜欢你，喜欢也没用，没用也喜欢。</p><hr>]]></content>
     
     <summary type="html">
     
@@ -85,29 +85,6 @@
     
     
       <category term="情话" scheme="http://yoursite.com/tags/%E6%83%85%E8%AF%9D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Maven使用</title>
-    <link href="http://yoursite.com/2019/10/16/Maven/"/>
-    <id>http://yoursite.com/2019/10/16/Maven/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-09T09:10:42.589Z</updated>
-    
-    <content type="html"><![CDATA[<center>   Maven</center><h3 id="1-Maven-的配置"><a href="#1-Maven-的配置" class="headerlink" title="1. Maven 的配置"></a>1. Maven 的配置</h3><blockquote><ol><li>环境变量配置<blockquote><p>MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3</p></blockquote></li></ol></blockquote><blockquote><ol start="2"><li>PATH 配置<blockquote><p>%MAVEN_HOME%\bin</p></blockquote></li></ol></blockquote><h3 id="2-Maven的生命周期"><a href="#2-Maven的生命周期" class="headerlink" title="2.Maven的生命周期"></a>2.Maven的生命周期</h3><blockquote><p>Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。</p></blockquote><p>1.clean生命周期：清理项目，包含三个phase。</p><ul><li><p>pre-clean：执行清理前需要完成的工作</p></li><li><p>clean：清理上一次构建生成的文件</p></li><li><p>post-clean：执行清理后需要完成的工作</p></li></ul><p>2.default生命周期：构建项目，重要的phase如下。</p><ul><li>validate：验证工程是否正确，所有需要的资源是否可用。</li><li>compile：编译项目的源代码。</li><li>test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。</li><li>Package：把已编译的代码打包成可发布的格式，比如jar。</li><li>integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。</li><li>verify：运行所有检查，验证包是否有效且达到质量标准。</li><li>install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。</li><li>Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。</li></ul><p>3.site生命周期：建立和发布项目站点，phase如下</p><ul><li><p>pre-site：生成项目站点之前需要完成的工作</p></li><li><p>site：生成项目站点文档</p></li><li><p>post-site：生成项目站点之后需要完成的工作</p></li><li><p>site-deploy：将项目站点发布到服务器</p></li></ul><h3 id="3-配置Maven仓库"><a href="#3-配置Maven仓库" class="headerlink" title="3. 配置Maven仓库"></a>3. 配置Maven仓库</h3><p>3.1 本地仓库配置到指定路径</p><blockquote><p>在maven解压文件中，conf目录中修改settings.xml文件。<br>可以添加新的仓库路径<localrepository>D:Programming\maven-3.5.2\repository</localrepository><br>3.2 配置中央仓库指定阿里的</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;nexus-aliyun&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><h3 id="4-配置Idea使用自己安装的Maven"><a href="#4-配置Idea使用自己安装的Maven" class="headerlink" title="4.配置Idea使用自己安装的Maven"></a>4.配置Idea使用自己安装的Maven</h3><p><img src="https://i.loli.net/2019/10/08/jUhJqWRYrISV37u.png" alt="20191008123630"></p><h3 id="5-Maven如何将自己下载的jar包安装到本地仓库"><a href="#5-Maven如何将自己下载的jar包安装到本地仓库" class="headerlink" title="5. Maven如何将自己下载的jar包安装到本地仓库"></a>5. Maven如何将自己下载的jar包安装到本地仓库</h3><blockquote><p>示例： 想要添加Oracle驱动包时，Maven的pom.xml总是报Missing artifact com.oracle:ojdbc14:jar:10.2.0.1.0错。</p></blockquote><p>解决办法：</p><blockquote><p><a href="http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html" target="_blank" rel="noopener">oracle官网</a>  下载你所需要的oraclejar包</p></blockquote><blockquote><p>将jar放在盘符下</p></blockquote><blockquote><p>cmd 命令下运行</p><blockquote><p>  mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=F:ojdbc14.jar</p><blockquote><p>-Dfile 是你的jar包的路径</p></blockquote></blockquote></blockquote><blockquote><p>pom.xml文件中输入</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.oracle&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;10.2.0.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h3 id="6-Maven官网"><a href="#6-Maven官网" class="headerlink" title="6. Maven官网"></a>6. Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      Maven的使用
-    
-    </summary>
-    
-    
-      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
-    
-    
-      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
     
   </entry>
   
@@ -131,6 +108,29 @@
     
     
       <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven使用</title>
+    <link href="http://yoursite.com/2019/10/16/Maven/"/>
+    <id>http://yoursite.com/2019/10/16/Maven/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-09T09:10:42.589Z</updated>
+    
+    <content type="html"><![CDATA[<center>   Maven</center><h3 id="1-Maven-的配置"><a href="#1-Maven-的配置" class="headerlink" title="1. Maven 的配置"></a>1. Maven 的配置</h3><blockquote><ol><li>环境变量配置<blockquote><p>MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3</p></blockquote></li></ol></blockquote><blockquote><ol start="2"><li>PATH 配置<blockquote><p>%MAVEN_HOME%\bin</p></blockquote></li></ol></blockquote><h3 id="2-Maven的生命周期"><a href="#2-Maven的生命周期" class="headerlink" title="2.Maven的生命周期"></a>2.Maven的生命周期</h3><blockquote><p>Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。</p></blockquote><p>1.clean生命周期：清理项目，包含三个phase。</p><ul><li><p>pre-clean：执行清理前需要完成的工作</p></li><li><p>clean：清理上一次构建生成的文件</p></li><li><p>post-clean：执行清理后需要完成的工作</p></li></ul><p>2.default生命周期：构建项目，重要的phase如下。</p><ul><li>validate：验证工程是否正确，所有需要的资源是否可用。</li><li>compile：编译项目的源代码。</li><li>test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。</li><li>Package：把已编译的代码打包成可发布的格式，比如jar。</li><li>integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。</li><li>verify：运行所有检查，验证包是否有效且达到质量标准。</li><li>install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。</li><li>Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。</li></ul><p>3.site生命周期：建立和发布项目站点，phase如下</p><ul><li><p>pre-site：生成项目站点之前需要完成的工作</p></li><li><p>site：生成项目站点文档</p></li><li><p>post-site：生成项目站点之后需要完成的工作</p></li><li><p>site-deploy：将项目站点发布到服务器</p></li></ul><h3 id="3-配置Maven仓库"><a href="#3-配置Maven仓库" class="headerlink" title="3. 配置Maven仓库"></a>3. 配置Maven仓库</h3><p>3.1 本地仓库配置到指定路径</p><blockquote><p>在maven解压文件中，conf目录中修改settings.xml文件。<br>可以添加新的仓库路径<localrepository>D:Programming\maven-3.5.2\repository</localrepository><br>3.2 配置中央仓库指定阿里的</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;nexus-aliyun&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><h3 id="4-配置Idea使用自己安装的Maven"><a href="#4-配置Idea使用自己安装的Maven" class="headerlink" title="4.配置Idea使用自己安装的Maven"></a>4.配置Idea使用自己安装的Maven</h3><p><img src="https://i.loli.net/2019/10/08/jUhJqWRYrISV37u.png" alt="20191008123630"></p><h3 id="5-Maven如何将自己下载的jar包安装到本地仓库"><a href="#5-Maven如何将自己下载的jar包安装到本地仓库" class="headerlink" title="5. Maven如何将自己下载的jar包安装到本地仓库"></a>5. Maven如何将自己下载的jar包安装到本地仓库</h3><blockquote><p>示例： 想要添加Oracle驱动包时，Maven的pom.xml总是报Missing artifact com.oracle:ojdbc14:jar:10.2.0.1.0错。</p></blockquote><p>解决办法：</p><blockquote><p><a href="http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html" target="_blank" rel="noopener">oracle官网</a>  下载你所需要的oraclejar包</p></blockquote><blockquote><p>将jar放在盘符下</p></blockquote><blockquote><p>cmd 命令下运行</p><blockquote><p>  mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=F:ojdbc14.jar</p><blockquote><p>-Dfile 是你的jar包的路径</p></blockquote></blockquote></blockquote><blockquote><p>pom.xml文件中输入</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.oracle&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;10.2.0.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h3 id="6-Maven官网"><a href="#6-Maven官网" class="headerlink" title="6. Maven官网"></a>6. Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      Maven的使用
+    
+    </summary>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
     
   </entry>
   
@@ -277,29 +277,6 @@
   </entry>
   
   <entry>
-    <title>Vim有哪几种模式？</title>
-    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:36:26.999Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
     <title>编程基础知识积累</title>
     <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
     <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
@@ -319,52 +296,6 @@
     
     
       <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初识VIM</title>
-    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
-    <id>http://yoursite.com/2019/09/27/初识vim/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:31:07.899Z</updated>
-    
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
-    
-    
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 基础（一）</title>
-    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-20T09:46:01.124Z</updated>
-    
-    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间</p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值</li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -415,6 +346,29 @@
   </entry>
   
   <entry>
+    <title>Java 基础（一）</title>
+    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-20T09:46:01.124Z</updated>
+    
+    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间</p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值</li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>爱</title>
     <link href="http://yoursite.com/2019/09/27/%E7%88%B1/"/>
     <id>http://yoursite.com/2019/09/27/爱/</id>
@@ -434,6 +388,52 @@
     
     
       <category term="爱" scheme="http://yoursite.com/tags/%E7%88%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim有哪几种模式？</title>
+    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T11:36:26.999Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初识VIM</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
+    <id>http://yoursite.com/2019/09/27/初识vim/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T11:31:07.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
     
   </entry>
   
