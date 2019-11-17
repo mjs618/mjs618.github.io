@@ -57,18 +57,18 @@
 </script>
 
   <meta name="description" content="相信习惯的力量">
-<meta name="keywords" content="美剧">
+<meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="美剧">
-<meta property="og:url" content="http://yoursite.com/2019/09/27/美剧推荐/index.html">
+<meta property="og:title" content="排序">
+<meta property="og:url" content="http://yoursite.com/2019/09/27/排序/index.html">
 <meta property="og:site_name" content="代码老中医">
 <meta property="og:description" content="相信习惯的力量">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-05T15:25:23.237Z">
+<meta property="og:updated_time" content="2019-11-17T13:35:22.824Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="美剧">
+<meta name="twitter:title" content="排序">
 <meta name="twitter:description" content="相信习惯的力量">
-  <link rel="canonical" href="http://yoursite.com/2019/09/27/美剧推荐/">
+  <link rel="canonical" href="http://yoursite.com/2019/09/27/排序/">
 
 
 <script id="page-configurations">
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>美剧 | 代码老中医</title>
+  <title>排序 | 代码老中医</title>
   
 
 
@@ -274,7 +274,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/27/美剧推荐/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/27/排序/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Maojinsong">
@@ -286,7 +286,7 @@
       <meta itemprop="name" content="代码老中医">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">美剧
+        <h1 class="post-title" itemprop="name headline">排序
 
           
         </h1>
@@ -313,7 +313,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-05 23:25:23" itemprop="dateModified" datetime="2019-11-05T23:25:23+08:00">2019-11-05</time>
+                <time title="修改时间：2019-11-17 21:35:22" itemprop="dateModified" datetime="2019-11-17T21:35:22+08:00">2019-11-17</time>
               </span>
             
           
@@ -323,7 +323,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/英语学习/" itemprop="url" rel="index"><span itemprop="name">英语学习</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/算法/" itemprop="url" rel="index"><span itemprop="name">算法</span></a></span>
 
                 
                 
@@ -352,18 +352,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <ol>
-<li>Modern Family</li>
-<li>How I Met Your Mother</li>
-<li>The Ellen Show</li>
-<li>Conan</li>
-<li>James Corden</li>
-<li>The Graham Norton Show</li>
-<li>Brooklyn 99</li>
-<li>Scrubs</li>
-<li>Silicon Valley</li>
-<li>Heabag</li>
-</ol>
+        <h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">7</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = bubbleSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(<span class="string">"第"</span>+i+<span class="string">"元素"</span> +<span class="string">":"</span>+ temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;array.length-<span class="number">1</span>-i ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (array[j + <span class="number">1</span>] &lt; array[j]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = array[j + <span class="number">1</span>];</span><br><span class="line">                    array[j + <span class="number">1</span>] = array[j];</span><br><span class="line">                    array[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp =  selectionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; temp.length; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] selectionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length ==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">          <span class="keyword">int</span> minIndex = i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; array.length ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(array[j] &lt; array[minIndex])&#123;</span><br><span class="line">                    minIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> temp = array[minIndex];</span><br><span class="line">            array[minIndex]  = array[i];</span><br><span class="line">            array[i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertionSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = insertionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] insertionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> current;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length -<span class="number">1</span>; i++) &#123;</span><br><span class="line">            current = array[i + <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">int</span> preIndex = i;</span><br><span class="line">            <span class="keyword">while</span> (preIndex &gt;= <span class="number">0</span> &amp;&amp; current &lt; array[preIndex])&#123;</span><br><span class="line">                array[preIndex + <span class="number">1</span> ] = array[preIndex];</span><br><span class="line">                preIndex--;</span><br><span class="line">            &#125;</span><br><span class="line">            array[preIndex + <span class="number">1</span>] = current;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -379,7 +373,7 @@
           
           <div class="post-tags">
             
-              <a href="/tags/美剧/" rel="tag"># 美剧</a>
+              <a href="/tags/算法/" rel="tag"># 算法</a>
             
           </div>
         
@@ -389,8 +383,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/27/markdown学习指南/" rel="next" title="MarkDown">
-                  <i class="fa fa-chevron-left"></i> MarkDown
+                <a href="/2019/09/27/ClassLoader/" rel="next" title="ClassLoaderTest">
+                  <i class="fa fa-chevron-left"></i> ClassLoaderTest
                 </a>
               
             </div>
@@ -399,8 +393,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/27/Java 基础(三)/" rel="prev" title="Java 基础(三)">
-                  Java 基础(三) <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/28/开发中常用的简单 Linux 命令/" rel="prev" title="开发中常用的简单 Linux 命令">
+                  开发中常用的简单 Linux 命令 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -450,6 +444,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序"><span class="nav-number">2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序"><span class="nav-number">3.</span> <span class="nav-text">插入排序</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
