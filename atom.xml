@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-04T14:49:09.953Z</updated>
+  <updated>2019-11-03T07:30:55.481Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,30 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/11/04/%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95/"/>
-    <id>http://yoursite.com/2019/11/04/学习算法/</id>
-    <published>2019-11-04T14:48:53.160Z</published>
-    <updated>2019-11-04T14:49:09.953Z</updated>
-    
-    <content type="html"><![CDATA[<p>前言<br>此文对我影响很大，分享出来给大家，愿大家早日成为大神。</p><p>1）不要完美主义！<br>我观察到的大多数同学犯得最最最最大的“错误”，就是在学习上“完美主义”。乃至后续很多其他的问题，在我看来都和这个问题是直接相关的。</p><p>举个最经典的例子，也是我经常举的例子，背英语单词（在这里我们先不聊背英语单词是不是好的英语学习方法，我们只看如果我们想要背英语单词的话，应该怎么背）。</p><p>我发现很多同学拿着红宝书，第一个list都没翻过去就放弃了。这是因为每天背完第一个 list 以后，第二天会发现：第一个list还是有很多单词没掌握，然后就继续背第一个 list。然后一周后，发现自己第一个 list 都搞不定，觉得英语好难，彻底放弃了。这就是“完美主义”：不把第一个 list “彻底”掌握不肯继续前进。这样是不对的。背了一个list，能多记一个词，都是进步。就算一个词都没记住，模糊有了印象，也是一种进步。</p><p>我们不应该过度着眼于我们还不够完美。</p><p>学习不是要么 0 分，要么 100 分的。80 分是收获；60 分是收获；20 分也是收获。有收获最重要。但是因为着眼于自己的不完美，最终放弃了，那就是彻底的 0 分了。</p><p>仔细想，这种“完美主义害死人”的例子特别多。我看到过很多同学，其实是在学习的路上，被自己的“完美主义”逼得“放弃了”——由于学习中有一点没有做好，遭受到了一点点挫折，最终就放弃了整个学习计划。每个人都一定要接受自己的不完美。想开一点：我们都不是小升初考了满分，才能上初中的；也不是中考考了满分，才能读高中的；更不是高考考了满分，才能念大学的；将来也不会是大学所有科目都是满分，才能出来工作。不完美其实是常态，根本不会影响我们学习更多更深入的内容。但是在自学过程中，很多同学却要求自己在自己制定的每一步计划中都达到“完美”，才进行下一步。最终结果，通常都是“放弃”：（</p><p>可能有的同学会跳出来反驳我：学习当然要认真啊！在这里，我必须强调，我所说的“不要完美主义”，和“学习认真”是不冲突的。</p><p>什么是“完美主义”，什么又是“囫囵吞枣”，这是一个“度”，每个人其实不一样。不要“完美主义”，不代表学习可以草率前行。</p><p>每个人都必须要找到适合自己的学习节奏。我的经验是：在一些情况下，问自己一句：是不是自己又犯“完美主义”的毛病了：）</p><p>2）不要过度“学习路径依赖”，学习要冲着自己的目标去。<br>什么意思？就是现在信息太发达了，对于大多数领域的知识，网上会有很多所谓的“学习路径”。我不是说这些学习路径没有用，但是不能“过度”依赖这些所谓的学习路径。</p><p>比如，很多同学想学机器学习，大多数学习路径都会告诉你，机器学习需要数学基础。于是，很多同学就转而学习数学去了，非要先把数学学好再去学机器学习。可是发现数学怎么也学不好（在这里，可能完美主义的毛病又犯了），而机器学习却一点儿都没学。最终放弃了机器学习，非常可惜。</p><p>其实，如果真正去接触机器学习，就会发现，至少在入门阶段，机器学习对数学的要求没有那么高。正因为如此，我一直建议：只要你在本科接触过高数，线数，概率这些科目的基础概念，想学机器学习，就去直接学习机器学习。学习过程中发现自己的数学不够用，再回头补数学。在这种情况下，数学学习得也更有目标性，其实效果更好。</p><p>类似这样的例子还有很多，很多同学想学习做 iOS app，就先去精通 Swift 语言，或者想做android app，就先去精通 java 语言。在我看来大可不必。以我的经验，只要你有一门编译型语言基础，大概看一下这些语言的基础语法，就可以直接上手 iOS 或者 android app 的开发了。先能做出一个最基本的 app，在这个过程中，就会意识到语言特性的意义，再回头深入研究语言也不迟。此时还能结合真实的开发任务去理解语言特性，比没有上手 app 开发，抽象地理解语言特性，有意义的多。</p><p>虽然我一再强调对预算法的学习，语言不重要，但还是有很多同学表示，要先把 C++ 学透，再回来把课程中的算法学好。这是完全没必要的。事实上，在我的这两门课程中，我看到的收获最大的同学，是那些能够把课程中的算法思想理解清楚，然后用自己熟悉的语言去实现的同学：）</p><p>依然是：不要“过度”学习路径依赖，什么叫“过度”，每个人的标准不一样。每个人都需要寻找自己的那个“度”。</p><p>3） 不要迷信权威的“好”教材。<br>不是说权威教材不好，而是每一本教材都有其预设的读者群，如果你不在这个预设的读者群的范畴里，教材再好也没用。最简单的例子：再好的高数教材，对于小学生来说，都是一堆废纸。</p><p>我经常举的一个例子是《算法导论》。我个人建议如果你是研究生或者博士生，已经有了一定的算法底子，才应该去阅读《算法导论》，我在我的课程的问答区，也谈过如何学习使用算法导论。</p><p>但是对大多数本科同学，尤其是第一次接触算法的同学，《算法导论》实在不是一个好的教材。</p><p>但很可惜，很多同学在学习中有上面的两个毛病，既过度路径依赖，别人说《算法导论》好，学习算法要走学《算法导论》这个路径，自己就不探索其他更适合自己的学习路径了，一头扎进《算法导论》里；同时还“完美主义”，对于《算法导论》的前几章，学习的事无巨细，但其实接触了很多在初学算法时没必要学习的内容。最后终于觉得自己学不下去了，放弃了对“算法”整个学科的学习。认为算法太难了。</p><p>诚然，算法不容易，但是，一上来就抱着《算法导论》啃，实在是选择了一条完全没必要的，更难的，甚至可能是根本走不通的路。对于一个领域的学习，了解市面上有什么好的教材是必要的，单也不能迷信权威教材。每个人必须要去探索学习如何寻找适合自己的学习材料。</p><p>4）不要看不起“薄薄”的“傻”教材，这些你看不起的学习材料，可能是你入门某个领域的关键。<br>很多同学问我最初学习算法的是什么教材，我告诉他们是这本教材：《算法设计与分析基础》 。在这里，我完全没有推荐这本教材的意思。事实上，现在我有点儿“鄙视”这本教材。因为我在学习它的过程中，发现这本教材有很多错误（帮助它纠正错误其实也提高了我的水平：）</p><p>当然，现在这本书的版本可能也和我当时学习的版本不同了，大部分错误应该已经纠正了。）但它确实是我的一本很重要的算法启蒙教材。</p><p>关键原因是，它够薄。</p><p>在大多数时候，如果有人问我教材推荐，基本上我的回答都是，如果是入门水平：随便找一本在京东，亚马逊，豆瓣上，评分不太差的“薄”的教材，就 ok 了。</p><p>在这里，关键字是够“薄”。</p><p>因为“薄”的教材能让你以最快的速度看完，对整个学科有一个全盘的认识：这个领域是做什么的？解决什么问题了？整体解决问题的思路是怎样？解决问题的方法大致是怎样划分的？一些最基础的方法具体是怎样的。这些在初学阶段是至关重要！是让你全盘把握整个领域脉络的。</p><p>虽然通过这么一本薄薄的教材，你的脉络把握肯定不够全面细致，但比没有强太多！我看过不少同学，一上来学习《算法导论》，关于复杂度分析的笔记做了好几页，然后就放弃了，可是连什么是动态规划都不知道。这样完全没有对“算法”这个领域有全面的认识，甚至可以说根本没有学过“算法”！</p><p>先用薄教材入门，再找“厚”教材，细细体会其中的细节，是我百试不爽的学习方法。</p><p>另外，在这里，我还要强调“入门教材”，很多教材虽然够“薄”，但不是“入门教材”。大家要注意。</p><p>5）不要迷信单一教材。<br>很多同学理解了要找“薄”教材入门的道理，却还是非要我推荐一本具体的“薄”教材，说实话，很多时候这让我有点儿哭笑不得。</p><p>因为我随便推荐一本，我确实不敢保证它是“最好的”，“最适合你的”，但是各个领域那么多教材，我又不可能都一一看过，一一比较过。</p><p>最最重要的是，我的学习经验告诉我，在大多数情况下，学习不是一本固定教材可以搞定的。</p><p>非要找到一本“最适合自己的”教材，然后就一头扎进去，其实是不科学的。我印象很深刻，我读本科的时候，那会儿申请了一个项目，要做一个网站（那时候服务端都用 ASP.NET ），我一口气从图书馆借了 10 本 ASP.NET 的教材，然后以一本最薄的书为主干去看，发现这本书介绍不清楚的概念，马上就从其他书里找答案。</p><p>通常不同的作者对同一个事物从不同的角度做解读，是能够帮助你更深刻的认识一个概念的。基本上一个月的时间，我就从一个完全的网站搭建小白，做出了这个项目需要的那个网站。</p><p>这个习惯我一直延续，研究生的时候，对什么领域感兴趣了，第一件事就是到图书馆，借十本相关书籍回来翻看。</p><p>但是，大多数同学喜欢仅仅扎进一本书里，一旦选定了自己的学习材料，就对其他材料充耳不闻，甚至是排斥的心理。这种做法，一方面又是“完美主义”的表现——非要把这本教材学透；另一方面，其实也是“犯懒”的表现，不愿意多翻翻，多看看，自己多比较比较，自己去寻找最适合自己的材料，一味地盲目相信所谓“大神”的推荐，殊不知，这些推荐，不一定是更适合自己的材料；更何况，还有很多大神，明明是靠不出名的“薄”教材入的门，但给别人做推荐的时候，就突然变成自己是算法奇才，自幼阅读《算法导论》而所成的神话了：）</p><p>6）实践<br>前面说了很多和教材选择相关的话题，但对于计算机领域的学习来说，教材的意义其实远远小于实践的意义。如果仅仅是看学习材料就是学习的话，那么慕课网的视频后期处理人员就是水平最高的工程师了。因为每段视频，他们都需要看一遍。但是，很显然，仅仅是看视频，是无法学到知识的。</p><p>对于计算机领域的学习来说，真正动手实践去编程是异常重要的。怎么夸大其中的作用都不过分。</p><p>这就好比学游泳，必须下水去游泳；或者学开车，必须亲自上路。</p><p>否则你说的再头头是道，一个小学生文化水平的人，只要他开过车，游过泳，都能在这两个领域瞬间秒杀你。</p><p>很多同学都说我的算法讲得好，其实，我一直认为，这其中的一个最简单的秘诀就是：我带领大家把大多数算法都非常细致的实现了一遍；或者对其中的应用进行了非常具体的实践。</p><p>反观大多数高校教育，对于算法或者机器学习这种一定程度偏理论的学习，通常非常不强调实践。最终的结果是学习者只是接受了很多抽象的概念，但对其中具体的实现细节，却是云里雾里。</p><p>我见过太多同学，都明白什么是 O(n^2) 复杂度，什么是 O(nlogn) 的复杂度，却问我对于 100 万的数据规模，为什么自己的选择排序运行起来就没反应了。答案很简单：O(n^2) 的复杂度太慢了，100 万的数据规模太大了，一般家用计算机转选择排序一时半会儿是转不完的。这些同学一定理解 O(n^2) 的算法比 O(nlogn) 的算法慢，却没有真正实践过，不知道这个差距到底是多少。</p><p>在我的课程中，经常遇到有些同学提出这样的问题：这个算法的某句话（或者某段逻辑），为什么要写成 A 的样子，而不是 B 的样子？这种问题其实很好，但我觉得解决方法也很简单，实际的去把算法改写成 B 的样子，实际的运行试试看，看会发生什么。如果发生了错误，仔细分析一下，为什么会有错误？如果没有错误，具体比较一下：A和B两种不同的写法，为什么都正确？又有什么区别？</p><p>真正的学习上的提高，就发生在这个过程中。</p><p>我当然可以告诉给同学们一个结果，但是自己亲自实践一遍，相比阅读我给出的一个答案，自己对其中问题理解的深刻程度，是完全不可比拟的。</p><p>7）debug非常非常重要。<br>我看到的另一类“经典”问题就是：老师，这个代码为什么错了，然后贴一大段代码。这种问题背后，依然是，透露着学习方法的不对劲：提问的同学懒得 debug 。</p><p>在计算机领域，debug 近乎和实践是一个意思。如果只是把材料上的代码“抄”一遍，这不叫实践，这叫抄代码。小学生也能做。但是“抄”一遍，不小心没抄对，发生了错误，然后自己一点一点调试，找到错误的根源，这叫真的实践。小学生不能做。（当然，我更推崇的是：自己理解了算法的逻辑，按照自己的理解，把算法写出来：）</p><p>不过很多同学不喜欢 debug，我当然理解。其实谁都不喜欢 debug ，但是，debug 才是最重要的能力。（通常在一个领域里，你最不喜欢做的事情，就是这个领域的核心竞争力：）是计算机领域异常重要的一项技能。我见过的所有计算机领域的“高手”，不管是在哪个细分领域，都无一例外，是个 debug 好手。我经常告诉大家，在实际工作中，其实 debug 的时间要占你真正编程时间的 70%。如果你做一个项目，根本不需要 debug ，要么是你的项目对你来说太简单了，要么是你根本没有接触到这个项目的核心。</p><p>debug 不仅仅是找到代码错误，解决错误的手段，其实更是一个重要的学习手段。通过 debug，看看自己写的程序执行逻辑，哪里和自己设想的不一致？再回头看自己哪里想错了，或者想漏了，分析一下自己为什么想错了，或者想漏了，等等等等，依然是，进步就是发生在这个过程的。</p><p>在我的算法课程中，很多同学对递归想不明白，我的建议都是：用一个小数据量，一步步跟踪程序，看看程序到底是怎么运行的。通常这么做，1 个小时的时间，就足以让你深刻理解递归程序的运转逻辑。可是，很多同学懒得花这1个小时的时间，最终的结果是，花了一个下午，对着代码生看，硬想，最终还是没有理解程序的运转逻辑。</p><p>8）量变到质变。<br>还有很多同学，对于算法的一些问题，会问：老师，你是怎么想到用这样的方法的？对于这类问题，我的回答一般都是：你见的还不够多。</p><p>不知道是不是受高中阶段学习的影响，有一些同学特别执着于就着一个单一的问题，寻找其中的“解题路径”。当然，我不是说这是完全错误的，但也有一个“度”。</p><p>我的经验是：与其把时间花在这里，不如去见更多问题。</p><p>比如动态规划，是算法学习的一个难点，很多同学在学会了背包问题的解法之后，总是执着于去追寻：是怎么想到这种状态定义的方法的。可能是我个人水平有限，我无法清楚地解释是如何想到这种状态定义的方法的。但是我的经验告诉我：再去看，去实践 100 个动态规划相关的问题，然后回头看背包问题，你会发现这种状态定义的方式非常自然。</p><p>仅仅对着一个问题思考，很多时候都是死胡同。你见识的还不够多，就不足以帮助你总结出更加“普遍”的问题解决的规律。当你见得足够多的时候，一切就都变得很自然，所谓的“量变到质变”。</p><p>不过，大多数同学在这个环节都会“犯懒”，企图通过一个问题就理解问题的本质，这其实和企图通过一本教材就精通一个领域的想法是一样的，是不现实的，不可能的。同时，这里又包含着学习过程中的“完美主义”的思想，遇到一个问题一定要把它想的无比透彻。但是我的经验告诉我：大多数问题，其实都是需要“回头看”的。随着你对一个领域理解的越深入，回头再去看那些曾经的问题，都会产生新的视角，对于很多曾经想不明白的问题也豁然开朗。这也是“进步”的根源。如果卡在一个问题上不前进，不给自己“回头看”的机会，甚至最后是放弃了，就什么也没有学会了。</p><p>所以，很多时候，你发现对一些问题“百思不得其解”，或许不是因为自己“笨”，而是因为“还不够努力”：）</p><p>9）最后，一定要相信时间的力量。<br>有一天，在我的一个算法课程群里，有个滴滴的后端大神发招聘，结果大家七嘴八舌的就议论开了，大致主题思想就是：自己什么时候能够成为滴滴的后端大神。这位滴滴的后端大神今年 32 岁；大多数议论的同学，其实连 22 岁都不到。我告诉他们，其实 10 年后，你们就是大神。</p><p>这其实很好理解，回想十年前，也就是 12 岁的你，和现在的你比较，是不是天壤之别？如果把你扔到一堆 12 岁的小朋友中间，22 岁的你是不是就是个大神？同理，32 岁的人，已经在业界摸爬滚打了那么多年，扔回到22岁的大学生中间，当然是大神：）</p><p>很多时候，所谓的“大神”并不神秘，很多时候，仔细观察，会发现时间有着不可磨灭的作用。只要你没有虚度时间，每天都在进步，通常结果都不会太差的。如果再加上一点点机遇，可能就不仅仅是大神。</p><p>愿大家也早日成为大神。</p><p>End<br>本文作者为 liuyubobobo，算法大牛，ACM亚洲区奖牌获得者，现居美国，创业者。bobo老师对我影响极大，我的算法入门和进阶都是靠他的指导，希望此篇文章对大家有帮助~</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;前言&lt;br&gt;此文对我影响很大，分享出来给大家，愿大家早日成为大神。&lt;/p&gt;
-&lt;p&gt;1）不要完美主义！&lt;br&gt;我观察到的大多数同学犯得最最最最大的“错误”，就是在学习上“完美主义”。乃至后续很多其他的问题，在我看来都和这个问题是直接相关的。&lt;/p&gt;
-&lt;p&gt;举个最经典的例子，也
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>面试题集</title>
@@ -87,29 +63,6 @@
   </entry>
   
   <entry>
-    <title>Java 基础(二)</title>
-    <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
-    <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-06T11:37:40.386Z</updated>
-    
-    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="a0f0ff">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      基础的数据类型
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Maven使用</title>
     <link href="http://yoursite.com/2019/10/16/Maven/"/>
     <id>http://yoursite.com/2019/10/16/Maven/</id>
@@ -129,6 +82,29 @@
     
     
       <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 基础(二)</title>
+    <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
+    <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-06T11:37:40.386Z</updated>
+    
+    <content type="html"><![CDATA[<center>    进制</center><h2 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h2><blockquote><p>位权</p></blockquote><blockquote><p>补码表示法</p></blockquote><blockquote><table><tr><td bgcolor="#a0f0ff">源码表示法</td></tr></table></blockquote><h3 id="十进制与二进制的转换"><a href="#十进制与二进制的转换" class="headerlink" title="十进制与二进制的转换"></a>十进制与二进制的转换</h3><h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><blockquote><p>位运算包括移位运算和逻辑运算</p></blockquote><h3 id="移位运算"><a href="#移位运算" class="headerlink" title="移位运算"></a>移位运算</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">int</span> a = <span class="number">4</span>; <span class="comment">//二进制为 100</span></span><br><span class="line">                a = a &gt;&gt; <span class="number">2</span>; <span class="comment">// 二进制为 001</span></span><br><span class="line">                System.out.println(a);</span><br><span class="line">                a= a &lt;&lt; <span class="number">3</span>; <span class="comment">// 二进制为1000</span></span><br><span class="line">       &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>程序输出</p><blockquote><p>1</p><p>8</p><blockquote><p>Process finished with exit code 0</p></blockquote></blockquote></blockquote><h3 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h3><table><thead><tr><th align="center">逻辑运算</th><th align="center">运算符</th><th align="center">规则</th></tr></thead><tbody><tr><td align="center">按位与</td><td align="center">&amp;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位或</td><td align="center">&#124;</td><td align="center">两位都为1才为1</td></tr><tr><td align="center">按位取反</td><td align="center">~</td><td align="center">1变为0,0变为1</td></tr><tr><td align="center">按位异或</td><td align="center">^</td><td align="center">相异为真，相同为假</td></tr></tbody></table><table><tr><td bgcolor="a0f0ff">    如果在MarkDown输入特殊字符可以使用字符对应的ASCII值    例如 | 对应的ASCII为124;</td></tr></table><h2 id="字符的编码与乱码"><a href="#字符的编码与乱码" class="headerlink" title="字符的编码与乱码"></a>字符的编码与乱码</h2><h3 id="常用的非Unicode编码"><a href="#常用的非Unicode编码" class="headerlink" title="常用的非Unicode编码"></a>常用的非Unicode编码</h3><h4 id="1-ASCII编码"><a href="#1-ASCII编码" class="headerlink" title="1.ASCII编码"></a>1.ASCII编码</h4><blockquote><p>American Standard Code for Information Interchange(美国信息互换标准代码)</p><blockquote><p>由一个byte构成，0 ~ 127,127转换为二进制数为最大的7位二进制数。</p></blockquote></blockquote><h4 id="2-ISO-8859-1-Latin-1"><a href="#2-ISO-8859-1-Latin-1" class="headerlink" title="2.ISO 8859-1(Latin-1)"></a>2.ISO 8859-1(Latin-1)</h4><blockquote><p>128 ~ 159 表示控制字符</p><p>160 ~ 255 表示西欧字符 </p></blockquote><h4 id="3-Windows-1252"><a href="#3-Windows-1252" class="headerlink" title="3.Windows-1252"></a>3.Windows-1252</h4><blockquote><p>用于替换ISO 8859-1 因为出现较早没有欧元等符号，二者的区别主要在于128 ~ 159</p></blockquote><h4 id="4-GB2312"><a href="#4-GB2312" class="headerlink" title="4.GB2312"></a>4.GB2312</h4><blockquote><p>主要是针对简体中文常见字符，包括7000个汉字和一些罕用词和繁体字。</p></blockquote><h4 id="5-GBK"><a href="#5-GBK" class="headerlink" title="5.GBK"></a>5.GBK</h4><blockquote><p>GBK是建立在GB2312的基础上，向下兼容了GB2312，GBK增加了14000多个汉字。</p></blockquote><h4 id="6-GB18030"><a href="#6-GB18030" class="headerlink" title="6.GB18030"></a>6.GB18030</h4><blockquote><p>向下兼容了GBK，共计76000多个字符，包括了很多少数民族字符，以及中日韩统一字符。</p></blockquote><h4 id="7-Big5"><a href="#7-Big5" class="headerlink" title="7.Big5"></a>7.Big5</h4><blockquote><p>是针对繁体中文的，港台地区使用。</p></blockquote><h3 id="Unicode编码"><a href="#Unicode编码" class="headerlink" title="Unicode编码"></a>Unicode编码</h3><h4 id="UTF-32"><a href="#UTF-32" class="headerlink" title="UTF-32"></a>UTF-32</h4><blockquote><p>每个字符用4个字节表示，非常浪费空间</p></blockquote><h4 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h4><blockquote><p>使用变长字节表示</p></blockquote><h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><blockquote><p>使用变长字节表示，每个字节使用的字节个数与其Unicode编号的大小有关，编号小的使用的字节就少，编号大的使用的字节就多，使用的字节为1 ~ 4字节不等。</p></blockquote><table><tr><td bgcolor="#a0f0ff">    编码转换改变了字符的二进制内容，但并没有改变字符看上去的样子。</td></tr></table><h2 id="编码错误的原因"><a href="#编码错误的原因" class="headerlink" title="编码错误的原因"></a>编码错误的原因</h2><h3 id="1-解析错误"><a href="#1-解析错误" class="headerlink" title="1.解析错误"></a>1.解析错误</h3><h3 id="2-错误的解析和编码转换"><a href="#2-错误的解析和编码转换" class="headerlink" title="2.错误的解析和编码转换"></a>2.错误的解析和编码转换</h3><h3 id="char的真正含义"><a href="#char的真正含义" class="headerlink" title="char的真正含义"></a>char的真正含义</h3><blockquote><p>char本质是一个固定占用两个字节的无符号正整数，</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
@@ -272,13 +248,13 @@
   </entry>
   
   <entry>
-    <title>程序员准则</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%87%86%E5%88%99/"/>
-    <id>http://yoursite.com/2019/09/27/程序员准则/</id>
+    <title>Vim有哪几种模式？</title>
+    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-25T12:22:10.617Z</updated>
+    <updated>2019-10-04T11:36:26.999Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><p>我不会产生有害的代码。</p></li><li><p>我制作的代码永远是我最好的作品。我不会故意允许在行为或结构上有缺陷的代码。</p></li><li><p>每次发布时，我都会生成一个快速、可靠、可重复的证据，证明代码的每个元素都应该正常工作。</p></li><li><p>我将经常发布小版本，这样我就不会妨碍其他人的进展。</p></li><li><p>我会抓住每一个机会，无畏地，不懈地改进我的代码。我永远不会损害它们。</p></li><li><p>我将尽我所能保持自己和他人的生产力。我不会做任何降低生产力的事情。</p></li><li><p>我将继续确保支持其他人的工作，并且他们也可以支持我的工作。</p></li><li><p>我将对幅度和精度做出诚实的估计。我不会作出做不到的诺言。</p></li><li><p>我将永远不会停止学习和改进我的手艺。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
     
     <summary type="html">
     
@@ -287,10 +263,33 @@
     </summary>
     
     
-      <category term="程序员那些事" scheme="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
     
     
-      <category term="准则" scheme="http://yoursite.com/tags/%E5%87%86%E5%88%99/"/>
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>投入</title>
+    <link href="http://yoursite.com/2019/09/27/%E6%8A%95%E5%85%A5/"/>
+    <id>http://yoursite.com/2019/09/27/投入/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-04T10:47:25.004Z</updated>
+    
+    <content type="html"><![CDATA[<p>享受并且投入</p>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="益言" scheme="http://yoursite.com/categories/%E7%9B%8A%E8%A8%80/"/>
+    
+    
+      <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
     
   </entry>
   
@@ -318,36 +317,36 @@
   </entry>
   
   <entry>
-    <title>初识VIM</title>
-    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
-    <id>http://yoursite.com/2019/09/27/初识vim/</id>
+    <title>爱</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%88%B1/"/>
+    <id>http://yoursite.com/2019/09/27/爱/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:31:07.899Z</updated>
+    <updated>2019-11-04T08:06:46.688Z</updated>
     
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!</p>]]></content>
     
     <summary type="html">
     
-      相信习惯的力量
+      想对你讲的一些话
     
     </summary>
     
     
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+      <category term="每日晚安" scheme="http://yoursite.com/categories/%E6%AF%8F%E6%97%A5%E6%99%9A%E5%AE%89/"/>
     
     
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+      <category term="爱" scheme="http://yoursite.com/tags/%E7%88%B1/"/>
     
   </entry>
   
   <entry>
-    <title>编程基础知识积累</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
-    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
+    <title>程序员准则</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%A8%8B%E5%BA%8F%E5%91%98%E5%87%86%E5%88%99/"/>
+    <id>http://yoursite.com/2019/09/27/程序员准则/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:45:56.608Z</updated>
+    <updated>2019-10-25T12:22:10.617Z</updated>
     
-    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
+    <content type="html"><![CDATA[<ul><li><p>我不会产生有害的代码。</p></li><li><p>我制作的代码永远是我最好的作品。我不会故意允许在行为或结构上有缺陷的代码。</p></li><li><p>每次发布时，我都会生成一个快速、可靠、可重复的证据，证明代码的每个元素都应该正常工作。</p></li><li><p>我将经常发布小版本，这样我就不会妨碍其他人的进展。</p></li><li><p>我会抓住每一个机会，无畏地，不懈地改进我的代码。我永远不会损害它们。</p></li><li><p>我将尽我所能保持自己和他人的生产力。我不会做任何降低生产力的事情。</p></li><li><p>我将继续确保支持其他人的工作，并且他们也可以支持我的工作。</p></li><li><p>我将对幅度和精度做出诚实的估计。我不会作出做不到的诺言。</p></li><li><p>我将永远不会停止学习和改进我的手艺。</p></li></ul>]]></content>
     
     <summary type="html">
     
@@ -356,33 +355,10 @@
     </summary>
     
     
-      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+      <category term="程序员那些事" scheme="http://yoursite.com/categories/%E7%A8%8B%E5%BA%8F%E5%91%98%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
     
     
-      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序</title>
-    <link href="http://yoursite.com/2019/09/27/%E6%8E%92%E5%BA%8F/"/>
-    <id>http://yoursite.com/2019/09/27/排序/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-11-17T13:35:22.824Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">7</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = bubbleSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(<span class="string">"第"</span>+i+<span class="string">"元素"</span> +<span class="string">":"</span>+ temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;array.length-<span class="number">1</span>-i ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (array[j + <span class="number">1</span>] &lt; array[j]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = array[j + <span class="number">1</span>];</span><br><span class="line">                    array[j + <span class="number">1</span>] = array[j];</span><br><span class="line">                    array[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp =  selectionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; temp.length; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] selectionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length ==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">          <span class="keyword">int</span> minIndex = i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; array.length ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(array[j] &lt; array[minIndex])&#123;</span><br><span class="line">                    minIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> temp = array[minIndex];</span><br><span class="line">            array[minIndex]  = array[i];</span><br><span class="line">            array[i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertionSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = insertionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] insertionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> current;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length -<span class="number">1</span>; i++) &#123;</span><br><span class="line">            current = array[i + <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">int</span> preIndex = i;</span><br><span class="line">            <span class="keyword">while</span> (preIndex &gt;= <span class="number">0</span> &amp;&amp; current &lt; array[preIndex])&#123;</span><br><span class="line">                array[preIndex + <span class="number">1</span> ] = array[preIndex];</span><br><span class="line">                preIndex--;</span><br><span class="line">            &#125;</span><br><span class="line">            array[preIndex + <span class="number">1</span>] = current;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+      <category term="准则" scheme="http://yoursite.com/tags/%E5%87%86%E5%88%99/"/>
     
   </entry>
   
@@ -410,13 +386,13 @@
   </entry>
   
   <entry>
-    <title>Java 基础(三)</title>
-    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%89)/"/>
-    <id>http://yoursite.com/2019/09/27/Java 基础(三)/</id>
+    <title>编程基础知识积累</title>
+    <link href="http://yoursite.com/2019/09/27/%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    <id>http://yoursite.com/2019/09/27/编程基础知识积累/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-11-06T15:02:08.963Z</updated>
+    <updated>2019-10-04T10:45:56.608Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="遍历数组的几种方式"><a href="#遍历数组的几种方式" class="headerlink" title="遍历数组的几种方式"></a>遍历数组的几种方式</h1><ul><li><p>方法一</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String[] str  = &#123;<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"157****8935"</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ;i &lt; str.length; i++ ) &#123;</span><br><span class="line">    System.out.println(str[i]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>方法二</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    String[] str  = &#123;<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"157****8935"</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (String number : str ) &#123;</span><br><span class="line">      System.out.println(number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<center>    编程基础知识积累</center><h1 id="POJO-与-EJB"><a href="#POJO-与-EJB" class="headerlink" title="POJO 与 EJB"></a>POJO 与 EJB</h1><h2 id="POJO是什么？"><a href="#POJO是什么？" class="headerlink" title="POJO是什么？"></a>POJO是什么？</h2><p> POJO（Plain Ordinary Java Object）简单的Java对象。</p><h2 id="EJB-是什么？"><a href="#EJB-是什么？" class="headerlink" title="EJB 是什么？"></a>EJB 是什么？</h2><p> 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。</p>]]></content>
     
     <summary type="html">
     
@@ -425,21 +401,21 @@
     </summary>
     
     
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
     
   </entry>
   
   <entry>
-    <title>Vim有哪几种模式？</title>
-    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
+    <title>初识VIM</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
+    <id>http://yoursite.com/2019/09/27/初识vim/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T11:36:26.999Z</updated>
+    <updated>2019-10-04T11:31:07.899Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -475,6 +451,29 @@
     
     
       <category term="美剧" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%89%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java 基础（一）</title>
+    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/09/27/Java 基础(一)/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-20T09:46:01.124Z</updated>
+    
+    <content type="html"><![CDATA[<center>    Java 基础（一）</center><h2 id="Java的基本数据类型"><a href="#Java的基本数据类型" class="headerlink" title="Java的基本数据类型"></a>Java的基本数据类型</h2><table><thead><tr><th align="center">类型名</th><th align="center">取值范围</th><th align="center">占用内存空间字节</th></tr></thead><tbody><tr><td align="center">byte</td><td align="center">-2^7~2^(7-1)</td><td align="center">1</td></tr><tr><td align="center">short</td><td align="center">-2^15~2^(15-1)</td><td align="center">2</td></tr><tr><td align="center">int</td><td align="center">-2^31~2^(31-1)</td><td align="center">4</td></tr><tr><td align="center">long</td><td align="center">-2^63~2^(63-1)</td><td align="center">8</td></tr><tr><td align="center">float</td><td align="center">1.4E-45 ~ 3.4E+38<br>-3.4E+38 ~ -1.4E-45</td><td align="center">4</td></tr><tr><td align="center">double</td><td align="center">4.9E-324 ~ 1.7E+308<br>-1.7E+308 ~ -4.9E-324</td><td align="center">8</td></tr><tr><td align="center">boolean</td><td align="center">ture false</td><td align="center">具体情况而定</td></tr><tr><td align="center">char</td><td align="center"></td><td align="center">2</td></tr></tbody></table><h2 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h2><blockquote><p>变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。</p></blockquote><h2 id="数组类型"><a href="#数组类型" class="headerlink" title="数组类型"></a>数组类型</h2><blockquote><p>基本类型的数组有三种赋值方式</p><ul><li>int[] arr = {1,2,3};</li><li>int[] arr = new int[]{1,2,3};</li><li>int[] arr = new int[3];<br>arr[0]=1; arr[1]=2;arr[2]=3;</li></ul></blockquote><blockquote><p>数组类型有两块内存空间</p><ul><li>一块是存储数组内容本身；</li><li>另一块是存储数组内容的位置；<blockquote><p>数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈；</p><blockquote><p>栈：</p><p>堆：</p></blockquote></blockquote></li></ul></blockquote><h2 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h2><table><thead><tr><th align="center">运算符</th><th align="center">符号</th></tr></thead><tbody><tr><td align="center">加</td><td align="center">+</td></tr><tr><td align="center">减</td><td align="center">-</td></tr><tr><td align="center">乘</td><td align="center">*</td></tr><tr><td align="center">除</td><td align="center">/</td></tr><tr><td align="center">取模</td><td align="center">%</td></tr></tbody></table><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="函数的组成"><a href="#函数的组成" class="headerlink" title="函数的组成"></a>函数的组成</h3><ul><li>函数名字</li><li>参数</li><li>操作</li><li>返回值</li></ul><h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main 函数"></a>main 函数</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">JavaTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>main函数表示程序的入口<br>同一个类中函数名相同但参数不同的现象，一般称为函数重载。</p></blockquote><h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h3><blockquote><p>调用自己的函数称为递归函数。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
     
   </entry>
   
