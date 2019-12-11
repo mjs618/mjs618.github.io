@@ -14,23 +14,12 @@
   <entry>
     <title><![CDATA[情话]]></title>
     <url>%2F2019%2F10%2F20%2F%E6%83%85%E8%AF%9D%2F</url>
-    <content type="text"><![CDATA[情话 20191020 我想你一定很忙，所以你只要看前三个字就好了。 20191023 林深时见鹿，海蓝时见鲸，梦醒时见你。 20191024 月亮很亮，亮也没用，没用也亮。我喜欢你，喜欢也没用，没用也喜欢。 20191025 直到今天我才知道，我的人生之所以漂泊就是在向你漂流而去。 20191030 不乱于心，不困于情，不畏将来，不念过往，如此，安好。 20191031 这个世界乱糟糟的 而你干干净净 可以悬在我的心上 作太阳和月亮. 20191101 我希望 我是你想藏在口袋里的欢喜 20191106 我喜欢你，不需要太多言语，只想和你静静地呆在一起，让你出现在我的眼睛里。 20191107 旅行时最幸福的可能是，你在拍景，有人在拍你。。 20191112 风也吹过，雨也来过，在阴冷的天气抱着你躲进被窝，耳鬓厮磨。雪也下过，晴也停过，在暖和的日子牵着你漫步悠悠，安然喜乐。一年四季想陪你度过，世间琐事想与你做，此生也只想同你尝尽烟火。 20191113 但行好事，莫问前程。 20191115 我们各自努力，你抽空爱我。 20191115 谢谢你， 在这世界的角落 找到了我。 20191120 总有人笨拙的想把所有温柔都给你. 20191121 浅喜似苍狗，深爱如长风。 20191122 见卿安好，吾自安心。 20191128 十七日尾，灯火万家长不灭。想你是三分泉水七分月，把青山浩渺看遍，你独天下奇。 20191129 最爱在晚饭过后，身边坐着我爱的人，他看书或看电视，我坐在一盏台灯下，身上堆着布料，两人有一搭没一搭地说着闲话，将那份对家庭的情爱，一针一针细细地透过指尖，缝进不说一句话的帘子里去。然后有一日，上班的回来了，窗口飘出了帘子等他–家就成了。]]></content>
+    <content type="text"><![CDATA[情话 20191020 我想你一定很忙，所以你只要看前三个字就好了。 20191023 林深时见鹿，海蓝时见鲸，梦醒时见你。 20191024 月亮很亮，亮也没用，没用也亮。我喜欢你，喜欢也没用，没用也喜欢。 20191025 直到今天我才知道，我的人生之所以漂泊就是在向你漂流而去。 20191030 不乱于心，不困于情，不畏将来，不念过往，如此，安好。 20191031 这个世界乱糟糟的 而你干干净净 可以悬在我的心上 作太阳和月亮. 20191101 我希望 我是你想藏在口袋里的欢喜 20191106 我喜欢你，不需要太多言语，只想和你静静地呆在一起，让你出现在我的眼睛里。 20191107 旅行时最幸福的可能是，你在拍景，有人在拍你。。 20191112 风也吹过，雨也来过，在阴冷的天气抱着你躲进被窝，耳鬓厮磨。雪也下过，晴也停过，在暖和的日子牵着你漫步悠悠，安然喜乐。一年四季想陪你度过，世间琐事想与你做，此生也只想同你尝尽烟火。 20191113 但行好事，莫问前程。 20191115 我们各自努力，你抽空爱我。 20191115 谢谢你， 在这世界的角落 找到了我。 20191120 总有人笨拙的想把所有温柔都给你. 20191121 浅喜似苍狗，深爱如长风。 20191122 见卿安好，吾自安心。 20191128 十七日尾，灯火万家长不灭。想你是三分泉水七分月，把青山浩渺看遍，你独天下奇。 20191129 最爱在晚饭过后，身边坐着我爱的人，他看书或看电视，我坐在一盏台灯下，身上堆着布料，两人有一搭没一搭地说着闲话，将那份对家庭的情爱，一针一针细细地透过指尖，缝进不说一句话的帘子里去。然后有一日，上班的回来了，窗口飘出了帘子等他–家就成了。 20191205 我来不及认真地年轻，待明白过来时，只能选择认真地老去。 20191206 当我对世事厌倦的时候，我就会想到你。想到你在世界的某个地方生活着、生存着，我就愿意忍受一切。你的存在对我很重要。 20191207 在这个庞然而麻痹的时代，最大的罪名是谋杀浪漫。 20191208 鲜衣 怒马 功名 意中人 我鞭长莫及 也马不停蹄]]></content>
       <categories>
         <category>情话</category>
       </categories>
       <tags>
         <tag>情话</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Maven使用]]></title>
-    <url>%2F2019%2F10%2F16%2FMaven%2F</url>
-    <content type="text"><![CDATA[Maven 1. Maven 的配置 环境变量配置 MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3 PATH 配置 %MAVEN_HOME%\bin 2.Maven的生命周期 Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。 1.clean生命周期：清理项目，包含三个phase。 pre-clean：执行清理前需要完成的工作 clean：清理上一次构建生成的文件 post-clean：执行清理后需要完成的工作 2.default生命周期：构建项目，重要的phase如下。 validate：验证工程是否正确，所有需要的资源是否可用。 compile：编译项目的源代码。 test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。 Package：把已编译的代码打包成可发布的格式，比如jar。 integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。 verify：运行所有检查，验证包是否有效且达到质量标准。 install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。 Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。 3.site生命周期：建立和发布项目站点，phase如下 pre-site：生成项目站点之前需要完成的工作 site：生成项目站点文档 post-site：生成项目站点之后需要完成的工作 site-deploy：将项目站点发布到服务器 3. 配置Maven仓库3.1 本地仓库配置到指定路径 在maven解压文件中，conf目录中修改settings.xml文件。可以添加新的仓库路径D:Programming\maven-3.5.2\repository3.2 配置中央仓库指定阿里的 123456&lt;mirror&gt; &lt;id&gt;nexus-aliyun&lt;/id&gt; &lt;name&gt;nexus-aliyun&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt; 4.配置Idea使用自己安装的Maven 5. Maven如何将自己下载的jar包安装到本地仓库 示例： 想要添加Oracle驱动包时，Maven的pom.xml总是报Missing artifact com.oracle:ojdbc14:jar:10.2.0.1.0错。 解决办法： oracle官网 下载你所需要的oraclejar包 将jar放在盘符下 cmd 命令下运行 mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=F:ojdbc14.jar -Dfile 是你的jar包的路径 pom.xml文件中输入 12345&lt;dependency&gt; &lt;groupId&gt;com.oracle&lt;/groupId&gt; &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt; &lt;version&gt;10.2.0.1.0&lt;/version&gt;&lt;/dependency&gt; 6. Maven官网 Maven官网]]></content>
-      <categories>
-        <category>Maven</category>
-      </categories>
-      <tags>
-        <tag>Maven</tag>
       </tags>
   </entry>
   <entry>
@@ -45,14 +34,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[类的基础]]></title>
-    <url>%2F2019%2F10%2F16%2F%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
-    <content type="text"><![CDATA[面向对象 类的基本概念 类是函数的容器，但类更多表示的是自定义的数据类型。 抽象类 Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。 ###抽象方法的特点 只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现） 抽象方法用abstract关键字来修饰。 抽象方法代表一种不确定的操作或行为。（由子类去具体实现） 抽象方法不能被调用。 函数容器 不在同一包下，无法访问父类默认的构造方法 类方法 static表示类方法 类变量 就是静态变量 声明类变量通过类名直接调用 实例方法 通过实例或者对象调用 实例方法是表示具体的实例可以进行的操作。实例实例变量表示具体的实例所具有的属性有一种对象只叫对象，有一种对象叫实例化对象（实例）。 对象]]></content>
+    <title><![CDATA[Maven使用]]></title>
+    <url>%2F2019%2F10%2F16%2FMaven%2F</url>
+    <content type="text"><![CDATA[Maven 1. Maven 的配置 环境变量配置 MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3 PATH 配置 %MAVEN_HOME%\bin 2.Maven的生命周期 Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。 1.clean生命周期：清理项目，包含三个phase。 pre-clean：执行清理前需要完成的工作 clean：清理上一次构建生成的文件 post-clean：执行清理后需要完成的工作 2.default生命周期：构建项目，重要的phase如下。 validate：验证工程是否正确，所有需要的资源是否可用。 compile：编译项目的源代码。 test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。 Package：把已编译的代码打包成可发布的格式，比如jar。 integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。 verify：运行所有检查，验证包是否有效且达到质量标准。 install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。 Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。 3.site生命周期：建立和发布项目站点，phase如下 pre-site：生成项目站点之前需要完成的工作 site：生成项目站点文档 post-site：生成项目站点之后需要完成的工作 site-deploy：将项目站点发布到服务器 3. 配置Maven仓库3.1 本地仓库配置到指定路径 在maven解压文件中，conf目录中修改settings.xml文件。可以添加新的仓库路径D:Programming\maven-3.5.2\repository3.2 配置中央仓库指定阿里的 123456&lt;mirror&gt; &lt;id&gt;nexus-aliyun&lt;/id&gt; &lt;name&gt;nexus-aliyun&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt; 4.配置Idea使用自己安装的Maven 5. Maven如何将自己下载的jar包安装到本地仓库 示例： 想要添加Oracle驱动包时，Maven的pom.xml总是报Missing artifact com.oracle:ojdbc14:jar:10.2.0.1.0错。 解决办法： oracle官网 下载你所需要的oraclejar包 将jar放在盘符下 cmd 命令下运行 mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=F:ojdbc14.jar -Dfile 是你的jar包的路径 pom.xml文件中输入 12345&lt;dependency&gt; &lt;groupId&gt;com.oracle&lt;/groupId&gt; &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt; &lt;version&gt;10.2.0.1.0&lt;/version&gt;&lt;/dependency&gt; 6. Maven官网 Maven官网]]></content>
       <categories>
-        <category>Java</category>
+        <category>Maven</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>Maven</tag>
       </tags>
   </entry>
   <entry>
@@ -64,6 +53,17 @@
       </categories>
       <tags>
         <tag>网站清单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[类的基础]]></title>
+    <url>%2F2019%2F10%2F16%2F%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[面向对象 类的基本概念 类是函数的容器，但类更多表示的是自定义的数据类型。 抽象类 Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。 ###抽象方法的特点 只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现） 抽象方法用abstract关键字来修饰。 抽象方法代表一种不确定的操作或行为。（由子类去具体实现） 抽象方法不能被调用。 函数容器 不在同一包下，无法访问父类默认的构造方法 类方法 static表示类方法 类变量 就是静态变量 声明类变量通过类名直接调用 实例方法 通过实例或者对象调用 实例方法是表示具体的实例可以进行的操作。实例实例变量表示具体的实例所具有的属性有一种对象只叫对象，有一种对象叫实例化对象（实例）。 对象]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -111,6 +111,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java 基础（一）]]></title>
+    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[Java 基础（一） Java的基本数据类型 类型名 取值范围 占用内存空间字节 byte -2^7~2^(7-1) 1 short -2^15~2^(15-1) 2 int -2^31~2^(31-1) 4 long -2^63~2^(63-1) 8 float 1.4E-45 ~ 3.4E+38-3.4E+38 ~ -1.4E-45 4 double 4.9E-324 ~ 1.7E+308-1.7E+308 ~ -4.9E-324 8 boolean ture false 具体情况而定 char 2 变量 变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。 数组类型 基本类型的数组有三种赋值方式 int[] arr = {1,2,3}; int[] arr = new int[]{1,2,3}; int[] arr = new int[3];arr[0]=1; arr[1]=2;arr[2]=3; 数组类型有两块内存空间 一块是存储数组内容本身； 另一块是存储数组内容的位置； 数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈； 栈： 堆： 基本运算 运算符 符号 加 + 减 - 乘 * 除 / 取模 % 函数函数的组成 函数名字 参数 操作 返回值 main 函数12345class JavaTest &#123; public static void main(String[] args)&#123; &#125;&#125; main函数表示程序的入口同一个类中函数名相同但参数不同的现象，一般称为函数重载。 递归函数 调用自己的函数称为递归函数。]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Vim有哪几种模式？]]></title>
     <url>%2F2019%2F09%2F27%2FVIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[Vim有哪几种模式？模式一：normal模式作用主要是用来浏览，输入各种和在文档中移动。 模式二：编辑模式用于对文件的编辑：常用的插入命令：a在光标位置后编辑,i在光标位置前编辑,o在下一行插入;A在光标所在行的末尾编辑,I在光标所在行的行头编辑,O在光标所处的上一行编辑。 模式三：命令模式进入编辑模式之前，可以在输入：set nu 为文档设置行号。原始文档设置行号后 wq 写入退出 vs 竖分屏 sp 横分屏 % s/原文内容/替换的内容/ g 模式四：可视化模式作用主要是进行块状选择文本。 有三种方式进入到visual模式 1.Normal模式使用v进入Visual模式 使用V选中行 使用Ctrl + v ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。]]></content>
@@ -119,17 +130,6 @@
       </categories>
       <tags>
         <tag>VIM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[投入]]></title>
-    <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
-    <content type="text"><![CDATA[享受并且投入]]></content>
-      <categories>
-        <category>益言</category>
-      </categories>
-      <tags>
-        <tag>益言</tag>
       </tags>
   </entry>
   <entry>
@@ -144,14 +144,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[爱]]></title>
-    <url>%2F2019%2F09%2F27%2F%E7%88%B1%2F</url>
-    <content type="text"><![CDATA[爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!]]></content>
+    <title><![CDATA[Java 基础(三)]]></title>
+    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%89)%2F</url>
+    <content type="text"><![CDATA[遍历数组的几种方式 方法一 1234567public static void main(String[] args) &#123; String[] str = &#123;"185****2662","150****1342","185****2662","150****1342","157****8935"&#125;; for (int i = 0 ;i &lt; str.length; i++ ) &#123; System.out.println(str[i]); &#125;&#125; 方法二 123456public static void main(String[] args) &#123; String[] str = &#123;"185****2662","150****1342","185****2662","150****1342","157****8935"&#125;; for (String number : str ) &#123; System.out.println(number); &#125;&#125;]]></content>
       <categories>
-        <category>每日晚安</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>爱</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -166,9 +166,31 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MarkDown]]></title>
-    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
-    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
+    <title><![CDATA[爱]]></title>
+    <url>%2F2019%2F09%2F27%2F%E7%88%B1%2F</url>
+    <content type="text"><![CDATA[爱让我们相见，爱让我们相恋，爱让我们相爱，爱让我们牵挂，让我在有生之年把我全部的爱都送给你!]]></content>
+      <categories>
+        <category>每日晚安</category>
+      </categories>
+      <tags>
+        <tag>爱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[美剧]]></title>
+    <url>%2F2019%2F09%2F27%2F%E7%BE%8E%E5%89%A7%E6%8E%A8%E8%8D%90%2F</url>
+    <content type="text"><![CDATA[Modern Family How I Met Your Mother The Ellen Show Conan James Corden The Graham Norton Show Brooklyn 99 Scrubs Silicon Valley Heabag]]></content>
+      <categories>
+        <category>英语学习</category>
+      </categories>
+      <tags>
+        <tag>美剧</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[编程基础知识积累]]></title>
+    <url>%2F2019%2F09%2F27%2F%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF%2F</url>
+    <content type="text"><![CDATA[编程基础知识积累 POJO 与 EJBPOJO是什么？ POJO（Plain Ordinary Java Object）简单的Java对象。 EJB 是什么？ 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。]]></content>
       <categories>
         <category>编程习惯</category>
       </categories>
@@ -177,9 +199,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[编程基础知识积累]]></title>
-    <url>%2F2019%2F09%2F27%2F%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF%2F</url>
-    <content type="text"><![CDATA[编程基础知识积累 POJO 与 EJBPOJO是什么？ POJO（Plain Ordinary Java Object）简单的Java对象。 EJB 是什么？ 企业级JavaBean（Enterprise JavaBean, EJB）是一个用来构筑企业级应用的服务器端可被管理组件。]]></content>
+    <title><![CDATA[MarkDown]]></title>
+    <url>%2F2019%2F09%2F27%2Fmarkdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97%2F</url>
+    <content type="text"><![CDATA[MarkDown学习指南 # MarkDown 标题 使用=和-标记一级和二级标题 一级标题我展示的二级标题我也是一级标题我也是二级标题MarkDown 字体斜体文本 斜体文本 粗体文本 粗体文本 粗斜体文本 粗斜体文本 MarkDown 分割线 MarkDown 删除线~ 我删除了 ~ MarkDown 脚注无序列表 使用(“*”,”-“,”+”) 第一项 第二项 第三项 有序列表 第一项： 第一项的第一个元素 第一项的第二个元素 第二项： 第二项的第一个元素 第二项的第二个元素 Markdown 区块Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：简单区块 区块内容一区块内容二区块内容三 嵌套区块&gt; 最外层区块 &gt; &gt; 第一层区块 &gt; &gt; &gt; 第二层区块区块和列表 嵌套使用区块内嵌套列表&gt; 区块 &gt; 1. 第一项 &gt; 2. 第二项列表内嵌套区块 第一项 区块内容一区块内容二 第二项 区块内容一区块内容二 Markdown 代码12System.out.println("我是代码") Markdown 链接链接方式一我是一个链接代码老司机 链接方式二https://maojingsong.com 高级链接 链接也可以用变量来代替，文档末尾附带变量地址：这是一个高级链接代码老司机 Markdown 图片 Markdown 表格 天气 日期 晴天 20191004 阴天 20191005 天气 日期 任务 晴天 20191004 学习 阴天 20191005 学习]]></content>
       <categories>
         <category>编程习惯</category>
       </categories>
@@ -199,36 +221,25 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[美剧]]></title>
-    <url>%2F2019%2F09%2F27%2F%E7%BE%8E%E5%89%A7%E6%8E%A8%E8%8D%90%2F</url>
-    <content type="text"><![CDATA[Modern Family How I Met Your Mother The Ellen Show Conan James Corden The Graham Norton Show Brooklyn 99 Scrubs Silicon Valley Heabag]]></content>
+    <title><![CDATA[实用小技巧]]></title>
+    <url>%2F2019%2F09%2F27%2F%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[知乎中如果遇到禁止转载的文章需要复制文章内容，在Google浏览器下可以使用 F12 + F1 在Debugger 选项中勾选 Disable JavaScript]]></content>
       <categories>
-        <category>英语学习</category>
+        <category>实用小技巧</category>
       </categories>
       <tags>
-        <tag>美剧</tag>
+        <tag>实用小技巧</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java 基础（一）]]></title>
-    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%80)%2F</url>
-    <content type="text"><![CDATA[Java 基础（一） Java的基本数据类型 类型名 取值范围 占用内存空间字节 byte -2^7~2^(7-1) 1 short -2^15~2^(15-1) 2 int -2^31~2^(31-1) 4 long -2^63~2^(63-1) 8 float 1.4E-45 ~ 3.4E+38-3.4E+38 ~ -1.4E-45 4 double 4.9E-324 ~ 1.7E+308-1.7E+308 ~ -4.9E-324 8 boolean ture false 具体情况而定 char 2 变量 变量就是给数据取名字，方便找不同的数据，它的值可以变，但是含义不应变。 数组类型 基本类型的数组有三种赋值方式 int[] arr = {1,2,3}; int[] arr = new int[]{1,2,3}; int[] arr = new int[3];arr[0]=1; arr[1]=2;arr[2]=3; 数组类型有两块内存空间 一块是存储数组内容本身； 另一块是存储数组内容的位置； 数组和对象类型，内容空间一般分配在堆上，而存放地址的空间分配在栈； 栈： 堆： 基本运算 运算符 符号 加 + 减 - 乘 * 除 / 取模 % 函数函数的组成 函数名字 参数 操作 返回值 main 函数12345class JavaTest &#123; public static void main(String[] args)&#123; &#125;&#125; main函数表示程序的入口同一个类中函数名相同但参数不同的现象，一般称为函数重载。 递归函数 调用自己的函数称为递归函数。]]></content>
+    <title><![CDATA[投入]]></title>
+    <url>%2F2019%2F09%2F27%2F%E6%8A%95%E5%85%A5%2F</url>
+    <content type="text"><![CDATA[享受并且投入]]></content>
       <categories>
-        <category>Java</category>
+        <category>益言</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java 基础(三)]]></title>
-    <url>%2F2019%2F09%2F27%2FJava%20%E5%9F%BA%E7%A1%80(%E4%B8%89)%2F</url>
-    <content type="text"><![CDATA[遍历数组的几种方式 方法一 1234567public static void main(String[] args) &#123; String[] str = &#123;"185****2662","150****1342","185****2662","150****1342","157****8935"&#125;; for (int i = 0 ;i &lt; str.length; i++ ) &#123; System.out.println(str[i]); &#125;&#125; 方法二 123456public static void main(String[] args) &#123; String[] str = &#123;"185****2662","150****1342","185****2662","150****1342","157****8935"&#125;; for (String number : str ) &#123; System.out.println(number); &#125;&#125;]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
+        <tag>益言</tag>
       </tags>
   </entry>
   <entry>
