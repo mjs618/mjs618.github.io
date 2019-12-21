@@ -63,6 +63,29 @@
   </entry>
   
   <entry>
+    <title>Maven使用</title>
+    <link href="http://yoursite.com/2019/10/16/Maven/"/>
+    <id>http://yoursite.com/2019/10/16/Maven/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-09T09:10:42.589Z</updated>
+    
+    <content type="html"><![CDATA[<center>   Maven</center><h3 id="1-Maven-的配置"><a href="#1-Maven-的配置" class="headerlink" title="1. Maven 的配置"></a>1. Maven 的配置</h3><blockquote><ol><li>环境变量配置<blockquote><p>MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3</p></blockquote></li></ol></blockquote><blockquote><ol start="2"><li>PATH 配置<blockquote><p>%MAVEN_HOME%\bin</p></blockquote></li></ol></blockquote><h3 id="2-Maven的生命周期"><a href="#2-Maven的生命周期" class="headerlink" title="2.Maven的生命周期"></a>2.Maven的生命周期</h3><blockquote><p>Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。</p></blockquote><p>1.clean生命周期：清理项目，包含三个phase。</p><ul><li><p>pre-clean：执行清理前需要完成的工作</p></li><li><p>clean：清理上一次构建生成的文件</p></li><li><p>post-clean：执行清理后需要完成的工作</p></li></ul><p>2.default生命周期：构建项目，重要的phase如下。</p><ul><li>validate：验证工程是否正确，所有需要的资源是否可用。</li><li>compile：编译项目的源代码。</li><li>test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。</li><li>Package：把已编译的代码打包成可发布的格式，比如jar。</li><li>integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。</li><li>verify：运行所有检查，验证包是否有效且达到质量标准。</li><li>install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。</li><li>Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。</li></ul><p>3.site生命周期：建立和发布项目站点，phase如下</p><ul><li><p>pre-site：生成项目站点之前需要完成的工作</p></li><li><p>site：生成项目站点文档</p></li><li><p>post-site：生成项目站点之后需要完成的工作</p></li><li><p>site-deploy：将项目站点发布到服务器</p></li></ul><h3 id="3-配置Maven仓库"><a href="#3-配置Maven仓库" class="headerlink" title="3. 配置Maven仓库"></a>3. 配置Maven仓库</h3><p>3.1 本地仓库配置到指定路径</p><blockquote><p>在maven解压文件中，conf目录中修改settings.xml文件。<br>可以添加新的仓库路径<localrepository>D:Programming\maven-3.5.2\repository</localrepository><br>3.2 配置中央仓库指定阿里的</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;nexus-aliyun&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><h3 id="4-配置Idea使用自己安装的Maven"><a href="#4-配置Idea使用自己安装的Maven" class="headerlink" title="4.配置Idea使用自己安装的Maven"></a>4.配置Idea使用自己安装的Maven</h3><p><img src="https://i.loli.net/2019/10/08/jUhJqWRYrISV37u.png" alt="20191008123630"></p><h3 id="5-Maven如何将自己下载的jar包安装到本地仓库"><a href="#5-Maven如何将自己下载的jar包安装到本地仓库" class="headerlink" title="5. Maven如何将自己下载的jar包安装到本地仓库"></a>5. Maven如何将自己下载的jar包安装到本地仓库</h3><blockquote><p>示例： 想要添加Oracle驱动包时，Maven的pom.xml总是报Missing artifact com.oracle:ojdbc14:jar:10.2.0.1.0错。</p></blockquote><p>解决办法：</p><blockquote><p><a href="http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html" target="_blank" rel="noopener">oracle官网</a>  下载你所需要的oraclejar包</p></blockquote><blockquote><p>将jar放在盘符下</p></blockquote><blockquote><p>cmd 命令下运行</p><blockquote><p>  mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=F:ojdbc14.jar</p><blockquote><p>-Dfile 是你的jar包的路径</p></blockquote></blockquote></blockquote><blockquote><p>pom.xml文件中输入</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.oracle&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;10.2.0.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h3 id="6-Maven官网"><a href="#6-Maven官网" class="headerlink" title="6. Maven官网"></a>6. Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      Maven的使用
+    
+    </summary>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
+    
+    
+      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 基础(二)</title>
     <link href="http://yoursite.com/2019/10/16/Java%20%E5%9F%BA%E7%A1%80(%E4%BA%8C)/"/>
     <id>http://yoursite.com/2019/10/16/Java 基础(二)/</id>
@@ -74,6 +97,75 @@
     <summary type="html">
     
       基础的数据类型
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>类的基础</title>
+    <link href="http://yoursite.com/2019/10/16/%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
+    <id>http://yoursite.com/2019/10/16/类的基础(一)/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-07T08:09:36.420Z</updated>
+    
+    <content type="html"><![CDATA[<center>    面向对象</center><h2 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h2><blockquote><p>类是函数的容器，但类更多表示的是自定义的数据类型。</p></blockquote><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><blockquote><p>Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。<br>该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。</p></blockquote><p>###抽象方法的特点</p><ul><li>只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现）</li><li>抽象方法用abstract关键字来修饰。</li><li>抽象方法代表一种不确定的操作或行为。（由子类去具体实现）</li><li>抽象方法不能被调用。</li></ul><h3 id="函数容器"><a href="#函数容器" class="headerlink" title="函数容器"></a>函数容器</h3><blockquote><table> <tr><td bgcolor="#00ffff">不在同一包下，无法访问父类默认的构造方法</td> </tr></table></blockquote><h4 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h4><blockquote><p>static表示类方法</p><blockquote><p>类变量 就是静态变量 声明类变量<br>通过类名直接调用</p></blockquote></blockquote><h4 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h4><blockquote><p>通过实例或者对象调用</p><blockquote><p> 实例方法是表示具体的实例可以进行的操作。<br>实例<br>实例变量表示具体的实例所具有的属性<br>有一种对象只叫对象，有一种对象叫实例化对象（实例）。</p></blockquote><p>对象 </p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      面向对象
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站清单</title>
+    <link href="http://yoursite.com/2019/10/16/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
+    <id>http://yoursite.com/2019/10/16/网站清单/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-15T14:40:55.200Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="有趣的学习网站"><a href="#有趣的学习网站" class="headerlink" title="有趣的学习网站"></a>有趣的学习网站</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">git学习网站</a></td><td><a href="https://design-patterns.readthedocs.io/zh_CN/latest/index.html#" target="_blank" rel="noopener">图说设计模式</a></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><h2 id="小工具"><a href="#小工具" class="headerlink" title="小工具"></a>小工具</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://oktools.net/" target="_blank" rel="noopener">格式化工具</a></td><td></td><td></td></tr></tbody></table><h2 id="常用官网"><a href="#常用官网" class="headerlink" title="常用官网"></a>常用官网</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven</a></td><td><a href="https://spring.io/" target="_blank" rel="noopener">Spring</a></td><td></td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      网站清单
+    
+    </summary>
+    
+    
+      <category term="网站清单" scheme="http://yoursite.com/categories/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
+    
+    
+      <category term="网站清单" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java项目</title>
+    <link href="http://yoursite.com/2019/10/16/%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://yoursite.com/2019/10/16/项目/</id>
+    <published>2019-10-16T13:13:50.000Z</published>
+    <updated>2019-10-20T09:55:51.600Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="1-CS-Notes"><a href="#1-CS-Notes" class="headerlink" title="1.CS-Notes"></a>1.CS-Notes</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/CyC2018/CS-Notes" target="_blank" rel="noopener">https://github.com/CyC2018/CS-Notes</a></li><li><strong>Star</strong>:  69.8k</li><li><strong>介绍</strong>: 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计。</li></ul><h3 id="2-toBeTopJavaer"><a href="#2-toBeTopJavaer" class="headerlink" title="2.toBeTopJavaer"></a>2.toBeTopJavaer</h3><ul><li><strong>Github 地址：</strong><a href="https://github.com/hollischuang/toBeTopJavaer" target="_blank" rel="noopener">https://github.com/hollischuang/toBeTopJavaer</a></li><li><strong>Star</strong>:  4.7k</li><li><strong>介绍</strong>: To Be Top Javaer - Java工程师成神之路。</li></ul><h3 id="3-p3c"><a href="#3-p3c" class="headerlink" title="3.p3c"></a>3.p3c</h3><ul><li><strong>Github 地址：</strong> <a href="https://github.com/alibaba/p3c" target="_blank" rel="noopener">https://github.com/alibaba/p3c</a></li><li><strong>Star</strong>:  16.6k</li><li><strong>介绍</strong>: Alibaba Java Coding Guidelines pmd implements and IDE plugin。Eclipse 和 IDEA 上都有该插件，推荐使用！</li></ul><h3 id="4-SpringCloudLearning"><a href="#4-SpringCloudLearning" class="headerlink" title="4.SpringCloudLearning"></a>4.SpringCloudLearning</h3><ul><li><strong>Github 地址：</strong> <a href="https://github.com/forezp/SpringCloudLearning" target="_blank" rel="noopener">https://github.com/forezp/SpringCloudLearning</a></li><li><strong>Star</strong>:  8.7k</li><li><strong>介绍</strong>: 史上最简单的Spring Cloud教程源码。</li></ul><h3 id="5-dubbo"><a href="#5-dubbo" class="headerlink" title="5.dubbo"></a>5.dubbo</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/apache/dubbo" target="_blank" rel="noopener">https://github.com/apache/dubbo</a></li><li><strong>star</strong>: 27.6 k</li><li><strong>介绍</strong>: Apache Dubbo是一个基于Java的高性能开源RPC框架。</li></ul><h3 id="6-jeecg-boot"><a href="#6-jeecg-boot" class="headerlink" title="6.jeecg-boot"></a>6.jeecg-boot</h3><ul><li><strong>Github地址</strong>： <a href="https://github.com/zhangdaiscott/jeecg-boot" target="_blank" rel="noopener">https://github.com/zhangdaiscott/jeecg-boot</a></li><li><strong>star</strong>: 3.3 k</li><li><strong>介绍</strong>: 一款基于代码生成器的JAVA快速开发平台！全新架构前后端分离：SpringBoot 2.x，Ant Design&amp;Vue，Mybatis，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码，绝对是全栈开发福音！！ JeecgBoot的宗旨是提高UI能力的同时,降低前后分离的开发成本，JeecgBoot还独创在线开发模式，No代码概念，一系列在线智能开发：在线配置表单、在线配置报表、在线设计流程等等。</li></ul><h3 id="7-advanced-java"><a href="#7-advanced-java" class="headerlink" title="7.advanced-java"></a>7.advanced-java</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/doocs/advanced-java" target="_blank" rel="noopener">https://github.com/doocs/advanced-java</a></li><li><strong>Star</strong>: 24.2k</li><li><strong>介绍</strong>: 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，后端同学必看，前端同学也可学习。</li></ul><h3 id="8-FEBS-Shiro"><a href="#8-FEBS-Shiro" class="headerlink" title="8.FEBS-Shiro"></a>8.FEBS-Shiro</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/wuyouzhuguli/FEBS-Shiro" target="_blank" rel="noopener">https://github.com/wuyouzhuguli/FEBS-Shiro</a></li><li><strong>Star</strong>: 2.6k</li><li><strong>介绍</strong>: Spring Boot 2.1.3，Shiro1.4.0 &amp; Layui 2.5.4 权限管理系统。预览地址：<a href="http://49.234.20.223:8080/login。" target="_blank" rel="noopener">http://49.234.20.223:8080/login。</a></li></ul><h3 id="9-SpringAll"><a href="#9-SpringAll" class="headerlink" title="9.SpringAll"></a>9.SpringAll</h3><ul><li><strong>Github 地址</strong>: <a href="https://github.com/wuyouzhuguli/SpringAll" target="_blank" rel="noopener">https://github.com/wuyouzhuguli/SpringAll</a></li><li><strong>Star</strong>: 5.4k</li><li><strong>介绍</strong>: 循序渐进，学习Spring Boot、Spring Boot &amp; Shiro、Spring Cloud、Spring Security &amp; Spring Security OAuth2，博客Spring系列源码。</li></ul><h3 id="10-JavaGuide"><a href="#10-JavaGuide" class="headerlink" title="10.JavaGuide"></a>10.JavaGuide</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/Snailclimb/JavaGuide" target="_blank" rel="noopener">https://github.com/Snailclimb/JavaGuide</a></li><li><strong>Star</strong>:  47.2k</li><li><strong>介绍</strong>: 【Java 学习+面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。</li></ul><h3 id="11-vhr"><a href="#11-vhr" class="headerlink" title="11.vhr"></a>11.vhr</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/lenve/vhr" target="_blank" rel="noopener">https://github.com/lenve/vhr</a></li><li><strong>Star</strong>:  4.9k</li><li><strong>介绍</strong>: 微人事是一个前后端分离的人力资源管理系统，项目采用SpringBoot+Vue开发。</li></ul><h3 id="12-tutorials"><a href="#12-tutorials" class="headerlink" title="12. tutorials"></a>12. tutorials</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/eugenp/tutorials" target="_blank" rel="noopener">https://github.com/eugenp/tutorials</a></li><li><strong>star</strong>: 15.4 k</li><li><strong>介绍</strong>:  该项目是一系列小而专注的教程 - 每个教程都涵盖 Java 生态系统中单一且定义明确的开发领域。 当然，它们的重点是 Spring Framework  -  Spring，Spring Boot 和 Spring Securiyt。 除了 Spring 之外，还有以下技术：核心 Java，Jackson，HttpClient，Guava。</li></ul><h3 id="13-EasyScheduler"><a href="#13-EasyScheduler" class="headerlink" title="13.EasyScheduler"></a>13.EasyScheduler</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/analysys/EasyScheduler" target="_blank" rel="noopener">https://github.com/analysys/EasyScheduler</a></li><li><strong>star</strong>: 1.1 k</li><li><strong>介绍</strong>:  Easy Scheduler是一个分布式工作流任务调度系统，主要解决“复杂任务依赖但无法直接监控任务健康状态”的问题。Easy Scheduler以DAG方式组装任务，可以实时监控任务的运行状态。同时，它支持重试，重新运行等操作… 。<a href="https://analysys.github.io/easyscheduler_docs_cn/" target="_blank" rel="noopener">https://analysys.github.io/easyscheduler_docs_cn/</a></li></ul><h3 id="14-thingsboard"><a href="#14-thingsboard" class="headerlink" title="14.thingsboard"></a>14.thingsboard</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/thingsboard/thingsboard" target="_blank" rel="noopener">https://github.com/thingsboard/thingsboard</a></li><li><strong>star</strong>: 3.7 k</li><li><strong>介绍</strong>:  开源物联网平台 - 设备管理，数据收集，处理和可视化。 <a href="https://thingsboard.io/" target="_blank" rel="noopener">https://thingsboard.io</a></li></ul><h3 id="15-mall-learning"><a href="#15-mall-learning" class="headerlink" title="15.mall-learning"></a>15.mall-learning</h3><ul><li><strong>Github 地址</strong>: <a href="https://github.com/macrozheng/mall-learning" target="_blank" rel="noopener">https://github.com/macrozheng/mall-learning</a></li><li><strong>star</strong>: 0.6 k</li><li><strong>介绍</strong>:  mall学习教程，架构、业务、技术要点全方位解析。mall项目（16k+star）是一套电商系统，使用现阶段主流技术实现。 涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。 <a href="https://github.com/macrozheng/mall" target="_blank" rel="noopener">https://github.com/macrozheng/mall</a></li></ul><h3 id="16-flink"><a href="#16-flink" class="headerlink" title="16. flink"></a>16. flink</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/apache/flink" target="_blank" rel="noopener">https://github.com/apache/flink</a></li><li><strong>star</strong>: 9.3 k</li><li><strong>介绍</strong>: Apache Flink是一个开源流处理框架，具有强大的流和批处理功能。</li></ul><h3 id="17-spring-cloud-kubernetes"><a href="#17-spring-cloud-kubernetes" class="headerlink" title="17.spring-cloud-kubernetes"></a>17.spring-cloud-kubernetes</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/spring-cloud/spring-cloud-kubernetes" target="_blank" rel="noopener">https://github.com/spring-cloud/spring-cloud-kubernetes</a></li><li><strong>star</strong>: 1.4 k</li><li><strong>介绍</strong>: Kubernetes 集成 Spring Cloud Discovery Client, Configuration, etc…</li></ul><h3 id="18-springboot-learning-example"><a href="#18-springboot-learning-example" class="headerlink" title="18.springboot-learning-example"></a>18.springboot-learning-example</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/JeffLi1993/springboot-learning-example" target="_blank" rel="noopener">https://github.com/JeffLi1993/springboot-learning-example</a></li><li><strong>star</strong>: 10.0 k</li><li><strong>介绍</strong>: spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。</li></ul><h3 id="19-canal"><a href="#19-canal" class="headerlink" title="19.canal"></a>19.canal</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/alibaba/canal" target="_blank" rel="noopener">https://github.com/alibaba/canal</a></li><li><strong>star</strong>: 9.3 k</li><li><strong>介绍</strong>: 阿里巴巴 MySQL binlog 增量订阅&amp;消费组件。</li></ul><h3 id="20-react-native-device-info"><a href="#20-react-native-device-info" class="headerlink" title="20.react-native-device-info"></a>20.react-native-device-info</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/react-native-community/react-native-device-info" target="_blank" rel="noopener">https://github.com/react-native-community/react-native-device-info</a></li><li><strong>star</strong>: 4.0 k</li><li><strong>介绍</strong>: React Native iOS和Android的设备信息。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      Java项目
     
     </summary>
     
@@ -109,94 +201,21 @@
   </entry>
   
   <entry>
-    <title>Java项目</title>
-    <link href="http://yoursite.com/2019/10/16/%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://yoursite.com/2019/10/16/项目/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-20T09:55:51.600Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="1-CS-Notes"><a href="#1-CS-Notes" class="headerlink" title="1.CS-Notes"></a>1.CS-Notes</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/CyC2018/CS-Notes" target="_blank" rel="noopener">https://github.com/CyC2018/CS-Notes</a></li><li><strong>Star</strong>:  69.8k</li><li><strong>介绍</strong>: 技术面试必备基础知识、Leetcode 题解、后端面试、Java 面试、春招、秋招、操作系统、计算机网络、系统设计。</li></ul><h3 id="2-toBeTopJavaer"><a href="#2-toBeTopJavaer" class="headerlink" title="2.toBeTopJavaer"></a>2.toBeTopJavaer</h3><ul><li><strong>Github 地址：</strong><a href="https://github.com/hollischuang/toBeTopJavaer" target="_blank" rel="noopener">https://github.com/hollischuang/toBeTopJavaer</a></li><li><strong>Star</strong>:  4.7k</li><li><strong>介绍</strong>: To Be Top Javaer - Java工程师成神之路。</li></ul><h3 id="3-p3c"><a href="#3-p3c" class="headerlink" title="3.p3c"></a>3.p3c</h3><ul><li><strong>Github 地址：</strong> <a href="https://github.com/alibaba/p3c" target="_blank" rel="noopener">https://github.com/alibaba/p3c</a></li><li><strong>Star</strong>:  16.6k</li><li><strong>介绍</strong>: Alibaba Java Coding Guidelines pmd implements and IDE plugin。Eclipse 和 IDEA 上都有该插件，推荐使用！</li></ul><h3 id="4-SpringCloudLearning"><a href="#4-SpringCloudLearning" class="headerlink" title="4.SpringCloudLearning"></a>4.SpringCloudLearning</h3><ul><li><strong>Github 地址：</strong> <a href="https://github.com/forezp/SpringCloudLearning" target="_blank" rel="noopener">https://github.com/forezp/SpringCloudLearning</a></li><li><strong>Star</strong>:  8.7k</li><li><strong>介绍</strong>: 史上最简单的Spring Cloud教程源码。</li></ul><h3 id="5-dubbo"><a href="#5-dubbo" class="headerlink" title="5.dubbo"></a>5.dubbo</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/apache/dubbo" target="_blank" rel="noopener">https://github.com/apache/dubbo</a></li><li><strong>star</strong>: 27.6 k</li><li><strong>介绍</strong>: Apache Dubbo是一个基于Java的高性能开源RPC框架。</li></ul><h3 id="6-jeecg-boot"><a href="#6-jeecg-boot" class="headerlink" title="6.jeecg-boot"></a>6.jeecg-boot</h3><ul><li><strong>Github地址</strong>： <a href="https://github.com/zhangdaiscott/jeecg-boot" target="_blank" rel="noopener">https://github.com/zhangdaiscott/jeecg-boot</a></li><li><strong>star</strong>: 3.3 k</li><li><strong>介绍</strong>: 一款基于代码生成器的JAVA快速开发平台！全新架构前后端分离：SpringBoot 2.x，Ant Design&amp;Vue，Mybatis，Shiro，JWT。强大的代码生成器让前后端代码一键生成，无需写任何代码，绝对是全栈开发福音！！ JeecgBoot的宗旨是提高UI能力的同时,降低前后分离的开发成本，JeecgBoot还独创在线开发模式，No代码概念，一系列在线智能开发：在线配置表单、在线配置报表、在线设计流程等等。</li></ul><h3 id="7-advanced-java"><a href="#7-advanced-java" class="headerlink" title="7.advanced-java"></a>7.advanced-java</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/doocs/advanced-java" target="_blank" rel="noopener">https://github.com/doocs/advanced-java</a></li><li><strong>Star</strong>: 24.2k</li><li><strong>介绍</strong>: 互联网 Java 工程师进阶知识完全扫盲：涵盖高并发、分布式、高可用、微服务等领域知识，后端同学必看，前端同学也可学习。</li></ul><h3 id="8-FEBS-Shiro"><a href="#8-FEBS-Shiro" class="headerlink" title="8.FEBS-Shiro"></a>8.FEBS-Shiro</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/wuyouzhuguli/FEBS-Shiro" target="_blank" rel="noopener">https://github.com/wuyouzhuguli/FEBS-Shiro</a></li><li><strong>Star</strong>: 2.6k</li><li><strong>介绍</strong>: Spring Boot 2.1.3，Shiro1.4.0 &amp; Layui 2.5.4 权限管理系统。预览地址：<a href="http://49.234.20.223:8080/login。" target="_blank" rel="noopener">http://49.234.20.223:8080/login。</a></li></ul><h3 id="9-SpringAll"><a href="#9-SpringAll" class="headerlink" title="9.SpringAll"></a>9.SpringAll</h3><ul><li><strong>Github 地址</strong>: <a href="https://github.com/wuyouzhuguli/SpringAll" target="_blank" rel="noopener">https://github.com/wuyouzhuguli/SpringAll</a></li><li><strong>Star</strong>: 5.4k</li><li><strong>介绍</strong>: 循序渐进，学习Spring Boot、Spring Boot &amp; Shiro、Spring Cloud、Spring Security &amp; Spring Security OAuth2，博客Spring系列源码。</li></ul><h3 id="10-JavaGuide"><a href="#10-JavaGuide" class="headerlink" title="10.JavaGuide"></a>10.JavaGuide</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/Snailclimb/JavaGuide" target="_blank" rel="noopener">https://github.com/Snailclimb/JavaGuide</a></li><li><strong>Star</strong>:  47.2k</li><li><strong>介绍</strong>: 【Java 学习+面试指南】 一份涵盖大部分 Java 程序员所需要掌握的核心知识。</li></ul><h3 id="11-vhr"><a href="#11-vhr" class="headerlink" title="11.vhr"></a>11.vhr</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/lenve/vhr" target="_blank" rel="noopener">https://github.com/lenve/vhr</a></li><li><strong>Star</strong>:  4.9k</li><li><strong>介绍</strong>: 微人事是一个前后端分离的人力资源管理系统，项目采用SpringBoot+Vue开发。</li></ul><h3 id="12-tutorials"><a href="#12-tutorials" class="headerlink" title="12. tutorials"></a>12. tutorials</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/eugenp/tutorials" target="_blank" rel="noopener">https://github.com/eugenp/tutorials</a></li><li><strong>star</strong>: 15.4 k</li><li><strong>介绍</strong>:  该项目是一系列小而专注的教程 - 每个教程都涵盖 Java 生态系统中单一且定义明确的开发领域。 当然，它们的重点是 Spring Framework  -  Spring，Spring Boot 和 Spring Securiyt。 除了 Spring 之外，还有以下技术：核心 Java，Jackson，HttpClient，Guava。</li></ul><h3 id="13-EasyScheduler"><a href="#13-EasyScheduler" class="headerlink" title="13.EasyScheduler"></a>13.EasyScheduler</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/analysys/EasyScheduler" target="_blank" rel="noopener">https://github.com/analysys/EasyScheduler</a></li><li><strong>star</strong>: 1.1 k</li><li><strong>介绍</strong>:  Easy Scheduler是一个分布式工作流任务调度系统，主要解决“复杂任务依赖但无法直接监控任务健康状态”的问题。Easy Scheduler以DAG方式组装任务，可以实时监控任务的运行状态。同时，它支持重试，重新运行等操作… 。<a href="https://analysys.github.io/easyscheduler_docs_cn/" target="_blank" rel="noopener">https://analysys.github.io/easyscheduler_docs_cn/</a></li></ul><h3 id="14-thingsboard"><a href="#14-thingsboard" class="headerlink" title="14.thingsboard"></a>14.thingsboard</h3><ul><li><strong>Github 地址</strong>：<a href="https://github.com/thingsboard/thingsboard" target="_blank" rel="noopener">https://github.com/thingsboard/thingsboard</a></li><li><strong>star</strong>: 3.7 k</li><li><strong>介绍</strong>:  开源物联网平台 - 设备管理，数据收集，处理和可视化。 <a href="https://thingsboard.io/" target="_blank" rel="noopener">https://thingsboard.io</a></li></ul><h3 id="15-mall-learning"><a href="#15-mall-learning" class="headerlink" title="15.mall-learning"></a>15.mall-learning</h3><ul><li><strong>Github 地址</strong>: <a href="https://github.com/macrozheng/mall-learning" target="_blank" rel="noopener">https://github.com/macrozheng/mall-learning</a></li><li><strong>star</strong>: 0.6 k</li><li><strong>介绍</strong>:  mall学习教程，架构、业务、技术要点全方位解析。mall项目（16k+star）是一套电商系统，使用现阶段主流技术实现。 涵盖了SpringBoot2.1.3、MyBatis3.4.6、Elasticsearch6.2.2、RabbitMQ3.7.15、Redis3.2、Mongodb3.2、Mysql5.7等技术，采用Docker容器化部署。 <a href="https://github.com/macrozheng/mall" target="_blank" rel="noopener">https://github.com/macrozheng/mall</a></li></ul><h3 id="16-flink"><a href="#16-flink" class="headerlink" title="16. flink"></a>16. flink</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/apache/flink" target="_blank" rel="noopener">https://github.com/apache/flink</a></li><li><strong>star</strong>: 9.3 k</li><li><strong>介绍</strong>: Apache Flink是一个开源流处理框架，具有强大的流和批处理功能。</li></ul><h3 id="17-spring-cloud-kubernetes"><a href="#17-spring-cloud-kubernetes" class="headerlink" title="17.spring-cloud-kubernetes"></a>17.spring-cloud-kubernetes</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/spring-cloud/spring-cloud-kubernetes" target="_blank" rel="noopener">https://github.com/spring-cloud/spring-cloud-kubernetes</a></li><li><strong>star</strong>: 1.4 k</li><li><strong>介绍</strong>: Kubernetes 集成 Spring Cloud Discovery Client, Configuration, etc…</li></ul><h3 id="18-springboot-learning-example"><a href="#18-springboot-learning-example" class="headerlink" title="18.springboot-learning-example"></a>18.springboot-learning-example</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/JeffLi1993/springboot-learning-example" target="_blank" rel="noopener">https://github.com/JeffLi1993/springboot-learning-example</a></li><li><strong>star</strong>: 10.0 k</li><li><strong>介绍</strong>: spring boot 实践学习案例，是 spring boot 初学者及核心技术巩固的最佳实践。</li></ul><h3 id="19-canal"><a href="#19-canal" class="headerlink" title="19.canal"></a>19.canal</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/alibaba/canal" target="_blank" rel="noopener">https://github.com/alibaba/canal</a></li><li><strong>star</strong>: 9.3 k</li><li><strong>介绍</strong>: 阿里巴巴 MySQL binlog 增量订阅&amp;消费组件。</li></ul><h3 id="20-react-native-device-info"><a href="#20-react-native-device-info" class="headerlink" title="20.react-native-device-info"></a>20.react-native-device-info</h3><ul><li><strong>Github地址</strong>：<a href="https://github.com/react-native-community/react-native-device-info" target="_blank" rel="noopener">https://github.com/react-native-community/react-native-device-info</a></li><li><strong>star</strong>: 4.0 k</li><li><strong>介绍</strong>: React Native iOS和Android的设备信息。</li></ul>]]></content>
+    <title>开发中常用的简单 Linux 命令</title>
+    <link href="http://yoursite.com/2019/09/28/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AE%80%E5%8D%95%20Linux%20%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2019/09/28/开发中常用的简单 Linux 命令/</id>
+    <published>2019-09-28T04:23:32.000Z</published>
+    <updated>2019-11-09T08:33:05.491Z</updated>
     
     <summary type="html">
-    
-      Java项目
     
     </summary>
     
     
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Maven使用</title>
-    <link href="http://yoursite.com/2019/10/16/Maven/"/>
-    <id>http://yoursite.com/2019/10/16/Maven/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-09T09:10:42.589Z</updated>
-    
-    <content type="html"><![CDATA[<center>   Maven</center><h3 id="1-Maven-的配置"><a href="#1-Maven-的配置" class="headerlink" title="1. Maven 的配置"></a>1. Maven 的配置</h3><blockquote><ol><li>环境变量配置<blockquote><p>MAVEN_HOME:F:\Maven\apache-maven-3.5.3-bin\apache-maven-3.5.3</p></blockquote></li></ol></blockquote><blockquote><ol start="2"><li>PATH 配置<blockquote><p>%MAVEN_HOME%\bin</p></blockquote></li></ol></blockquote><h3 id="2-Maven的生命周期"><a href="#2-Maven的生命周期" class="headerlink" title="2.Maven的生命周期"></a>2.Maven的生命周期</h3><blockquote><p>Maven有三套相互独立的生命周期，分别是clean、default和site。每个生命周期包含一些阶段（phase），阶段是有顺序的，后面的阶段依赖于前面的阶段。</p></blockquote><p>1.clean生命周期：清理项目，包含三个phase。</p><ul><li><p>pre-clean：执行清理前需要完成的工作</p></li><li><p>clean：清理上一次构建生成的文件</p></li><li><p>post-clean：执行清理后需要完成的工作</p></li></ul><p>2.default生命周期：构建项目，重要的phase如下。</p><ul><li>validate：验证工程是否正确，所有需要的资源是否可用。</li><li>compile：编译项目的源代码。</li><li>test：使用合适的单元测试框架来测试已编译的源代码。这些测试不需要已打包和布署。</li><li>Package：把已编译的代码打包成可发布的格式，比如jar。</li><li>integration-test：如有需要，将包处理和发布到一个能够进行集成测试的环境。</li><li>verify：运行所有检查，验证包是否有效且达到质量标准。</li><li>install：把包安装到maven本地仓库，可以被其他工程作为依赖来使用。</li><li>Deploy：在集成或者发布环境下执行，将最终版本的包拷贝到远程的repository，使得其他的开发者或者工程可以共享。</li></ul><p>3.site生命周期：建立和发布项目站点，phase如下</p><ul><li><p>pre-site：生成项目站点之前需要完成的工作</p></li><li><p>site：生成项目站点文档</p></li><li><p>post-site：生成项目站点之后需要完成的工作</p></li><li><p>site-deploy：将项目站点发布到服务器</p></li></ul><h3 id="3-配置Maven仓库"><a href="#3-配置Maven仓库" class="headerlink" title="3. 配置Maven仓库"></a>3. 配置Maven仓库</h3><p>3.1 本地仓库配置到指定路径</p><blockquote><p>在maven解压文件中，conf目录中修改settings.xml文件。<br>可以添加新的仓库路径<localrepository>D:Programming\maven-3.5.2\repository</localrepository><br>3.2 配置中央仓库指定阿里的</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;nexus-aliyun&lt;/id&gt;</span><br><span class="line">  &lt;name&gt;nexus-aliyun&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public&lt;/url&gt;</span><br><span class="line">  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</span><br><span class="line">&lt;/mirror&gt;</span><br></pre></td></tr></table></figure><h3 id="4-配置Idea使用自己安装的Maven"><a href="#4-配置Idea使用自己安装的Maven" class="headerlink" title="4.配置Idea使用自己安装的Maven"></a>4.配置Idea使用自己安装的Maven</h3><p><img src="https://i.loli.net/2019/10/08/jUhJqWRYrISV37u.png" alt="20191008123630"></p><h3 id="5-Maven如何将自己下载的jar包安装到本地仓库"><a href="#5-Maven如何将自己下载的jar包安装到本地仓库" class="headerlink" title="5. Maven如何将自己下载的jar包安装到本地仓库"></a>5. Maven如何将自己下载的jar包安装到本地仓库</h3><blockquote><p>示例： 想要添加Oracle驱动包时，Maven的pom.xml总是报Missing artifact com.oracle:ojdbc14:jar:10.2.0.1.0错。</p></blockquote><p>解决办法：</p><blockquote><p><a href="http://www.oracle.com/technetwork/database/features/jdbc/index-091264.html" target="_blank" rel="noopener">oracle官网</a>  下载你所需要的oraclejar包</p></blockquote><blockquote><p>将jar放在盘符下</p></blockquote><blockquote><p>cmd 命令下运行</p><blockquote><p>  mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc14 -Dversion=10.2.0.1.0 -Dpackaging=jar -Dfile=F:ojdbc14.jar</p><blockquote><p>-Dfile 是你的jar包的路径</p></blockquote></blockquote></blockquote><blockquote><p>pom.xml文件中输入</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;com.oracle&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;ojdbc14&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;10.2.0.1.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><h3 id="6-Maven官网"><a href="#6-Maven官网" class="headerlink" title="6. Maven官网"></a>6. Maven官网</h3><blockquote><p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven官网</a></p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      Maven的使用
-    
-    </summary>
-    
-    
-      <category term="Maven" scheme="http://yoursite.com/categories/Maven/"/>
-    
-    
-      <category term="Maven" scheme="http://yoursite.com/tags/Maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站清单</title>
-    <link href="http://yoursite.com/2019/10/16/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    <id>http://yoursite.com/2019/10/16/网站清单/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-15T14:40:55.200Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="有趣的学习网站"><a href="#有趣的学习网站" class="headerlink" title="有趣的学习网站"></a>有趣的学习网站</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener">git学习网站</a></td><td><a href="https://design-patterns.readthedocs.io/zh_CN/latest/index.html#" target="_blank" rel="noopener">图说设计模式</a></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><h2 id="小工具"><a href="#小工具" class="headerlink" title="小工具"></a>小工具</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://oktools.net/" target="_blank" rel="noopener">格式化工具</a></td><td></td><td></td></tr></tbody></table><h2 id="常用官网"><a href="#常用官网" class="headerlink" title="常用官网"></a>常用官网</h2><table><thead><tr><th>0</th><th>1</th><th>2</th></tr></thead><tbody><tr><td><a href="https://mvnrepository.com/" target="_blank" rel="noopener">Maven</a></td><td><a href="https://spring.io/" target="_blank" rel="noopener">Spring</a></td><td></td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      网站清单
-    
-    </summary>
-    
-    
-      <category term="网站清单" scheme="http://yoursite.com/categories/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    
-    
-      <category term="网站清单" scheme="http://yoursite.com/tags/%E7%BD%91%E7%AB%99%E6%B8%85%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>类的基础</title>
-    <link href="http://yoursite.com/2019/10/16/%E7%B1%BB%E7%9A%84%E5%9F%BA%E7%A1%80(%E4%B8%80)/"/>
-    <id>http://yoursite.com/2019/10/16/类的基础(一)/</id>
-    <published>2019-10-16T13:13:50.000Z</published>
-    <updated>2019-10-07T08:09:36.420Z</updated>
-    
-    <content type="html"><![CDATA[<center>    面向对象</center><h2 id="类的基本概念"><a href="#类的基本概念" class="headerlink" title="类的基本概念"></a>类的基本概念</h2><blockquote><p>类是函数的容器，但类更多表示的是自定义的数据类型。</p></blockquote><h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><blockquote><p>Java中可以定义没有方法体的方法，该方法由其子类来具体的实现。<br>该没有方法体的方法我们称之为抽象方法，含有抽象方法的类我们称之为抽象类。</p></blockquote><p>###抽象方法的特点</p><ul><li>只有方法头没有方法体的方法称之为抽象方法。（即只有方法的声明，没有方法的实现）</li><li>抽象方法用abstract关键字来修饰。</li><li>抽象方法代表一种不确定的操作或行为。（由子类去具体实现）</li><li>抽象方法不能被调用。</li></ul><h3 id="函数容器"><a href="#函数容器" class="headerlink" title="函数容器"></a>函数容器</h3><blockquote><table> <tr><td bgcolor="#00ffff">不在同一包下，无法访问父类默认的构造方法</td> </tr></table></blockquote><h4 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h4><blockquote><p>static表示类方法</p><blockquote><p>类变量 就是静态变量 声明类变量<br>通过类名直接调用</p></blockquote></blockquote><h4 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h4><blockquote><p>通过实例或者对象调用</p><blockquote><p> 实例方法是表示具体的实例可以进行的操作。<br>实例<br>实例变量表示具体的实例所具有的属性<br>有一种对象只叫对象，有一种对象叫实例化对象（实例）。</p></blockquote><p>对象 </p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      面向对象
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
@@ -229,32 +248,13 @@
   </entry>
   
   <entry>
-    <title>开发中常用的简单 Linux 命令</title>
-    <link href="http://yoursite.com/2019/09/28/%E5%BC%80%E5%8F%91%E4%B8%AD%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AE%80%E5%8D%95%20Linux%20%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2019/09/28/开发中常用的简单 Linux 命令/</id>
-    <published>2019-09-28T04:23:32.000Z</published>
-    <updated>2019-11-09T08:33:05.491Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java 基础(三)</title>
-    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%89)/"/>
-    <id>http://yoursite.com/2019/09/27/Java 基础(三)/</id>
+    <title>Vim有哪几种模式？</title>
+    <link href="http://yoursite.com/2019/09/27/VIM%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/09/27/VIM有哪几种模式/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-11-06T15:02:08.963Z</updated>
+    <updated>2019-10-04T11:36:26.999Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="遍历数组的几种方式"><a href="#遍历数组的几种方式" class="headerlink" title="遍历数组的几种方式"></a>遍历数组的几种方式</h1><ul><li><p>方法一</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String[] str  = &#123;<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"157****8935"</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ;i &lt; str.length; i++ ) &#123;</span><br><span class="line">    System.out.println(str[i]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>方法二</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    String[] str  = &#123;<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"157****8935"</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (String number : str ) &#123;</span><br><span class="line">      System.out.println(number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="Vim有哪几种模式？"><a href="#Vim有哪几种模式？" class="headerlink" title="Vim有哪几种模式？"></a>Vim有哪几种模式？</h1><h2 id="模式一：normal模式"><a href="#模式一：normal模式" class="headerlink" title="模式一：normal模式"></a>模式一：normal模式</h2><p>作用主要是用来浏览，输入各种和在文档中移动。</p><h2 id="模式二：编辑模式"><a href="#模式二：编辑模式" class="headerlink" title="模式二：编辑模式"></a>模式二：编辑模式</h2><p>用于对文件的编辑：<br>常用的插入命令：<br>a在光标位置后编辑,<br>i在光标位置前编辑,<br>o在下一行插入;<br>A在光标所在行的末尾编辑,<br>I在光标所在行的行头编辑,<br>O在光标所处的上一行编辑。</p><h2 id="模式三：命令模式"><a href="#模式三：命令模式" class="headerlink" title="模式三：命令模式"></a>模式三：命令模式</h2><p>进入编辑模式之前，可以在输入：set nu 为文档设置行号。<br>原始文档<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195928747-896775833.png" alt><br>设置行号后<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200019962-2084690184.png" alt></p><p>wq 写入退出</p><p>vs 竖分屏<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195658881-1465198106.png" alt></p><p>sp 横分屏</p><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817195738316-1213216544.png" alt></p><p>% s/原文内容/替换的内容/ g<br><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817200650118-1256455692.png" alt></p><h2 id="模式四：可视化模式"><a href="#模式四：可视化模式" class="headerlink" title="模式四：可视化模式"></a>模式四：可视化模式</h2><p>作用主要是进行块状选择文本。</p><p>有三种方式进入到visual模式</p><h3 id="1-Normal模式使用v进入Visual模式"><a href="#1-Normal模式使用v进入Visual模式" class="headerlink" title="1.Normal模式使用v进入Visual模式"></a>1.Normal模式使用v进入Visual模式</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201325280-340939407.png" alt></p><h3 id="使用V选中行"><a href="#使用V选中行" class="headerlink" title="使用V选中行"></a>使用V选中行</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201633060-2122939578.png" alt></p><h3 id="使用Ctrl-v"><a href="#使用Ctrl-v" class="headerlink" title="使用Ctrl + v"></a>使用Ctrl + v</h3><p><img src="https://img2018.cnblogs.com/blog/1061335/201908/1061335-20190817201730057-1120242691.png" alt></p>  <center>  ##### 注：此系列文章都是学习的记录，对个人学习的总结，如果错误还望指出，菜鸟一枚。  </center>]]></content>
     
     <summary type="html">
     
@@ -263,33 +263,10 @@
     </summary>
     
     
-      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>投入</title>
-    <link href="http://yoursite.com/2019/09/27/%E6%8A%95%E5%85%A5/"/>
-    <id>http://yoursite.com/2019/09/27/投入/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-10-04T10:47:25.004Z</updated>
-    
-    <content type="html"><![CDATA[<p>享受并且投入</p>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="益言" scheme="http://yoursite.com/categories/%E7%9B%8A%E8%A8%80/"/>
-    
-    
-      <category term="益言" scheme="http://yoursite.com/tags/%E7%9B%8A%E8%A8%80/"/>
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
     
   </entry>
   
@@ -317,13 +294,13 @@
   </entry>
   
   <entry>
-    <title>初识VIM</title>
-    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
-    <id>http://yoursite.com/2019/09/27/初识vim/</id>
+    <title>Java 基础(三)</title>
+    <link href="http://yoursite.com/2019/09/27/Java%20%E5%9F%BA%E7%A1%80(%E4%B8%89)/"/>
+    <id>http://yoursite.com/2019/09/27/Java 基础(三)/</id>
     <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-12-05T05:53:38.413Z</updated>
+    <updated>2019-11-06T15:02:08.963Z</updated>
     
-    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<h1 id="遍历数组的几种方式"><a href="#遍历数组的几种方式" class="headerlink" title="遍历数组的几种方式"></a>遍历数组的几种方式</h1><ul><li><p>方法一</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  String[] str  = &#123;<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"157****8935"</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span> ;i &lt; str.length; i++ ) &#123;</span><br><span class="line">    System.out.println(str[i]);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>方法二</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    String[] str  = &#123;<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"185****2662"</span>,<span class="string">"150****1342"</span>,<span class="string">"157****8935"</span>&#125;;</span><br><span class="line">    <span class="keyword">for</span> (String number : str ) &#123;</span><br><span class="line">      System.out.println(number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
     <summary type="html">
     
@@ -332,10 +309,33 @@
     </summary>
     
     
-      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
     
     
-      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序</title>
+    <link href="http://yoursite.com/2019/09/27/%E6%8E%92%E5%BA%8F/"/>
+    <id>http://yoursite.com/2019/09/27/排序/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-11-17T13:35:22.824Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">7</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = bubbleSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(<span class="string">"第"</span>+i+<span class="string">"元素"</span> +<span class="string">":"</span>+ temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;array.length-<span class="number">1</span>-i ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (array[j + <span class="number">1</span>] &lt; array[j]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = array[j + <span class="number">1</span>];</span><br><span class="line">                    array[j + <span class="number">1</span>] = array[j];</span><br><span class="line">                    array[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp =  selectionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; temp.length; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] selectionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length ==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">          <span class="keyword">int</span> minIndex = i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; array.length ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(array[j] &lt; array[minIndex])&#123;</span><br><span class="line">                    minIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> temp = array[minIndex];</span><br><span class="line">            array[minIndex]  = array[i];</span><br><span class="line">            array[i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertionSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = insertionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] insertionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> current;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length -<span class="number">1</span>; i++) &#123;</span><br><span class="line">            current = array[i + <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">int</span> preIndex = i;</span><br><span class="line">            <span class="keyword">while</span> (preIndex &gt;= <span class="number">0</span> &amp;&amp; current &lt; array[preIndex])&#123;</span><br><span class="line">                array[preIndex + <span class="number">1</span> ] = array[preIndex];</span><br><span class="line">                preIndex--;</span><br><span class="line">            &#125;</span><br><span class="line">            array[preIndex + <span class="number">1</span>] = current;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -409,6 +409,52 @@
   </entry>
   
   <entry>
+    <title>MarkDown</title>
+    <link href="http://yoursite.com/2019/09/27/markdown%E5%AD%A6%E4%B9%A0%E6%8C%87%E5%8D%97/"/>
+    <id>http://yoursite.com/2019/09/27/markdown学习指南/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-10-08T06:41:25.550Z</updated>
+    
+    <content type="html"><![CDATA[<center>MarkDown学习指南</center># MarkDown 标题<ol><li>使用=和-标记一级和二级标题</li></ol><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="我展示的二级标题"><a href="#我展示的二级标题" class="headerlink" title="我展示的二级标题"></a>我展示的二级标题</h2><h1 id="我也是一级标题"><a href="#我也是一级标题" class="headerlink" title="我也是一级标题"></a>我也是一级标题</h1><h2 id="我也是二级标题"><a href="#我也是二级标题" class="headerlink" title="我也是二级标题"></a>我也是二级标题</h2><h1 id="MarkDown-字体"><a href="#MarkDown-字体" class="headerlink" title="MarkDown 字体"></a>MarkDown 字体</h1><p><em>斜体文本</em></p><p><em>斜体文本</em></p><p><strong>粗体文本</strong></p><p><strong>粗体文本</strong></p><p><strong><em>粗斜体文本</em></strong></p><p><strong><em>粗斜体文本</em></strong></p><h1 id="MarkDown-分割线"><a href="#MarkDown-分割线" class="headerlink" title="MarkDown 分割线"></a>MarkDown 分割线</h1><hr><hr><hr><hr><hr><h1 id="MarkDown-删除线"><a href="#MarkDown-删除线" class="headerlink" title="MarkDown 删除线"></a>MarkDown 删除线</h1><p><del>~ 我删除了 ~</del></p><h1 id="MarkDown-脚注"><a href="#MarkDown-脚注" class="headerlink" title="MarkDown 脚注"></a>MarkDown 脚注</h1><h3 id="无序列表-使用-“-”-”-“-”-”"><a href="#无序列表-使用-“-”-”-“-”-”" class="headerlink" title="无序列表 使用(“*”,”-“,”+”)"></a>无序列表 使用(“*”,”-“,”+”)</h3><ul><li>第一项</li></ul><ul><li>第二项</li></ul><ul><li>第三项</li></ul><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol><li>第一项：<ul><li>第一项的第一个元素</li><li>第一项的第二个元素</li></ul></li><li>第二项：<ul><li>第二项的第一个元素</li><li>第二项的第二个元素</li></ul></li></ol><h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><h3 id="Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号："><a href="#Markdown-区块引用是在段落的开头使用-gt-符号，然后在后面紧跟着一个空格符号：" class="headerlink" title="Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号："></a>Markdown 区块引用是在段落的开头使用&gt;符号，然后在后面紧跟着一个空格符号：</h3><h4 id="简单区块"><a href="#简单区块" class="headerlink" title="简单区块"></a>简单区块</h4><blockquote><p>区块内容一<br>区块内容二<br>区块内容三</p></blockquote><h4 id="嵌套区块"><a href="#嵌套区块" class="headerlink" title="嵌套区块"></a>嵌套区块</h4><pre><code>&gt; 最外层区块&gt; &gt; 第一层区块&gt; &gt; &gt; 第二层区块</code></pre><h4 id="区块和列表-嵌套使用"><a href="#区块和列表-嵌套使用" class="headerlink" title="区块和列表 嵌套使用"></a>区块和列表 嵌套使用</h4><h5 id="区块内嵌套列表"><a href="#区块内嵌套列表" class="headerlink" title="区块内嵌套列表"></a>区块内嵌套列表</h5><pre><code>&gt; 区块&gt; 1. 第一项&gt; 2. 第二项</code></pre><h5 id="列表内嵌套区块"><a href="#列表内嵌套区块" class="headerlink" title="列表内嵌套区块"></a>列表内嵌套区块</h5><ul><li><p>第一项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li><li><p>第二项</p><blockquote><p>区块内容一<br>区块内容二</p></blockquote></li></ul><h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">System.out.println(<span class="string">"我是代码"</span>)</span><br></pre></td></tr></table></figure><h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><h3 id="链接方式一"><a href="#链接方式一" class="headerlink" title="链接方式一"></a>链接方式一</h3><p>我是一个链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h3 id="链接方式二"><a href="#链接方式二" class="headerlink" title="链接方式二"></a>链接方式二</h3><p><a href="https://maojingsong.com" target="_blank" rel="noopener">https://maojingsong.com</a></p><h3 id="高级链接-链接也可以用变量来代替，文档末尾附带变量地址："><a href="#高级链接-链接也可以用变量来代替，文档末尾附带变量地址：" class="headerlink" title="高级链接 链接也可以用变量来代替，文档末尾附带变量地址："></a>高级链接 链接也可以用变量来代替，文档末尾附带变量地址：</h3><p>这是一个高级链接<a href="https://maojingsong.com" target="_blank" rel="noopener">代码老司机</a></p><h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><img src="http://static.runoob.com/images/runoob-logo.png" alt="代码老中医"></p><h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><table><thead><tr><th>天气</th><th>日期</th></tr></thead><tbody><tr><td>晴天</td><td>20191004</td></tr><tr><td>阴天</td><td>20191005</td></tr></tbody></table><table><thead><tr><th align="left">天气</th><th align="center">日期</th><th align="right">任务</th></tr></thead><tbody><tr><td align="left">晴天</td><td align="center">20191004</td><td align="right">学习</td></tr><tr><td align="left">阴天</td><td align="center">20191005</td><td align="right">学习</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+    
+      <category term="编程习惯" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E4%B9%A0%E6%83%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初识VIM</title>
+    <link href="http://yoursite.com/2019/09/27/%E5%88%9D%E8%AF%86vim/"/>
+    <id>http://yoursite.com/2019/09/27/初识vim/</id>
+    <published>2019-09-27T13:13:50.000Z</published>
+    <updated>2019-12-05T05:53:38.413Z</updated>
+    
+    <content type="html"><![CDATA[<p>vim 文件名 进入该文件的normal模式</p><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>在光标位置插入</td></tr><tr><td>a</td><td>在光标之后插入</td></tr><tr><td>o</td><td>在下一行插入</td></tr><tr><td>I</td><td>在行头插入</td></tr><tr><td>A</td><td>在行末尾插入</td></tr><tr><td>O</td><td>在上一行插</td></tr><tr><td>:wq</td><td>写入退出</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      相信习惯的力量
+    
+    </summary>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/categories/VIM/"/>
+    
+    
+      <category term="VIM" scheme="http://yoursite.com/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>实用小技巧</title>
     <link href="http://yoursite.com/2019/09/27/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://yoursite.com/2019/09/27/实用小技巧/</id>
@@ -428,52 +474,6 @@
     
     
       <category term="实用小技巧" scheme="http://yoursite.com/tags/%E5%AE%9E%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序</title>
-    <link href="http://yoursite.com/2019/09/27/%E6%8E%92%E5%BA%8F/"/>
-    <id>http://yoursite.com/2019/09/27/排序/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-11-17T13:35:22.824Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">7</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = bubbleSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(<span class="string">"第"</span>+i+<span class="string">"元素"</span> +<span class="string">":"</span>+ temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;array.length-<span class="number">1</span>-i ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (array[j + <span class="number">1</span>] &lt; array[j]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = array[j + <span class="number">1</span>];</span><br><span class="line">                    array[j + <span class="number">1</span>] = array[j];</span><br><span class="line">                    array[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp =  selectionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; temp.length; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] selectionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length ==<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length ; i++) &#123;</span><br><span class="line">          <span class="keyword">int</span> minIndex = i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &lt; array.length ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(array[j] &lt; array[minIndex])&#123;</span><br><span class="line">                    minIndex = j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> temp = array[minIndex];</span><br><span class="line">            array[minIndex]  = array[i];</span><br><span class="line">            array[i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InsertionSort</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">5</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] temp = insertionSort(array);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;temp.length ; i++) &#123;</span><br><span class="line">            System.out.println(temp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] insertionSort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">if</span>(array.length == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> current;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length -<span class="number">1</span>; i++) &#123;</span><br><span class="line">            current = array[i + <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">int</span> preIndex = i;</span><br><span class="line">            <span class="keyword">while</span> (preIndex &gt;= <span class="number">0</span> &amp;&amp; current &lt; array[preIndex])&#123;</span><br><span class="line">                array[preIndex + <span class="number">1</span> ] = array[preIndex];</span><br><span class="line">                preIndex--;</span><br><span class="line">            &#125;</span><br><span class="line">            array[preIndex + <span class="number">1</span>] = current;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>美剧</title>
-    <link href="http://yoursite.com/2019/09/27/%E7%BE%8E%E5%89%A7%E6%8E%A8%E8%8D%90/"/>
-    <id>http://yoursite.com/2019/09/27/美剧推荐/</id>
-    <published>2019-09-27T13:13:50.000Z</published>
-    <updated>2019-11-05T15:25:23.237Z</updated>
-    
-    <content type="html"><![CDATA[<ol><li>Modern Family</li><li>How I Met Your Mother</li><li>The Ellen Show</li><li>Conan</li><li>James Corden</li><li>The Graham Norton Show</li><li>Brooklyn 99</li><li>Scrubs</li><li>Silicon Valley</li><li>Heabag</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      相信习惯的力量
-    
-    </summary>
-    
-    
-      <category term="英语学习" scheme="http://yoursite.com/categories/%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="美剧" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%89%A7/"/>
     
   </entry>
   
